@@ -214,10 +214,12 @@ def main() -> int:
             brand_dir = REPO_ROOT / "brand"
             render_digest(digest_md, brand_dir, out_dir / "digest.html", run_date.isoformat())
             render_angles(angles_md, brand_dir, out_dir / "angles.html", run_date.isoformat())
+            repo_url = os.environ.get("REPO_DIGEST_URL_BASE", "")
+            digest_url = f"{repo_url}/{run_date.isoformat()}/digest.html" if repo_url else f"file://{out_dir}/digest.html"
             render_email_body(
                 digest_md, brand_dir, out_dir / "email_body.html",
                 run_date.isoformat(),
-                digest_url=f"https://github.com/your-org/fiteligent-research/blob/main/digests/{run_date.isoformat()}/digest.html",
+                digest_url=digest_url,
                 subject=f"[Fiteligent Research] Digest {run_date.isoformat()}",
             )
             _log(run_log, "render: HTML siblings written")
