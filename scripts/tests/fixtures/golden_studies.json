@@ -1,0 +1,80 @@
+{
+  "studies": [
+    {
+      "title": "Semaglutide + RT preserves lean mass",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40000001/",
+      "doi": "10.1016/j.cmet.2026.05.001",
+      "authors": ["Smith J", "Doe A"],
+      "journal": "Cell Metabolism",
+      "published": "2026-05-05",
+      "source": "pubmed",
+      "abstract": "Two-arm RCT (n=180) comparing semaglutide alone vs semaglutide + 3x/wk resistance training. Lean mass loss 4.2 kg vs 1.1 kg favoring RT arm (p<0.001).",
+      "n": 180,
+      "study_type": "RCT",
+      "theme_guess": "obesity",
+      "cited_by": []
+    },
+    {
+      "title": "Microneedling + topical minoxidil for AGA",
+      "url": "https://www.jaad.org/article/PIIxxx",
+      "doi": "10.1016/j.jaad.2026.04.015",
+      "authors": ["Tanaka K"],
+      "journal": "JAAD",
+      "published": "2026-05-02",
+      "source": "rss",
+      "abstract": "12-week RCT (n=80) shows microneedling + 5% minoxidil produces 1.7x hair density increase vs minoxidil alone.",
+      "n": 80,
+      "study_type": "RCT",
+      "theme_guess": "skin_hair",
+      "cited_by": []
+    },
+    {
+      "title": "Sleep restriction blunts MPS response to RT",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40000003/",
+      "doi": "10.1152/japplphysiol.2026.05.003",
+      "authors": ["Wong J"],
+      "journal": "J Appl Physiol",
+      "published": "2026-05-08",
+      "source": "pubmed",
+      "abstract": "Crossover trial (n=24) shows 4h sleep restriction reduces post-RT muscle protein synthesis by 27%.",
+      "n": 24,
+      "study_type": "RCT",
+      "theme_guess": "sleep",
+      "cited_by": []
+    },
+    {
+      "title": "Rapamycin in aged mice — ITP follow-up",
+      "url": "https://www.biorxiv.org/content/10.1101/2026.05.001v1",
+      "doi": "10.1101/2026.05.001",
+      "authors": ["Patel S"],
+      "published": "2026-05-09",
+      "source": "biorxiv",
+      "abstract": "Preprint: rapamycin at 14ppm extends median lifespan by 21% in 24mo C57BL/6J.",
+      "study_type": "preprint",
+      "theme_guess": "longevity",
+      "cited_by": []
+    },
+    {
+      "title": "Creatine 5g/day vs 10g/day — meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40000005/",
+      "doi": "10.1186/s12970-2026-05-005",
+      "authors": ["Garcia M"],
+      "journal": "J Int Soc Sports Nutr",
+      "published": "2026-05-06",
+      "source": "pubmed",
+      "abstract": "Meta-analysis (k=14, n=872) — no hypertrophy benefit at 10g/day over 5g/day.",
+      "study_type": "meta-analysis",
+      "theme_guess": "supplements",
+      "cited_by": []
+    },
+    {
+      "title": "Examine: New evidence on ashwagandha and sleep",
+      "url": "https://examine.com/articles/ashwagandha-sleep-2026",
+      "published": "2026-05-10",
+      "source": "examine",
+      "abstract": "Review of 3 new RCTs on ashwagandha for sleep onset latency.",
+      "theme_guess": "supplements",
+      "cited_by": ["10.1186/s12970-2026-05-005"]
+    }
+  ]
+}
