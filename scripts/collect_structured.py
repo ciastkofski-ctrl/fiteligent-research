@@ -156,3 +156,65 @@ def fetch_biorxiv(
             )
         )
     return studies
+
+
+import feedparser
+from email.utils import parsedate_to_datetime
+
+
+def fetch_journal_rss(
+    feed_url: str,
+    journal_name: str,
+    keyword_filters: dict[ThemeKind, list[str]],
+    date_from: date,
+    date_to: date,
+) -> list[Study]:
+    """Parse a journal RSS feed; keep entries matching any theme's keywords.
+
+    keyword_filters maps theme -> lowercase keyword list. First matching theme wins.
+    """
+    with httpx.Client(timeout=30.0) as client:
+        resp = client.get(feed_url, follow_redirects=True)
+        resp.raise_for_status()
+
+    feed = feedparser.parse(resp.text)
+    studies: list[Study] = []
+
+    for entry in feed.entries:
+        title = entry.get("title", "Untitled")
+        link = entry.get("link", "")
+        summary = entry.get("summary", "") or entry.get("description", "")
+
+        # date
+        pub: date | None = None
+        if entry.get("published"):
+            try:
+                pub = parsedate_to_datetime(entry.published).date()
+            except (TypeError, ValueError):
+                pass
+        if not pub:
+            continue
+        if not (date_from <= pub <= date_to):
+            continue
+
+        haystack = f"{title} {summary}".lower()
+        theme_match: ThemeKind | None = None
+        for theme, keywords in keyword_filters.items():
+            if any(kw.lower() in haystack for kw in keywords):
+                theme_match = theme
+                break
+        if not theme_match:
+            continue
+
+        studies.append(
+            Study(
+                title=title,
+                url=link,
+                journal=journal_name,
+                published=pub,
+                source="rss",
+                abstract=summary[:1000] or None,
+                theme_guess=theme_match,
+            )
+        )
+    return studies
