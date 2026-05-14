@@ -77,6 +77,28 @@ def fetch_pubmed(
         esummary.raise_for_status()
         sroot = ET.fromstring(esummary.text)
 
+        time.sleep(0.4)  # rate limit
+
+        # 3. efetch to get full abstracts (esummary only returns metadata)
+        efetch = client.get(
+            f"{PUBMED_BASE}/efetch.fcgi",
+            params={"db": "pubmed", "id": ",".join(pmids), "rettype": "abstract", "retmode": "xml"},
+        )
+        efetch.raise_for_status()
+        eroot = ET.fromstring(efetch.text)
+
+    abstracts_by_pmid: dict[str, str] = {}
+    for article in eroot.findall(".//PubmedArticle"):
+        pmid_el = article.find(".//PMID")
+        if pmid_el is None or not pmid_el.text:
+            continue
+        pmid = pmid_el.text
+        abs_texts = article.findall(".//Abstract/AbstractText")
+        if abs_texts:
+            joined = " ".join((t.text or "").strip() for t in abs_texts if t.text)
+            if joined:
+                abstracts_by_pmid[pmid] = joined
+
     studies: list[Study] = []
     for ds in sroot.findall(".//DocSum"):
         pmid = ds.find(".//Id").text  # type: ignore[union-attr]
@@ -114,6 +136,7 @@ def fetch_pubmed(
                 source="pubmed",
                 study_type=study_type,
                 theme_guess=theme,
+                abstract=abstracts_by_pmid.get(pmid),
             )
         )
 

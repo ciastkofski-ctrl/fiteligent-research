@@ -40,6 +40,31 @@ PUBMED_ESUMMARY_RESPONSE = """<?xml version="1.0"?>
   </DocSum>
 </eSummaryResult>"""
 
+PUBMED_EFETCH_RESPONSE = """<?xml version="1.0"?>
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation>
+      <PMID Version="1">40000001</PMID>
+      <Article>
+        <Abstract>
+          <AbstractText Label="BACKGROUND">Two-arm RCT comparing semaglutide alone vs semaglutide + 3x/wk resistance training.</AbstractText>
+          <AbstractText Label="RESULTS">Lean mass loss 4.2 kg vs 1.1 kg favoring RT arm (p&lt;0.001).</AbstractText>
+        </Abstract>
+      </Article>
+    </MedlineCitation>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation>
+      <PMID Version="1">40000002</PMID>
+      <Article>
+        <Abstract>
+          <AbstractText>Meta-analysis of 14 GLP-1 RCTs.</AbstractText>
+        </Abstract>
+      </Article>
+    </MedlineCitation>
+  </PubmedArticle>
+</PubmedArticleSet>"""
+
 
 @respx.mock
 def test_fetch_pubmed_returns_studies_with_metadata():
@@ -48,6 +73,9 @@ def test_fetch_pubmed_returns_studies_with_metadata():
     )
     respx.get("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi").mock(
         return_value=httpx.Response(200, text=PUBMED_ESUMMARY_RESPONSE)
+    )
+    respx.get("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi").mock(
+        return_value=httpx.Response(200, text=PUBMED_EFETCH_RESPONSE)
     )
 
     studies = fetch_pubmed(
@@ -66,6 +94,8 @@ def test_fetch_pubmed_returns_studies_with_metadata():
     assert s1.study_type == "RCT"
     assert s1.theme_guess == "obesity"
     assert s1.authors == ["Smith J", "Doe A"]
+    assert s1.abstract is not None and "RCT" in s1.abstract
 
     s2 = studies[1]
     assert s2.study_type == "meta-analysis"
+    assert s2.abstract is not None and "GLP-1" in s2.abstract
