@@ -66,9 +66,16 @@ def send_email(
 
 
 def send_failure_alert(stage: str, error: str, run_date_iso: str) -> None:
-    """Lightweight plain-text alert for run failures."""
-    send_email(
-        subject=f"[Fiteligent Research] FAILED {run_date_iso}",
-        html_body=f"<pre>{error}</pre>",
-        plain_fallback=f"Stage: {stage}\n\n{error}",
-    )
+    """Lightweight plain-text alert for run failures. Falls back to stderr if SMTP misconfigured."""
+    try:
+        send_email(
+            subject=f"[Fiteligent Research] FAILED {run_date_iso}",
+            html_body=f"<pre>{error}</pre>",
+            plain_fallback=f"Stage: {stage}\n\n{error}",
+        )
+    except Exception as alert_err:
+        import sys
+        sys.stderr.write(
+            f"[notify] FAILED to send failure alert ({alert_err}). "
+            f"Original failure (stage={stage}, run_date={run_date_iso}):\n{error}\n"
+        )
