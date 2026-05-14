@@ -118,3 +118,41 @@ def fetch_pubmed(
         )
 
     return studies
+
+
+BIORXIV_BASE = "https://api.biorxiv.org/details"
+
+
+def fetch_biorxiv(
+    server: Literal["biorxiv", "medrxiv"],
+    date_from: date,
+    date_to: date,
+) -> list[Study]:
+    """Fetch preprints from bioRxiv or medRxiv API."""
+    url = f"{BIORXIV_BASE}/{server}/{date_from:%Y-%m-%d}/{date_to:%Y-%m-%d}"
+    with httpx.Client(timeout=30.0) as client:
+        resp = client.get(url)
+        resp.raise_for_status()
+        data = resp.json()
+
+    studies: list[Study] = []
+    for item in data.get("collection", []):
+        authors_raw = item.get("authors", "")
+        authors = [a.strip() for a in authors_raw.split(";") if a.strip()]
+        try:
+            pub = date.fromisoformat(item["date"])
+        except (ValueError, KeyError):
+            continue
+        studies.append(
+            Study(
+                title=item.get("title", "Untitled"),
+                url=f"https://www.{server}.org/content/{item['doi']}v1",
+                doi=item.get("doi"),
+                authors=authors,
+                published=pub,
+                source=server,
+                abstract=item.get("abstract"),
+                study_type="preprint",
+            )
+        )
+    return studies
