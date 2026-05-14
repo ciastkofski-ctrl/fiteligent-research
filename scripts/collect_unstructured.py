@@ -108,7 +108,7 @@ def collect_for_source(
 
 def collect_unstructured(
     client: Any,
-    config: dict,
+    config: dict,  # reserved for future per-source overrides; not read currently
     influencers: dict,
     date_from: date,
     date_to: date,
@@ -117,10 +117,10 @@ def collect_unstructured(
     """Iterate all unstructured sources defined in config + influencers."""
     all_studies: list[Study] = []
 
-    # Direct sources from config
+    # Direct sources — Stronger by Science is intentionally omitted here because
+    # Greg Nuckols' influencer entry (site: strongerbyscience.com) already covers it.
     direct_sources = [
         ("Examine.com", "https://examine.com"),
-        ("Stronger by Science", "https://www.strongerbyscience.com"),
     ]
     for name, url in direct_sources:
         try:
