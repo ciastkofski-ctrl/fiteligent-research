@@ -1,0 +1,36 @@
+# API endpoints and RSS feed URLs.
+
+structured:
+  pubmed:
+    base_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+    rate_limit_per_sec: 3  # without API key; 10 with key
+    max_results_per_theme: 30
+
+  biorxiv:
+    base_url: "https://api.biorxiv.org/details/biorxiv"
+
+  medrxiv:
+    base_url: "https://api.biorxiv.org/details/medrxiv"
+
+  journal_rss:
+    - name: "NEJM"
+      url: "https://www.nejm.org/action/showFeed?type=etoc&feed=rss&jc=nejm"
+    - name: "The Lancet"
+      url: "https://www.thelancet.com/rssfeed/lancet_current.xml"
+    - name: "Cell Metabolism"
+      url: "https://www.cell.com/cell-metabolism/current.rss"
+    - name: "Nature Medicine"
+      url: "https://www.nature.com/nm.rss"
+    - name: "Cochrane Library New Reviews"
+      url: "https://www.cochranelibrary.com/cdsr/rss/new"
+    - name: "JAAD"
+      url: "https://www.jaad.org/current.rss"
+    - name: "Journal of Investigative Dermatology"
+      url: "https://www.jidonline.org/current.rss"
+    - name: "British Journal of Dermatology"
+      url: "https://onlinelibrary.wiley.com/feed/13652133/most-recent"
+
+unstructured:
+  examine_base: "https://examine.com"
+  stronger_by_science: "https://www.strongerbyscience.com"
+  search_query_template: "site:{site} after:{from_date}"

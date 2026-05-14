@@ -1,0 +1,64 @@
+# Provisional. Edit to add/drop as signal-quality observations accumulate.
+core_fitness_strength:
+  - name: "Greg Nuckols"
+    site: "strongerbyscience.com"
+    themes: [strength, supplements]
+  - name: "Eric Helms"
+    site: "massresearchreview.com"
+    themes: [strength, supplements]
+  - name: "Mike Israetel"
+    site: "rpstrength.com"
+    youtube: "@RenaissancePeriodization"
+    themes: [strength]
+  - name: "Brad Schoenfeld"
+    site: "lookgreatnaked.com"
+    themes: [strength]
+  - name: "Jeff Nippard"
+    youtube: "@JeffNippard"
+    themes: [strength, supplements]
+  - name: "Menno Henselmans"
+    site: "mennohenselmans.com"
+    themes: [strength, supplements]
+  - name: "Layne Norton"
+    site: "biolayne.com"
+    themes: [strength, supplements, obesity]
+
+core_longevity:
+  - name: "Andrew Huberman"
+    site: "hubermanlab.com"
+    themes: [longevity, sleep, supplements]
+  - name: "Peter Attia"
+    site: "peterattiamd.com"
+    themes: [longevity, obesity]
+  - name: "Rhonda Patrick"
+    site: "foundmyfitness.com"
+    themes: [longevity, supplements]
+  - name: "David Sinclair"
+    site: "davidsinclair.com"
+    themes: [longevity]
+  - name: "Valter Longo"
+    site: "valterlongo.com"
+    themes: [longevity, obesity]
+  - name: "Eric Topol"
+    site: "erictopol.substack.com"
+    themes: [longevity]
+  - name: "Gabrielle Lyon"
+    site: "drgabriellelyon.com"
+    themes: [longevity, strength]
+  - name: "Stuart Phillips"
+    themes: [strength, longevity]
+    note: "researcher; surfaces via PubMed primarily"
+
+skin_hair_provisional:
+  - name: "Dr. Shaaf Husaain"
+    note: "Vet before Phase 2 — see spec §14"
+    themes: [skin_hair]
+  - name: "Dr. Andrea Suarez (Dr. Dray)"
+    youtube: "@DrDrayzday"
+    themes: [skin_hair]
+  - name: "Dr. Sam Ellis"
+    youtube: "@DrSamEllis"
+    themes: [skin_hair]
+  - name: "Dr. Michelle Wong (LabMuffin)"
+    site: "labmuffin.com"
+    themes: [skin_hair]

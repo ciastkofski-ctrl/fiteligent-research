@@ -1,0 +1,33 @@
+# MeSH terms + free-text keywords per theme.
+# Used by PubMed E-utilities and as keyword filters for RSS/journal feeds.
+
+themes:
+  obesity:
+    label: "Obesity & Metabolic Health"
+    pubmed_query: '("obesity"[MeSH] OR "metabolic syndrome"[MeSH] OR "weight loss"[MeSH] OR "GLP-1"[All Fields] OR "semaglutide"[All Fields] OR "tirzepatide"[All Fields])'
+    keywords: [obesity, glp-1, semaglutide, tirzepatide, metabolic, insulin resistance, weight loss, bariatric]
+
+  longevity:
+    label: "Longevity"
+    pubmed_query: '("longevity"[MeSH] OR "aging"[MeSH] OR "healthspan"[All Fields] OR "rapamycin"[All Fields] OR "senolytic"[All Fields] OR "caloric restriction"[All Fields])'
+    keywords: [longevity, healthspan, aging, rapamycin, senolytic, mTOR, NAD, sirtuin, autophagy, hallmarks of aging]
+
+  strength:
+    label: "Strength & Hypertrophy"
+    pubmed_query: '("resistance training"[MeSH] OR "muscle, skeletal"[MeSH] OR "hypertrophy"[All Fields] OR "1RM"[All Fields] OR "protein synthesis"[All Fields])'
+    keywords: [hypertrophy, resistance training, strength, muscle protein synthesis, sets, reps, 1RM, periodization, deload]
+
+  supplements:
+    label: "Supplements"
+    pubmed_query: '("dietary supplements"[MeSH] OR "creatine"[MeSH] OR "vitamin D"[MeSH] OR "omega-3 fatty acids"[MeSH] OR "magnesium"[MeSH] OR "ashwagandha"[All Fields])'
+    keywords: [creatine, vitamin D, omega-3, magnesium, ashwagandha, NAC, NMN, NR, collagen, protein powder]
+
+  sleep:
+    label: "Sleep & Recovery"
+    pubmed_query: '("sleep"[MeSH] OR "circadian rhythm"[MeSH] OR "sleep deprivation"[MeSH] OR "REM"[All Fields] OR "deep sleep"[All Fields])'
+    keywords: [sleep, circadian, REM, slow-wave, melatonin, sleep deprivation, jetlag, recovery]
+
+  skin_hair:
+    label: "Skin & Hair Health"
+    pubmed_query: '("skin aging"[MeSH] OR "alopecia, androgenetic"[MeSH] OR "minoxidil"[MeSH] OR "finasteride"[MeSH] OR "microneedling"[All Fields] OR "retinoid"[MeSH] OR "tretinoin"[MeSH])'
+    keywords: [skin aging, retinoid, tretinoin, peptide, microneedling, PRP, finasteride, dutasteride, minoxidil, androgenic alopecia, hair loss, dermatology]
