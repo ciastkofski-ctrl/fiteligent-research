@@ -75,11 +75,10 @@ def test_full_pipeline_with_mocked_llm(tmp_path):
     new_studies = filter_new(studies, seen)
     assert len(new_studies) == 6
 
-    # Synthesize (mocked)
+    # Synthesize (mocked streaming client)
     mock_client = MagicMock()
-    mock_response = MagicMock()
-    mock_response.content = [MagicMock(text=FAKE_DIGEST_OUTPUT)]
-    mock_client.messages.create.return_value = mock_response
+    stream_ctx = mock_client.messages.stream.return_value
+    stream_ctx.__enter__.return_value.text_stream = iter([FAKE_DIGEST_OUTPUT])
 
     digest_md, angles_md = synthesize(mock_client, new_studies, run_date=date(2026, 5, 15))
     assert "Fiteligent Research Digest" in digest_md

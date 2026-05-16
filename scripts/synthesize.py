@@ -4,8 +4,14 @@ import re
 from datetime import date
 from typing import Any
 
-from scripts.lib.schema import Study
+from scripts.lib.schema import Study, ThemeKind
 from scripts.lib.evidence import rate_study
+
+THEMES_ORDER: tuple[ThemeKind, ...] = (
+    "obesity", "longevity", "strength", "supplements", "sleep", "skin_hair",
+)
+DEFAULT_PER_THEME_CAP = 3
+MAX_TOKENS_OUT = 16000
 
 
 SYNTH_SYSTEM_PROMPT = """You are a research digest writer for fiteligent.pl, the brand of Dr. Jakub Stanisławski (Polish, evidence-based health optimization).
@@ -57,6 +63,32 @@ def _study_to_llm_payload(s: Study) -> dict:
     }
 
 
+def select_top_per_theme(
+    studies: list[Study],
+    per_theme: int = DEFAULT_PER_THEME_CAP,
+) -> list[Study]:
+    """Pick the strongest `per_theme` studies in each of the 6 themes.
+
+    Ranking within a theme: evidence_rating desc, then published desc, then
+    cited_by length desc. Studies with no theme_guess are dropped (they would
+    not fit the 6-section digest structure anyway).
+    """
+    by_theme: dict[ThemeKind, list[Study]] = {t: [] for t in THEMES_ORDER}
+    for s in studies:
+        if s.theme_guess in by_theme:
+            by_theme[s.theme_guess].append(s)
+
+    selected: list[Study] = []
+    for theme in THEMES_ORDER:
+        ranked = sorted(
+            by_theme[theme],
+            key=lambda s: (rate_study(s), s.published, len(s.cited_by)),
+            reverse=True,
+        )
+        selected.extend(ranked[:per_theme])
+    return selected
+
+
 def _extract(text: str, start_marker: str, end_marker: str) -> str:
     pattern = re.escape(start_marker) + r"(.*?)" + re.escape(end_marker)
     m = re.search(pattern, text, re.DOTALL)
@@ -78,24 +110,28 @@ def synthesize(
         f"Studies: {json.dumps(payload, indent=2, ensure_ascii=False)}"
     )
 
-    response = client.messages.create(
+    text = ""
+    stop_reason = None
+    with client.messages.stream(
         model=model,
-        max_tokens=16000,
+        max_tokens=MAX_TOKENS_OUT,
         system=SYNTH_SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_message}],
-    )
-
-    text = ""
-    for block in response.content:
-        if hasattr(block, "text"):
-            text += block.text
+    ) as stream:
+        for chunk in stream.text_stream:
+            text += chunk
+        final = stream.get_final_message()
+        stop_reason = final.stop_reason
+        usage = final.usage
 
     digest_md = _extract(text, "<<DIGEST_START>>", "<<DIGEST_END>>")
     angles_md = _extract(text, "<<ANGLES_START>>", "<<ANGLES_END>>")
 
     if not digest_md or not angles_md:
         raise RuntimeError(
-            f"Synthesizer output missing markers. Raw output:\n{text[:500]}..."
+            f"Synthesizer output missing markers. "
+            f"stop_reason={stop_reason}, output_tokens={usage.output_tokens}, "
+            f"raw_chars={len(text)}.\nTail of output:\n...{text[-500:]}"
         )
 
     return digest_md, angles_md

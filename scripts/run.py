@@ -14,6 +14,10 @@ _REPO_ROOT_EARLY = Path(__file__).resolve().parent.parent
 if str(_REPO_ROOT_EARLY) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT_EARLY))
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 import yaml
 from dotenv import load_dotenv
 
@@ -21,7 +25,7 @@ from scripts.collect_structured import fetch_pubmed, fetch_biorxiv, fetch_journa
 from scripts.collect_unstructured import collect_unstructured
 from scripts.filter_dedupe import load_seen, save_seen, filter_new, update_seen
 from scripts.lib.schema import Study, StudyList, ThemeKind
-from scripts.synthesize import synthesize
+from scripts.synthesize import synthesize, select_top_per_theme
 from scripts.render_html import render_digest, render_angles, render_email_body
 from scripts.notify import send_email, send_failure_alert
 
@@ -53,6 +57,7 @@ def collect_all(
     anthropic_client,
     model: str,
     only_source: str | None = None,
+    skip_unstructured: bool = False,
 ) -> list[Study]:
     all_studies: list[Study] = []
 
@@ -102,7 +107,9 @@ def collect_all(
                 _log(run_log, f"rss[{feed['name']}] FAILED: {e}")
 
     # Unstructured
-    if only_source in (None, "unstructured"):
+    if skip_unstructured and only_source != "unstructured":
+        _log(run_log, "unstructured: skipped (--no-unstructured)")
+    elif only_source in (None, "unstructured"):
         try:
             studies = collect_unstructured(
                 client=anthropic_client,
@@ -127,6 +134,7 @@ def main() -> int:
     parser.add_argument("--since", type=str, help="ISO date override for lookback start")
     parser.add_argument("--source", type=str, help="Run only one source path: pubmed|biorxiv|rss|unstructured")
     parser.add_argument("--no-render", action="store_true", help="Skip HTML rendering")
+    parser.add_argument("--no-unstructured", action="store_true", help="Skip influencer/LLM scraping stage")
     args = parser.parse_args()
 
     load_dotenv(REPO_ROOT / ".env")
@@ -164,6 +172,7 @@ def main() -> int:
             topics_cfg, sources_cfg, influencers_cfg,
             date_from, date_to, run_log, client, model,
             only_source=args.source,
+            skip_unstructured=args.no_unstructured,
         )
     except Exception as e:
         _log(run_log, f"COLLECT stage failed entirely: {e}\n{traceback.format_exc()}")
@@ -194,8 +203,10 @@ def main() -> int:
         return 0
 
     # === SYNTHESIZE ===
+    selected = select_top_per_theme(new_studies)
+    _log(run_log, f"synthesize input: {len(new_studies)} -> {len(selected)} (top-per-theme cap)")
     try:
-        digest_md, angles_md = synthesize(client, new_studies, run_date=run_date, model=model)
+        digest_md, angles_md = synthesize(client, selected, run_date=run_date, model=model)
     except Exception as e:
         _log(run_log, f"SYNTHESIZE failed: {e}\n{traceback.format_exc()}")
         (out_dir / "run.log").write_text("\n".join(run_log), encoding="utf-8")
