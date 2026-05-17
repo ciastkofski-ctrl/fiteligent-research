@@ -1,4 +1,1567 @@
 {
-  "by_doi": {},
-  "by_url": {}
+  "by_doi": {
+    "10.1001/jamadermatol.2026.1753": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1002/ame2.70225": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1002/cbic.202500873": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1002/jsfa.70735": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1002/mco2.70765": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00210-026-05416-4": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00223-026-01529-3": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00345-026-06438-6": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00426-026-02296-4": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00431-026-07066-3": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00520-026-10753-4": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00520-026-10758-z": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00592-026-02708-2": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00592-026-02709-1": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00702-026-03171-7": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s00702-026-03172-6": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s10522-026-10448-7": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s10735-026-10829-9": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11046-026-01080-7": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11250-026-05063-0": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11259-026-11238-9": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11259-026-11246-9": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11259-026-11257-6": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11306-026-02408-6": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11306-026-02455-z": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11325-026-03712-0": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11418-026-02026-5": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11427-025-3242-5": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s11883-026-01424-0": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s12529-026-10463-5": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s13668-026-00769-x": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s44192-026-00446-z": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1007/s44470-026-00079-7": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.ajcnut.2026.101349": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.arr.2026.103177": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.arr.2026.103182": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.bcp.2026.118074": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.beem.2026.102114": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.beem.2026.102115": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.bioelechem.2026.109327": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.biopsych.2026.05.002": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.bmcl.2026.130685": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.cell.2026.04.032": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.cellsig.2026.112605": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.eprac.2026.05.010": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.expneurol.2026.115823": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.hjc.2026.05.001": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.ijbiomac.2026.152514": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.ijpharm.2026.126970": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.jaad.2026.05.008": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.jconrel.2026.114804": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.jep.2026.121233": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.jmir.2026.102438": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.jphotobiol.2026.113458": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.neuint.2026.106186": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.orcp.2026.05.003": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.parkreldis.2026.108352": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.phymed.2026.158275": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.semarthrit.2026.152995": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.sleep.2026.109002": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1016/j.yjmcc.2026.05.007": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1017/jns.2026.10097": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1017/jns.2026.10099": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1021/acsabm.5c02495": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41380-026-03635-y": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41390-026-05071-8": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41589-026-02188-z": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41598-026-41318-4": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41598-026-50168-z": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41598-026-50709-6": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41598-026-51350-z": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41598-026-52194-3": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s41598-026-53008-2": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1038/s42003-026-10022-4": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1053/j.ajkd.2026.03.037": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1073/pnas.2602167123": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1073/pnas.2605960123": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1080/1028415X.2026.2670640": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1080/10717544.2026.2667564": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1080/13814788.2026.2661165": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1080/14656566.2026.2676109": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1080/15384047.2026.2670792": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1080/15502783.2026.2668435": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1080/17581869.2026.2674771": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1093/asj/sjag095": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1093/cid/ciag121": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1093/ehjqcco/qcag079": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1093/genetics/iyag049": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1093/jsxmed/qdag135": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1093/nar/gkag479": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1097/CRD.0000000000001311": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1097/IAE.0000000000004883": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1097/QAD.0000000000004544": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1097/SCS.0000000000012829": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1098/rstb.2025.0042": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1101/2021.03.29.437441": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1101/2024.12.16.628708": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1101/2025.06.04.657802": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1101/2025.08.26.25334432": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1101/2025.10.31.685763": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1111/jipb.70294": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1111/obr.70161": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1113/JP290683": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1113/JP291056": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1126/sciadv.adz3835": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1126/sciadv.aea4983": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1126/sciadv.aeb2528": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1126/sciadv.aed3162": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1126/sciadv.aed7122": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1126/sciadv.aed7566": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1126/scitranslmed.adq5442": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1136/bmjgh-2025-020597": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1136/bmjopen-2025-115088": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1146/annurev-nutr-070225-105258": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1155/humu/3304798": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1159/000552550": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1161/JAHA.125.045580": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1172/JCI194687": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1172/JCI206031": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1177/11207000261441838": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1177/11786469261449491": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1177/19322968261449829": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1183/16000617.0224-2025": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1183/16000617.0255-2025": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1183/16000617.0260-2025": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1183/16000617.0281-2025": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1186/s12872-026-05939-x": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1186/s12967-026-08214-x": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1186/s12967-026-08218-7": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1186/s13005-026-00612-2": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1186/s13148-026-02098-w": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1186/s40478-026-02319-6": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1186/s40478-026-02322-x": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1200/EDBK-26-100055": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1210/clinem/dgag207": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1371/journal.pbio.3003784": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1371/journal.pone.0346236": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1371/journal.pone.0346898": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1371/journal.pone.0348694": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1371/journal.pone.0349099": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1371/journal.pone.0349199": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1590/1806-9282.20251263": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1590/1806-9282.20251481": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1590/1806-9282.20251486": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.1590/1984-0462/2026/44/2025215": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.18632/aging.206378": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.21091/mppa.2026.02008": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.2147/VHRM.S601750": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.2174/0109298673420373251222130545": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.2174/0113816128456451260424065056": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.2174/0115665232473551260504092329": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.2174/0115734099420676260218064046": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.2196/89428": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.29063/ajrh2026/v30i9.12": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3390/ani16091416": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3390/molecules31091543": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3390/nu18091471": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3390/nu18091472": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3390/nu18091476": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3390/nu18091479": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3390/nu18091480": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3803/EnM.2025.2766": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3892/ijmm.2026.5861": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3892/ijo.2026.5891": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.3892/mmr.2026.13903": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.4014/jmb.2603.03032": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.4014/jmb.2603.03042": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2025.12.16.694766": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.02.06.704312": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.03.13.711660": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.08.26350061": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.15.26350949": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.720997": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721445": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721462": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721575": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721601": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721658": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721679": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721714": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721720": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721766": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721794": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.29.721795": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26351304": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352060": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352154": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352157": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352161": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352164": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352166": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352187": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352189": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.26352192": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.721624": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.721829": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.721837": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.721855": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.721858": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.721859": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.721942": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.04.30.722018": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352067": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352139": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352140": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352146": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352167": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352175": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352193": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352197": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352200": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352201": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352207": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352210": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352211": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352217": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352219": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352226": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.26352246": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.722218": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.722299": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.64898/2026.05.01.722334": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    },
+    "10.7189/jogh.16.04154": {
+      "digest": "2026-05-17",
+      "first_seen": "2026-05-17"
+    }
+  },
+  "by_url": {
+    "https://pubmed.ncbi.nlm.nih.gov/41592629/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/41742729/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/41802633/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42011843/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42084412/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42090514/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42098321/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42102478/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42105926/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42107090/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42116148/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42117741/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42118678/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42120556/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42120635/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42121835/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42123905/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42124072/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42124073/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42124077/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42124080/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42124081/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42126449/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42126475/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42126641/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42126679/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42126993/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42127019/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42127101/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42127107/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42127188/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42127197/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42127204/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42127218/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42127340/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128121/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128254/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128481/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128483/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128485/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128488/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128491/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128711/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128949/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42128962/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42129010/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42129014/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42129283/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42129468/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42129910/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42129944/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42129982/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42132028/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42132112/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42132175/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42132232/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42132348/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42132404/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42132992/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42133012/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42133019/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42133066/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42133119/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42133139/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42133575/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42133678/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42133706/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42134306/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42135521/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42135560/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42135775/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42135836/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42135882/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42135890/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42135908/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42135921/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42136210/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42136237/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42136311/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42136361/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42136363/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42136381/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42136497/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42136963/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42137184/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42137190/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42137196/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42137197/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42137260/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42137973/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138073/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138074/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138103/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138180/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138187/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138190/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138267/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138280/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138385/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138584/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138593/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138727/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138855/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138865/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138933/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42138936/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139049/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139091/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139095/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139151/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139159/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139180/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139339/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139355/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139370/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139454/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139974/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42139975/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42140342/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42140402/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42140577/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42140618/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42140744/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42140745/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42140759/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42140976/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141005/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141086/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141132/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141164/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141166/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141167/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141168/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141178/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141446/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141741/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42141930/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142126/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142145/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142149/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142150/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142201/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142261/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142263/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142335/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142339/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142362/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142486/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142532/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142594/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142596/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142623/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142713/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142739/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142765/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142797/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142808/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142820/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42142983/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42143229/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42143419/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42143467/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/42143542/": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.1101/2021.03.29.437441v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.1101/2024.12.16.628708v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.1101/2025.06.04.657802v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.1101/2025.10.31.685763v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2025.12.16.694766v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.02.06.704312v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.03.13.711660v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.720997v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721445v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721462v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721575v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721601v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721658v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721679v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721714v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721720v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721766v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721794v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.29.721795v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.30.721624v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.30.721829v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.30.721837v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.30.721855v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.30.721858v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.30.721859v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.30.721942v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.04.30.722018v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.05.01.722218v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.05.01.722299v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.biorxiv.org/content/10.64898/2026.05.01.722334v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.1101/2025.08.26.25334432v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.08.26350061v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.15.26350949v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26351304v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352060v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352154v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352157v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352161v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352164v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352166v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352187v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352189v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.04.30.26352192v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352067v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352139v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352140v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352146v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352167v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352175v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352193v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352197v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352200v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352201v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352207v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352210v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352211v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352217v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352219v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352226v1": {
+      "first_seen": "2026-05-17"
+    },
+    "https://www.medrxiv.org/content/10.64898/2026.05.01.26352246v1": {
+      "first_seen": "2026-05-17"
+    }
+  }
 }
