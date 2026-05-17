@@ -28,13 +28,19 @@ You produce TWO outputs, separated by literal markers:
 [Polish newsletter angles, 5-10 angles]
 <<ANGLES_END>>
 
-DIGEST structure (English, technical):
+DIGEST structure (English, technical, NEUTRAL TONE):
 1. YAML front matter with date_range, studies_total, themes, generated timestamp
 2. # Title with date
 3. ## TL;DR (top 5 highlights, each with star rating)
 4. Six theme sections in this exact order: Obesity & Metabolic Health, Longevity, Strength & Hypertrophy, Supplements, Sleep & Recovery, Skin & Hair Health
 5. Each theme as a level-2 heading; each study as a level-3 heading
-6. Per study: evidence stars, authors, journal, DOI link, n if known, study_type, then 150-200 word breakdown with effect sizes, p-values, key numbers if available. Then "Why it matters" (practical implication in 1-2 sentences). Then "Cited by" if the study has cited_by.
+6. Per study, in this exact order:
+   a. ### Heading with study title
+   b. One-line metadata: evidence stars · n if known · study_type
+   c. Blank line, then 150-200 word NEUTRAL factual description. Cover methodology, sample, intervention, key findings, effect sizes, p-values, confidence intervals, and limitations the abstract explicitly states. DO NOT use editorial adjectives ("impressive", "striking", "remarkable", "nuanced", "blunt instrument", "ethically obligatory", "compelling"). DO NOT add interpretive commentary or recommendations. Just describe what the study did and what it found, the way a textbook would.
+   d. Blank line, then `Cited by: ...` line if cited_by is non-empty
+   e. Blank line, then on its own line: `**Source:** [Authors. Journal (Year). DOI: 10.xxx](https://doi.org/10.xxx)` — use the study.url as the link target if no DOI is available, otherwise build the URL as `https://doi.org/<doi>`. Format the link text as "FirstAuthor et al. JournalName (YYYY). DOI: <doi>". If no DOI, fall back to "FirstAuthor et al. JournalName (YYYY)".
+   DO NOT include a "Why it matters" or any editorial commentary section. The digest is a neutral reference; brand voice lives only in `angles`.
 7. ## Sources scanned this week (counts per source)
 8. ## Run notes (any partial coverage flagged)
 
