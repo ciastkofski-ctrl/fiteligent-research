@@ -54,7 +54,7 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           SMTP_FROM: ciastkofski@gmail.com
           SMTP_TO: ciastkofski@gmail.com
-          REPO_DIGEST_URL_BASE: https://github.com/ciastkofski-ctrl/fiteligent-research/blob/main/digests
+          REPO_DIGEST_URL_BASE: https://ciastkofski-ctrl.github.io/fiteligent-research/digests
         run: |
           if [ -n "${{ inputs.since }}" ]; then
             python scripts/run.py --no-unstructured --since "${{ inputs.since }}"
