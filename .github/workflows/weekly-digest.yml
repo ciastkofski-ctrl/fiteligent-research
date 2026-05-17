@@ -1,0 +1,63 @@
+name: Weekly Digest
+
+on:
+  schedule:
+    # Friday 16:00 UTC = 18:00 Europe/Warsaw in summer (CEST, UTC+2)
+    # In winter (CET, UTC+1) this fires at 17:00 Warsaw — a one-hour drift.
+    - cron: '0 16 * * 5'
+  workflow_dispatch:
+    inputs:
+      since:
+        description: 'ISO date override for lookback start (optional)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Configure git
+        run: |
+          git config user.name "fiteligent-research bot"
+          git config user.email "noreply@fiteligent.pl"
+
+      - name: Run digest pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: claude-sonnet-4-6
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: '587'
+          SMTP_USER: ciastkofski@gmail.com
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SMTP_FROM: ciastkofski@gmail.com
+          SMTP_TO: ciastkofski@gmail.com
+          REPO_DIGEST_URL_BASE: https://github.com/ciastkofski-ctrl/fiteligent-research/blob/main/digests
+        run: |
+          if [ -n "${{ inputs.since }}" ]; then
+            python scripts/run.py --no-unstructured --since "${{ inputs.since }}"
+          else
+            python scripts/run.py --no-unstructured
+          fi
