@@ -22,6 +22,9 @@ dev = [
     "respx>=0.21.1",
 ]
 
+[tool.setuptools]
+packages = ["scripts", "scripts.lib"]
+
 [tool.pytest.ini_options]
 testpaths = ["scripts/tests"]
 pythonpath = ["."]
