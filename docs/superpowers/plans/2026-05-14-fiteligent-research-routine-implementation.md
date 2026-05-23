@@ -1,10 +1,10 @@
-# Fiteligent Research Routine — Implementation Plan
+﻿# Fiteligent Research Routine â€” Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a weekly automated routine that scans PubMed, journals, Examine.com, podcasts and 15 health-research influencers across 6 themes, then produces a branded English research digest + Polish newsletter angles every Friday 18:00 Europe/Warsaw.
 
-**Architecture:** Python orchestrator runs in a remote scheduled agent. Pipeline = collect (hybrid APIs/RSS + LLM WebSearch) → filter (dedupe via persistent `seen.json`) → synthesize (LLM writes markdown) → render (Jinja2 + premailer applies fiteligent brandbook) → deliver (git commit + branded HTML email). Markdown is canonical; HTML is a pure-presentation derivative.
+**Architecture:** Python orchestrator runs in a remote scheduled agent. Pipeline = collect (hybrid APIs/RSS + LLM WebSearch) â†’ filter (dedupe via persistent `seen.json`) â†’ synthesize (LLM writes markdown) â†’ render (Jinja2 + premailer applies fiteligent brandbook) â†’ deliver (git commit + branded HTML email). Markdown is canonical; HTML is a pure-presentation derivative.
 
 **Tech Stack:** Python 3.11+, httpx, pydantic v2, pyyaml, feedparser, jinja2, markdown-it-py, premailer, anthropic SDK, pytest. Claude Sonnet 4.6 for synthesis (cost-effective; 4000-word digest is well within its capability).
 
@@ -16,67 +16,67 @@
 
 ```
 fiteligent-research/
-├── README.md                       # how to read/tune/run manually
-├── pyproject.toml                  # pinned deps, pytest config
-├── .env.example                    # required env vars
-├── .gitignore
-├── seen.json                       # dedupe state — bootstrapped empty {by_doi:{},by_url:{}}
-│
-├── config/
-│   ├── topics.yaml                 # MeSH/keyword queries per theme (data only)
-│   ├── sources.yaml                # API endpoints, RSS URLs, rate limits
-│   └── influencers.yaml            # influencer names + URLs
-│
-├── brand/
-│   ├── logo.svg                    # copied from fiteligent-newsletters/svg_export_claude/
-│   ├── tokens.css                  # color/font/spacing CSS variables
-│   ├── template_digest.html        # Jinja2: 720px dark-theme digest
-│   ├── template_angles.html        # Jinja2: 600px newsletter-aligned
-│   └── template_email.html         # Jinja2: email-safe (premailer-inlined)
-│
-├── scripts/
-│   ├── __init__.py
-│   ├── run.py                      # orchestrator entry point with CLI flags
-│   ├── collect_structured.py       # PubMed + bioRxiv + journal RSS
-│   ├── collect_unstructured.py     # WebSearch/WebFetch for Examine/podcasts/influencers
-│   ├── filter_dedupe.py            # seen.json gate
-│   ├── synthesize.py               # LLM → digest.md + angles.md
-│   ├── render_html.py              # markdown → branded HTML
-│   ├── notify.py                   # SMTP email delivery
-│   ├── lib/
-│   │   ├── __init__.py
-│   │   ├── schema.py               # Study pydantic model + JSON I/O
-│   │   └── evidence.py             # study type → ★1-5 rating mapper
-│   └── tests/
-│       ├── __init__.py
-│       ├── conftest.py             # shared fixtures (sample Studies, mocked responses)
-│       ├── test_schema.py
-│       ├── test_evidence.py
-│       ├── test_filter_dedupe.py
-│       ├── test_render_html.py
-│       └── test_integration_goldenpath.py
-│
-└── docs/superpowers/
-    ├── specs/2026-05-14-fiteligent-research-routine-design.md  # exists
-    └── plans/2026-05-14-fiteligent-research-routine-implementation.md  # this file
+â”œâ”€â”€ README.md                       # how to read/tune/run manually
+â”œâ”€â”€ pyproject.toml                  # pinned deps, pytest config
+â”œâ”€â”€ .env.example                    # required env vars
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ seen.json                       # dedupe state â€” bootstrapped empty {by_doi:{},by_url:{}}
+â”‚
+â”œâ”€â”€ config/
+â”‚   â”œâ”€â”€ topics.yaml                 # MeSH/keyword queries per theme (data only)
+â”‚   â”œâ”€â”€ sources.yaml                # API endpoints, RSS URLs, rate limits
+â”‚   â””â”€â”€ influencers.yaml            # influencer names + URLs
+â”‚
+â”œâ”€â”€ brand/
+â”‚   â”œâ”€â”€ logo.svg                    # copied from fiteligent-newsletters/svg_export_claude/
+â”‚   â”œâ”€â”€ tokens.css                  # color/font/spacing CSS variables
+â”‚   â”œâ”€â”€ template_digest.html        # Jinja2: 720px dark-theme digest
+â”‚   â”œâ”€â”€ template_angles.html        # Jinja2: 600px newsletter-aligned
+â”‚   â””â”€â”€ template_email.html         # Jinja2: email-safe (premailer-inlined)
+â”‚
+â”œâ”€â”€ scripts/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ run.py                      # orchestrator entry point with CLI flags
+â”‚   â”œâ”€â”€ collect_structured.py       # PubMed + bioRxiv + journal RSS
+â”‚   â”œâ”€â”€ collect_unstructured.py     # WebSearch/WebFetch for Examine/podcasts/influencers
+â”‚   â”œâ”€â”€ filter_dedupe.py            # seen.json gate
+â”‚   â”œâ”€â”€ synthesize.py               # LLM â†’ digest.md + angles.md
+â”‚   â”œâ”€â”€ render_html.py              # markdown â†’ branded HTML
+â”‚   â”œâ”€â”€ notify.py                   # SMTP email delivery
+â”‚   â”œâ”€â”€ lib/
+â”‚   â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”‚   â”œâ”€â”€ schema.py               # Study pydantic model + JSON I/O
+â”‚   â”‚   â””â”€â”€ evidence.py             # study type â†’ â˜…1-5 rating mapper
+â”‚   â””â”€â”€ tests/
+â”‚       â”œâ”€â”€ __init__.py
+â”‚       â”œâ”€â”€ conftest.py             # shared fixtures (sample Studies, mocked responses)
+â”‚       â”œâ”€â”€ test_schema.py
+â”‚       â”œâ”€â”€ test_evidence.py
+â”‚       â”œâ”€â”€ test_filter_dedupe.py
+â”‚       â”œâ”€â”€ test_render_html.py
+â”‚       â””â”€â”€ test_integration_goldenpath.py
+â”‚
+â””â”€â”€ docs/superpowers/
+    â”œâ”€â”€ specs/2026-05-14-fiteligent-research-routine-design.md  # exists
+    â””â”€â”€ plans/2026-05-14-fiteligent-research-routine-implementation.md  # this file
 ```
 
 **File responsibilities (one-line each):**
-- `lib/schema.py` — defines `Study` pydantic model; only file that knows the on-disk JSON shape
-- `lib/evidence.py` — pure function `rate(study) -> int (1-5)` from study type + journal + n
-- `filter_dedupe.py` — loads `seen.json`, filters list[Study], returns new ones; never mutates seen.json (caller does)
-- `collect_structured.py` — three exported functions: `fetch_pubmed()`, `fetch_biorxiv()`, `fetch_journal_rss()`; each returns list[Study]
-- `collect_unstructured.py` — single exported `collect_unstructured(config, lookback_days) -> list[Study]` using WebSearch
-- `synthesize.py` — `synthesize(studies: list[Study]) -> tuple[str, str]` returns (digest_md, angles_md)
-- `render_html.py` — `render(digest_md, angles_md, brand_dir, out_dir) -> dict[name, path]`
-- `notify.py` — `send_email(subject, html_body, attachments) -> None`
-- `run.py` — orchestrator, CLI argparse, ties everything together
+- `lib/schema.py` â€” defines `Study` pydantic model; only file that knows the on-disk JSON shape
+- `lib/evidence.py` â€” pure function `rate(study) -> int (1-5)` from study type + journal + n
+- `filter_dedupe.py` â€” loads `seen.json`, filters list[Study], returns new ones; never mutates seen.json (caller does)
+- `collect_structured.py` â€” three exported functions: `fetch_pubmed()`, `fetch_biorxiv()`, `fetch_journal_rss()`; each returns list[Study]
+- `collect_unstructured.py` â€” single exported `collect_unstructured(config, lookback_days) -> list[Study]` using WebSearch
+- `synthesize.py` â€” `synthesize(studies: list[Study]) -> tuple[str, str]` returns (digest_md, angles_md)
+- `render_html.py` â€” `render(digest_md, angles_md, brand_dir, out_dir) -> dict[name, path]`
+- `notify.py` â€” `send_email(subject, html_body, attachments) -> None`
+- `run.py` â€” orchestrator, CLI argparse, ties everything together
 
 ---
 
 ## Task Order Rationale
 
-Bottom-up: foundational types → filter logic → individual collectors → synthesis → rendering → delivery → orchestrator → integration test → docs → cron registration. Each task produces independently testable output.
+Bottom-up: foundational types â†’ filter logic â†’ individual collectors â†’ synthesis â†’ rendering â†’ delivery â†’ orchestrator â†’ integration test â†’ docs â†’ cron registration. Each task produces independently testable output.
 
 ---
 
@@ -160,10 +160,10 @@ ANTHROPIC_API_KEY=sk-ant-...
 # SMTP (email delivery)
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=ciastkofski@gmail.com
+SMTP_USER=you@example.com
 SMTP_PASS=app-password-here
-SMTP_FROM=ciastkofski@gmail.com
-SMTP_TO=ciastkofski@gmail.com
+SMTP_FROM=you@example.com
+SMTP_TO=you@example.com
 
 # Optional: override default LLM model
 ANTHROPIC_MODEL=claude-sonnet-4-6
@@ -302,7 +302,7 @@ ThemeKind = Literal[
 
 
 class Study(BaseModel):
-    """Canonical Study record — same shape regardless of which collector produced it."""
+    """Canonical Study record â€” same shape regardless of which collector produced it."""
 
     title: str
     url: str
@@ -476,7 +476,7 @@ git commit -m "feat(evidence): add 1-5 star evidence rating mapper"
 - Create: `config/sources.yaml`
 - Create: `config/influencers.yaml`
 
-These are data files. No tests — they're verified by being parsed in Task 6+.
+These are data files. No tests â€” they're verified by being parsed in Task 6+.
 
 - [ ] **Step 1: Create `config/topics.yaml`**
 
@@ -613,7 +613,7 @@ core_longevity:
 
 skin_hair_provisional:
   - name: "Dr. Shaaf Husaain"
-    note: "Vet before Phase 2 — see spec §14"
+    note: "Vet before Phase 2 â€” see spec Â§14"
     themes: [skin_hair]
   - name: "Dr. Andrea Suarez (Dr. Dray)"
     youtube: "@DrDrayzday"
@@ -780,7 +780,7 @@ git commit -m "feat(filter): add DOI+URL dedupe against seen.json"
 
 **Files:**
 - Create: `scripts/collect_structured.py`
-- Test: extend `scripts/tests/test_filter_dedupe.py`? No — new test file.
+- Test: extend `scripts/tests/test_filter_dedupe.py`? No â€” new test file.
 - Create: `scripts/tests/test_collect_pubmed.py`
 
 - [ ] **Step 1: Write failing test with mocked HTTP**
@@ -1533,20 +1533,20 @@ from scripts.lib.schema import Study
 
 
 FAKE_LLM_OUTPUT = """<<DIGEST_START>>
-# Fiteligent Research Digest — 2026-05-15
+# Fiteligent Research Digest â€” 2026-05-15
 
 ## TL;DR
-1. Semaglutide + RT preserves lean mass — ★★★★★
+1. Semaglutide + RT preserves lean mass â€” â˜…â˜…â˜…â˜…â˜…
 
 ## Obesity & Metabolic Health
 ### Semaglutide and resistance training preserves lean mass during weight loss
 Some body text here.
 <<DIGEST_END>>
 <<ANGLES_START>>
-# Kąty redakcyjne — 2026-05-15
+# KÄ…ty redakcyjne â€” 2026-05-15
 
-## Kąt 1 — "GLP-1 nie niszczy mięśni"
-**Hook:** Każdy mówi, że...
+## KÄ…t 1 â€” "GLP-1 nie niszczy miÄ™Å›ni"
+**Hook:** KaÅ¼dy mÃ³wi, Å¼e...
 <<ANGLES_END>>"""
 
 
@@ -1575,7 +1575,7 @@ def test_synthesize_splits_digest_and_angles():
     assert "<<DIGEST_START>>" not in digest_md
     assert "<<DIGEST_END>>" not in digest_md
 
-    assert "Kąty redakcyjne" in angles_md
+    assert "KÄ…ty redakcyjne" in angles_md
     assert "<<ANGLES_START>>" not in angles_md
 
     # Verify the system prompt asks for the right structure
@@ -1601,7 +1601,7 @@ from scripts.lib.schema import Study
 from scripts.lib.evidence import rate_study
 
 
-SYNTH_SYSTEM_PROMPT = """You are a research digest writer for fiteligent.pl, the brand of Dr. Jakub Stanisławski (Polish, evidence-based health optimization).
+SYNTH_SYSTEM_PROMPT = """You are a research digest writer for fiteligent.pl, the brand of Dr. Jakub StanisÅ‚awski (Polish, evidence-based health optimization).
 
 You receive a JSON list of recent research studies + content items, each with:
 - title, url, source, published, doi, journal, n, study_type, theme_guess, abstract, cited_by, evidence_rating (1-5)
@@ -1627,9 +1627,9 @@ DIGEST structure (English, technical):
 
 ANGLES structure (Polish, in Jakub's voice: conversational, sarcastic-but-warm, no BS):
 - 5-10 numbered angles
-- Each: bold hook headline in Polish, 2-3 sentence pitch in Jakub's voice, suggested CTA in Polish, "Źródło w digest:" pointer, "Zalecany kąt newslettera:" mapping to one of: Psychology & Mindset, Medical Perspective, Practical How-to, Myth-Busting, The 3 Pillars, Disease Prevention, Marathon Not Sprint, Why People Fail, Patience & Compounds, Start Now
+- Each: bold hook headline in Polish, 2-3 sentence pitch in Jakub's voice, suggested CTA in Polish, "Å¹rÃ³dÅ‚o w digest:" pointer, "Zalecany kÄ…t newslettera:" mapping to one of: Psychology & Mindset, Medical Perspective, Practical How-to, Myth-Busting, The 3 Pillars, Disease Prevention, Marathon Not Sprint, Why People Fail, Patience & Compounds, Start Now
 
-Do not invent studies or numbers. If a field is missing in the input, omit it from the output. Quote effect sizes and statistics verbatim from the abstract when present. Maintain scientific precision — terminology, units, p-values, sample sizes."""
+Do not invent studies or numbers. If a field is missing in the input, omit it from the output. Quote effect sizes and statistics verbatim from the abstract when present. Maintain scientific precision â€” terminology, units, p-values, sample sizes."""
 
 
 def _study_to_llm_payload(s: Study) -> dict:
@@ -1769,7 +1769,7 @@ cp "C:/Users/Bonsky/fiteligent-newsletters/svg_export_claude/logo_same.svg" bran
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Fiteligent Research Digest — {{ date }}</title>
+<title>Fiteligent Research Digest â€” {{ date }}</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
 {{ tokens_css | safe }}
@@ -1807,7 +1807,7 @@ a:hover { text-decoration: underline; }
     {{ content_html | safe }}
   </div>
   <div class="footer">
-    <p><strong>fiteligent</strong> · Research Digest</p>
+    <p><strong>fiteligent</strong> Â· Research Digest</p>
     <p>Optymizacja zdrowia oparta na nauce</p>
     <p><a href="https://fiteligent.pl">fiteligent.pl</a></p>
   </div>
@@ -1819,7 +1819,7 @@ a:hover { text-decoration: underline; }
 - [ ] **Step 4: Create `brand/template_angles.html`**
 
 Same structure as digest but 600px-wide and styled for the angles content. Copy `template_digest.html` and change:
-- `<title>Fiteligent Editorial Angles — {{ date }}</title>`
+- `<title>Fiteligent Editorial Angles â€” {{ date }}</title>`
 - `.container { max-width: 600px; ... }`
 - `h1 { font-size: 24px; }`
 
@@ -1828,7 +1828,7 @@ Same structure as digest but 600px-wide and styled for the angles content. Copy 
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Fiteligent Editorial Angles — {{ date }}</title>
+<title>Fiteligent Editorial Angles â€” {{ date }}</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
 {{ tokens_css | safe }}
@@ -1851,7 +1851,7 @@ a { color: var(--brand-light); text-decoration: none; }
 <div class="container">
   <div class="header"><img src="logo.svg" alt="fiteligent" class="logo"></div>
   <div class="content">{{ content_html | safe }}</div>
-  <div class="footer"><p>fiteligent · Editorial Angles</p></div>
+  <div class="footer"><p>fiteligent Â· Editorial Angles</p></div>
 </div>
 </body>
 </html>
@@ -1886,9 +1886,9 @@ body { font-family: 'Satoshi', Arial, sans-serif; background: var(--bg-page); ma
   <div class="header"><img src="cid:logo" alt="fiteligent"></div>
   <div class="content">
     {{ summary_html | safe }}
-    <p><a class="cta" href="{{ digest_url }}">Read full digest →</a></p>
+    <p><a class="cta" href="{{ digest_url }}">Read full digest â†’</a></p>
   </div>
-  <div class="footer"><p>fiteligent · {{ date }}</p></div>
+  <div class="footer"><p>fiteligent Â· {{ date }}</p></div>
 </div>
 </body>
 </html>
@@ -1898,7 +1898,7 @@ body { font-family: 'Satoshi', Arial, sans-serif; background: var(--bg-page); ma
 
 ```bash
 git add brand/
-git commit -m "feat(brand): bootstrap brandbook assets — logo, tokens, 3 Jinja templates"
+git commit -m "feat(brand): bootstrap brandbook assets â€” logo, tokens, 3 Jinja templates"
 ```
 
 ---
@@ -1918,19 +1918,19 @@ from scripts.render_html import render_digest, render_angles
 
 
 SAMPLE_DIGEST_MD = """---
-date_range: 2026-05-01 → 2026-05-15
+date_range: 2026-05-01 â†’ 2026-05-15
 studies_total: 2
 ---
 
-# Fiteligent Research Digest — 2026-05-15
+# Fiteligent Research Digest â€” 2026-05-15
 
 ## TL;DR
-1. ★★★★★ Sample obesity finding
+1. â˜…â˜…â˜…â˜…â˜… Sample obesity finding
 
 ## Obesity & Metabolic Health (1 study)
 
 ### Sample obesity study
-**Evidence:** ★★★★★ · **Journal:** Cell Metabolism
+**Evidence:** â˜…â˜…â˜…â˜…â˜… Â· **Journal:** Cell Metabolism
 
 Body text here.
 
@@ -1957,9 +1957,9 @@ def test_render_digest_applies_theme_classes(tmp_path):
 def test_render_angles_creates_html(tmp_path):
     brand_dir = Path("brand")
     out_path = tmp_path / "angles.html"
-    render_angles("# Kąty\n\n## Kąt 1\nTreść.", brand_dir, out_path, run_date_str="2026-05-15")
+    render_angles("# KÄ…ty\n\n## KÄ…t 1\nTreÅ›Ä‡.", brand_dir, out_path, run_date_str="2026-05-15")
     html = out_path.read_text(encoding="utf-8")
-    assert "Kąty" in html
+    assert "KÄ…ty" in html
     assert "Editorial Angles" in html
 ```
 
@@ -2349,7 +2349,7 @@ def main() -> int:
         date_from = run_date - timedelta(days=14)
 
     run_log: list[str] = []
-    _log(run_log, f"run started — date_from={date_from} date_to={date_to} manual={args.manual} dry_run={args.dry_run}")
+    _log(run_log, f"run started â€” date_from={date_from} date_to={date_to} manual={args.manual} dry_run={args.dry_run}")
 
     # Output directory
     if args.dry_run:
@@ -2392,7 +2392,7 @@ def main() -> int:
     StudyList(studies=new_studies).save(out_dir / "new_studies.json")
 
     if len(new_studies) < THIN_WEEK_THRESHOLD:
-        msg = f"Only {len(new_studies)} new studies this week — below threshold {THIN_WEEK_THRESHOLD}."
+        msg = f"Only {len(new_studies)} new studies this week â€” below threshold {THIN_WEEK_THRESHOLD}."
         _log(run_log, f"THIN WEEK: {msg}")
         (out_dir / "run.log").write_text("\n".join(run_log), encoding="utf-8")
         if not args.dry_run:
@@ -2450,7 +2450,7 @@ def main() -> int:
              f"weekly digest {run_date.isoformat()} ({len(new_studies)} studies)"],
             cwd=REPO_ROOT, check=False,
         )
-        # push is optional — only if remote exists
+        # push is optional â€” only if remote exists
         push_result = subprocess.run(
             ["git", "push"], cwd=REPO_ROOT, capture_output=True, text=True,
         )
@@ -2549,7 +2549,7 @@ Create `scripts/tests/fixtures/golden_studies.json`:
       "cited_by": []
     },
     {
-      "title": "Rapamycin in aged mice — ITP follow-up",
+      "title": "Rapamycin in aged mice â€” ITP follow-up",
       "url": "https://www.biorxiv.org/content/10.1101/2026.05.001v1",
       "doi": "10.1101/2026.05.001",
       "authors": ["Patel S"],
@@ -2561,14 +2561,14 @@ Create `scripts/tests/fixtures/golden_studies.json`:
       "cited_by": []
     },
     {
-      "title": "Creatine 5g/day vs 10g/day — meta-analysis",
+      "title": "Creatine 5g/day vs 10g/day â€” meta-analysis",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40000005/",
       "doi": "10.1186/s12970-2026-05-005",
       "authors": ["Garcia M"],
       "journal": "J Int Soc Sports Nutr",
       "published": "2026-05-06",
       "source": "pubmed",
-      "abstract": "Meta-analysis (k=14, n=872) — no hypertrophy benefit at 10g/day over 5g/day.",
+      "abstract": "Meta-analysis (k=14, n=872) â€” no hypertrophy benefit at 10g/day over 5g/day.",
       "study_type": "meta-analysis",
       "theme_guess": "supplements",
       "cited_by": []
@@ -2610,19 +2610,19 @@ def _load_fixture_studies():
 
 FAKE_DIGEST_OUTPUT = """<<DIGEST_START>>
 ---
-date_range: 2026-05-01 → 2026-05-15
+date_range: 2026-05-01 â†’ 2026-05-15
 studies_total: 6
 themes: [obesity, longevity, strength, supplements, sleep, skin_hair]
 ---
 
-# Fiteligent Research Digest — 2026-05-15
+# Fiteligent Research Digest â€” 2026-05-15
 
 ## TL;DR
-1. ★★★★★ Semaglutide + RT preserves lean mass — Cell Metab RCT
-2. ★★★★★ Creatine 10g/day no better than 5g/day — meta-analysis (k=14)
-3. ★★★★☆ Microneedling + minoxidil 1.7x hair density vs monotherapy
-4. ★★★☆☆ Sleep restriction blunts post-RT MPS by 27%
-5. ★★☆☆☆ Rapamycin extends mouse lifespan 21% — preprint
+1. â˜…â˜…â˜…â˜…â˜… Semaglutide + RT preserves lean mass â€” Cell Metab RCT
+2. â˜…â˜…â˜…â˜…â˜… Creatine 10g/day no better than 5g/day â€” meta-analysis (k=14)
+3. â˜…â˜…â˜…â˜…â˜† Microneedling + minoxidil 1.7x hair density vs monotherapy
+4. â˜…â˜…â˜…â˜†â˜† Sleep restriction blunts post-RT MPS by 27%
+5. â˜…â˜…â˜†â˜†â˜† Rapamycin extends mouse lifespan 21% â€” preprint
 
 ## Obesity & Metabolic Health
 ### Semaglutide + RT preserves lean mass
@@ -2652,9 +2652,9 @@ Body text.
 - PubMed: 4 studies
 <<DIGEST_END>>
 <<ANGLES_START>>
-# Kąty redakcyjne — 2026-05-15
+# KÄ…ty redakcyjne â€” 2026-05-15
 
-## Kąt 1 — "GLP-1 nie niszczy mięśni"
+## KÄ…t 1 â€” "GLP-1 nie niszczy miÄ™Å›ni"
 Pitch.
 <<ANGLES_END>>"""
 
@@ -2662,7 +2662,7 @@ Pitch.
 def test_full_pipeline_with_mocked_llm(tmp_path):
     studies = _load_fixture_studies()
 
-    # Filter with empty seen — all 6 are new
+    # Filter with empty seen â€” all 6 are new
     seen = {"by_doi": {}, "by_url": {}}
     new_studies = filter_new(studies, seen)
     assert len(new_studies) == 6
@@ -2676,7 +2676,7 @@ def test_full_pipeline_with_mocked_llm(tmp_path):
     digest_md, angles_md = synthesize(mock_client, new_studies, run_date=date(2026, 5, 15))
     assert "Fiteligent Research Digest" in digest_md
     assert "Skin & Hair Health" in digest_md
-    assert "Kąty redakcyjne" in angles_md
+    assert "KÄ…ty redakcyjne" in angles_md
 
     # Render
     brand_dir = Path(__file__).resolve().parents[2] / "brand"
@@ -2695,7 +2695,7 @@ def test_full_pipeline_with_mocked_llm(tmp_path):
     assert len(seen["by_doi"]) == 5  # 5 of 6 studies have DOIs
     assert len(seen["by_url"]) == 6
 
-    # Re-filter with updated seen — everything should be dropped
+    # Re-filter with updated seen â€” everything should be dropped
     new_studies_round2 = filter_new(studies, seen)
     assert len(new_studies_round2) == 0
 ```
@@ -2749,22 +2749,22 @@ cp .env.example .env  # then edit secrets
 ```
 
 Required env vars (see `.env.example`):
-- `ANTHROPIC_API_KEY` — for LLM synthesis
-- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`, `SMTP_TO` — for email delivery
+- `ANTHROPIC_API_KEY` â€” for LLM synthesis
+- `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM`, `SMTP_TO` â€” for email delivery
 
 ## Run manually
 
 ```bash
-# Default — full pipeline, commits + emails
+# Default â€” full pipeline, commits + emails
 python scripts/run.py
 
-# Dry-run — writes to digests/_dry/<date>/, no commit, no email
+# Dry-run â€” writes to digests/_dry/<date>/, no commit, no email
 python scripts/run.py --dry-run
 
 # Manual trigger (same as default but tagged "manual" in subject)
 python scripts/run.py --manual
 
-# Backfill — override 14-day lookback
+# Backfill â€” override 14-day lookback
 python scripts/run.py --since 2026-04-01
 
 # Single source (debugging)
@@ -2782,9 +2782,9 @@ python scripts/render_html.py digests/2026-05-15/
 
 ## Tune
 
-- `config/topics.yaml` — MeSH terms + keywords per theme
-- `config/sources.yaml` — API endpoints, RSS feeds
-- `config/influencers.yaml` — influencer list
+- `config/topics.yaml` â€” MeSH terms + keywords per theme
+- `config/sources.yaml` â€” API endpoints, RSS feeds
+- `config/influencers.yaml` â€” influencer list
 
 ## Tests
 
@@ -2809,10 +2809,10 @@ python scripts/run.py --dry-run --since 2026-05-01
 ```
 
 Inspect:
-- `digests/_dry/<today>/run.log` — should show per-source counts
-- `digests/_dry/<today>/raw_studies.json` — should contain studies from at least PubMed (other paths may fail silently if API keys missing)
-- `digests/_dry/<today>/digest.md` — should be well-formed if LLM step ran
-- `digests/_dry/<today>/digest.html` — open in a browser; verify brand colors, theme borders, logo
+- `digests/_dry/<today>/run.log` â€” should show per-source counts
+- `digests/_dry/<today>/raw_studies.json` â€” should contain studies from at least PubMed (other paths may fail silently if API keys missing)
+- `digests/_dry/<today>/digest.md` â€” should be well-formed if LLM step ran
+- `digests/_dry/<today>/digest.html` â€” open in a browser; verify brand colors, theme borders, logo
 
 Expected: at minimum PubMed produces results. If LLM/SMTP env vars are missing, those stages will fail but the run should not crash.
 
@@ -2834,16 +2834,16 @@ git commit -m "docs: write README with setup, run, tune, schedule instructions"
 Before scheduling, confirm:
 - `python scripts/run.py --manual` runs successfully end-to-end at least once (Phase 2 of the rollout plan from the spec)
 - The first real digest has been reviewed and the synthesize prompt has been tuned if needed
-- `seen.json` has been populated with the first run's studies (cold start — first run produces a fat baseline digest)
+- `seen.json` has been populated with the first run's studies (cold start â€” first run produces a fat baseline digest)
 
 If any of the above is missing, halt and complete it first.
 
 - [ ] **Step 2: Register cron via `mcp__scheduled-tasks__create_scheduled_task`**
 
 Invoke the tool with these parameters:
-- **Cron expression:** `0 17 * * 5` (17:00 UTC = 18:00 CET winter / 19:00 CEST summer — see spec §5 timezone note)
-- **Command:** `cd <absolute-path-to-fiteligent-research> && python scripts/run.py` — substitute the absolute repo path on whatever host the scheduled agent runs on (read it from `pwd` at scheduling time)
-- **Description:** "Fiteligent weekly research digest — runs Fridays, sends to ciastkofski@gmail.com"
+- **Cron expression:** `0 17 * * 5` (17:00 UTC = 18:00 CET winter / 19:00 CEST summer â€” see spec Â§5 timezone note)
+- **Command:** `cd <absolute-path-to-fiteligent-research> && python scripts/run.py` â€” substitute the absolute repo path on whatever host the scheduled agent runs on (read it from `pwd` at scheduling time)
+- **Description:** "Fiteligent weekly research digest â€” runs Fridays, sends to you@example.com"
 - **Timezone:** `Europe/Warsaw` if the tool accepts IANA timezones; otherwise document the DST drift in `run.log`
 
 - [ ] **Step 3: Verify the schedule was created**
@@ -2873,28 +2873,28 @@ git commit -m "docs: record production schedule task ID and cron expression"
 After writing this plan, I cross-checked against the spec:
 
 **Spec coverage:**
-- §1 Purpose → Tasks 10 (synth produces both files), 12 (render to branded HTML), 13-14 (deliver via email + git)
-- §2 Decisions (6 themes, weekly, Friday 18:00 Europe/Warsaw, 14d lookback, hybrid, dedup, git+email, cold start) → Tasks 4 (topics), 5 (dedup), 6-9 (collectors), 14 (cron expr, lookback), 17 (cron)
-- §3 Sources → Tasks 6 (PubMed), 7 (bioRxiv), 8 (RSS incl. JAAD/JID/Br.J.Derm), 9 (unstructured + skincare influencers)
-- §4 Architecture (5-stage pipeline) → Tasks 6-9 (collect), 5 (filter), 10 (synth), 12 (render), 13-14 (deliver)
-- §5 Repo structure → Task 1 (scaffold) + Task 4 (config) + Task 11 (brand)
-- §6 Output format → Task 10 (synthesizer prompt enforces structure)
-- §6b Visual presentation (tokens, 3 templates, per-theme accents, brand bootstrap) → Task 11 + Task 12 (theme class application)
-- §7 Orchestrator flow (11 steps) → Task 14 covers each step
-- §8 Failure handling (per-source, partial, synth fail, render fail, push fail, email fail, thin week) → Task 14 (try/except per stage, subject tags, send_failure_alert)
-- §9 Manual triggers + modes → Task 14 (argparse: --manual, --dry-run, --since, --source, --no-render)
-- §10 Testing (schema, evidence, dedupe, render golden, integration golden-path) → Tasks 2, 3, 5, 12, 15
-- §11 Rollout (Phase 1 dry-run, Phase 2 manual, Phase 3 cron) → Task 16 (dry-run verification), Task 17 prereqs (Phase 2 confirmation), Task 17 (Phase 3)
-- §12 Observability → Task 14 (run.log written per run)
-- §13 Secrets → Task 1 (.env.example), Task 13 (notify reads env)
-- §14 Open questions (theme icons, derm influencer vetting) → deferred to v1.1, documented in spec; Task 4 marks skin_hair influencers as provisional
-- §15 Success criteria → measurable post-deployment; no direct tasks
+- Â§1 Purpose â†’ Tasks 10 (synth produces both files), 12 (render to branded HTML), 13-14 (deliver via email + git)
+- Â§2 Decisions (6 themes, weekly, Friday 18:00 Europe/Warsaw, 14d lookback, hybrid, dedup, git+email, cold start) â†’ Tasks 4 (topics), 5 (dedup), 6-9 (collectors), 14 (cron expr, lookback), 17 (cron)
+- Â§3 Sources â†’ Tasks 6 (PubMed), 7 (bioRxiv), 8 (RSS incl. JAAD/JID/Br.J.Derm), 9 (unstructured + skincare influencers)
+- Â§4 Architecture (5-stage pipeline) â†’ Tasks 6-9 (collect), 5 (filter), 10 (synth), 12 (render), 13-14 (deliver)
+- Â§5 Repo structure â†’ Task 1 (scaffold) + Task 4 (config) + Task 11 (brand)
+- Â§6 Output format â†’ Task 10 (synthesizer prompt enforces structure)
+- Â§6b Visual presentation (tokens, 3 templates, per-theme accents, brand bootstrap) â†’ Task 11 + Task 12 (theme class application)
+- Â§7 Orchestrator flow (11 steps) â†’ Task 14 covers each step
+- Â§8 Failure handling (per-source, partial, synth fail, render fail, push fail, email fail, thin week) â†’ Task 14 (try/except per stage, subject tags, send_failure_alert)
+- Â§9 Manual triggers + modes â†’ Task 14 (argparse: --manual, --dry-run, --since, --source, --no-render)
+- Â§10 Testing (schema, evidence, dedupe, render golden, integration golden-path) â†’ Tasks 2, 3, 5, 12, 15
+- Â§11 Rollout (Phase 1 dry-run, Phase 2 manual, Phase 3 cron) â†’ Task 16 (dry-run verification), Task 17 prereqs (Phase 2 confirmation), Task 17 (Phase 3)
+- Â§12 Observability â†’ Task 14 (run.log written per run)
+- Â§13 Secrets â†’ Task 1 (.env.example), Task 13 (notify reads env)
+- Â§14 Open questions (theme icons, derm influencer vetting) â†’ deferred to v1.1, documented in spec; Task 4 marks skin_hair influencers as provisional
+- Â§15 Success criteria â†’ measurable post-deployment; no direct tasks
 
 **Type / signature consistency check:**
 - `Study` field names consistent across schema, evidence, filter, all collectors, synthesize, render
-- `ThemeKind` literal used in topics.yaml keys, filter, synthesize prompt, render theme classes — all match: obesity, longevity, strength, supplements, sleep, skin_hair
+- `ThemeKind` literal used in topics.yaml keys, filter, synthesize prompt, render theme classes â€” all match: obesity, longevity, strength, supplements, sleep, skin_hair
 - `SourceKind` enum matches usage in all collectors: pubmed, biorxiv, medrxiv, rss, examine, podcast, blog, youtube, reddit
-- `synthesize()` returns `tuple[str, str]` — consumed correctly in run.py
+- `synthesize()` returns `tuple[str, str]` â€” consumed correctly in run.py
 - `render_digest/angles/email_body()` signatures consistent
 
 **Placeholder scan:** none found.
@@ -2905,8 +2905,8 @@ After writing this plan, I cross-checked against the spec:
 
 **Plan complete and saved to `docs/superpowers/plans/2026-05-14-fiteligent-research-routine-implementation.md`. Two execution options:**
 
-**1. Subagent-Driven (recommended)** — I dispatch a fresh subagent per task, review between tasks, fast iteration. Best for a 17-task plan with TDD discipline at each step.
+**1. Subagent-Driven (recommended)** â€” I dispatch a fresh subagent per task, review between tasks, fast iteration. Best for a 17-task plan with TDD discipline at each step.
 
-**2. Inline Execution** — Execute tasks in this session using executing-plans, batch execution with checkpoints. Faster for the human if you're going to be at the keyboard the whole time.
+**2. Inline Execution** â€” Execute tasks in this session using executing-plans, batch execution with checkpoints. Faster for the human if you're going to be at the keyboard the whole time.
 
 **Which approach?**

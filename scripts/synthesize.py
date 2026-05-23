@@ -35,12 +35,16 @@ DIGEST structure (English, technical, NEUTRAL TONE):
 4. Six theme sections in this exact order: Obesity & Metabolic Health, Longevity, Strength & Hypertrophy, Supplements, Sleep & Recovery, Skin & Hair Health
 5. Each theme as a level-2 heading; each study as a level-3 heading
 6. Per study, in this exact order:
-   a. ### Heading with study title
-   b. One-line metadata: evidence stars · n if known · study_type
-   c. Blank line, then 150-200 word NEUTRAL factual description. Cover methodology, sample, intervention, key findings, effect sizes, p-values, confidence intervals, and limitations the abstract explicitly states. DO NOT use editorial adjectives ("impressive", "striking", "remarkable", "nuanced", "blunt instrument", "ethically obligatory", "compelling"). DO NOT add interpretive commentary or recommendations. Just describe what the study did and what it found, the way a textbook would.
+   a. ### [Study Title](url) — the level-3 heading text IS a clickable markdown link to the study. Use `https://doi.org/<doi>` as the URL when the study has a DOI; otherwise use the study.url field. Do NOT include any separate "Source:" line later — the title link replaces it.
+   b. One-line metadata directly under the heading: `⭐⭐⭐ · FirstAuthor et al. · Journal (Year) · n = X · study_type` — drop any of these fields that are unknown rather than writing "not reported".
+   c. Blank line, then 3-5 bullet points of CONCRETE FACTS about THIS study. Each bullet = one specific, scannable fact. No prose, no editorial framing. Examples of what belongs in a bullet:
+      - "12-week double-blind RCT comparing 20 mg X/day vs placebo in 184 adults with hypertension"
+      - "Primary outcome: systolic BP reduction at week 12; mean diff −8.4 mmHg (95% CI −10.1 to −6.7, p<0.001)"
+      - "Secondary: LDL unchanged; HbA1c dropped 0.3% in treatment arm (p=0.04)"
+      - "AEs: mild GI in 11% of treatment vs 4% placebo; no serious events"
+      - "Single-center; predominantly white population; results may not generalize"
+      Quote effect sizes, p-values, n, and confidence intervals verbatim from the abstract when present. DO NOT use editorial adjectives ("impressive", "striking", "remarkable", "compelling"). DO NOT add a "Why it matters" or recommendations section. DO NOT write a prose paragraph — bullets only.
    d. Blank line, then `Cited by: ...` line if cited_by is non-empty
-   e. Blank line, then on its own line: `**Source:** [Authors. Journal (Year). DOI: 10.xxx](https://doi.org/10.xxx)` — use the study.url as the link target if no DOI is available, otherwise build the URL as `https://doi.org/<doi>`. Format the link text as "FirstAuthor et al. JournalName (YYYY). DOI: <doi>". If no DOI, fall back to "FirstAuthor et al. JournalName (YYYY)".
-   DO NOT include a "Why it matters" or any editorial commentary section. The digest is a neutral reference; brand voice lives only in `angles`.
 7. ## Sources scanned this week (counts per source)
 8. ## Run notes (any partial coverage flagged)
 

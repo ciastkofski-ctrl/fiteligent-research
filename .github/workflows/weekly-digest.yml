@@ -50,10 +50,10 @@ jobs:
           ANTHROPIC_MODEL: claude-sonnet-4-6
           SMTP_HOST: smtp.gmail.com
           SMTP_PORT: '587'
-          SMTP_USER: ciastkofski@gmail.com
+          SMTP_USER: ${{ secrets.SMTP_EMAIL }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
-          SMTP_FROM: ciastkofski@gmail.com
-          SMTP_TO: ciastkofski@gmail.com
+          SMTP_FROM: ${{ secrets.SMTP_EMAIL }}
+          SMTP_TO: ${{ secrets.SMTP_EMAIL }}
           REPO_DIGEST_URL_BASE: https://ciastkofski-ctrl.github.io/fiteligent-research/digests
         run: |
           if [ -n "${{ inputs.since }}" ]; then
