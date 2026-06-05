@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fiteligent Research Digest — 2026-06-05</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
+:root {
+  /* Surfaces */
+  --bg-page:       #0a0e27;
+  --bg-container:  #1a1f3a;
+  --bg-footer:     #0a0e27;
+
+  /* Brand colors */
+  --brand-primary: #016FFA;
+  --brand-deep:    #0047CC;
+  --brand-light:   #66A8FF;
+  --accent:        #FF7B00;
+  --accent-hover:  #E56A00;
+
+  /* Text */
+  --text-strong:   #ffffff;
+  --text-body:     #e0e0e0;
+  --text-muted:    #c0c0c0;
+  --text-footer:   #808080;
+
+  /* Type */
+  --font-sans:     'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --container-max: 720px;
+  --radius:        12px;
+
+  /* Theme accents */
+  --theme-obesity:    #FF7B00;
+  --theme-longevity:  #66A8FF;
+  --theme-strength:   #016FFA;
+  --theme-supplements:#9D7BFF;
+  --theme-sleep:      #3D5AFE;
+  --theme-skin-hair:  #F472B6;
+}
+
+* { box-sizing: border-box; }
+body { font-family: var(--font-sans); background: var(--bg-page); color: var(--text-body); margin: 0; padding: 24px; line-height: 1.7; }
+.container { max-width: var(--container-max); margin: 0 auto; background: var(--bg-container); border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+.header { background: linear-gradient(165deg, var(--brand-deep) 0%, var(--brand-primary) 55%, var(--brand-light) 100%); padding: 48px 32px; text-align: center; }
+.header .logo { max-width: 200px; height: auto; }
+.content { padding: 48px 56px; }
+h1 { color: var(--text-strong); font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+h1 + .subtitle { color: var(--text-muted); margin: 0 0 32px; font-size: 14px; }
+h2 { color: var(--text-strong); font-size: 22px; margin: 48px 0 16px; padding-left: 16px; border-left: 4px solid var(--theme-accent, var(--accent)); font-weight: 700; }
+h2.theme-obesity     { --theme-accent: var(--theme-obesity); }
+h2.theme-longevity   { --theme-accent: var(--theme-longevity); }
+h2.theme-strength    { --theme-accent: var(--theme-strength); }
+h2.theme-supplements { --theme-accent: var(--theme-supplements); }
+h2.theme-sleep       { --theme-accent: var(--theme-sleep); }
+h2.theme-skin-hair   { --theme-accent: var(--theme-skin-hair); }
+h3 { color: var(--text-strong); font-size: 17px; margin: 32px 0 8px; font-weight: 700; }
+.meta { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
+.stars { color: var(--accent); letter-spacing: 1px; font-weight: 700; }
+a { color: var(--brand-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.why-it-matters { background: rgba(255, 123, 0, 0.1); border-left: 3px solid var(--accent); padding: 12px 16px; margin: 16px 0; border-radius: 4px; color: var(--text-strong); font-weight: 500; }
+.footer { background: var(--bg-footer); padding: 32px; text-align: center; color: var(--text-footer); font-size: 12px; }
+.footer a { color: var(--brand-light); margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="logo.svg" alt="fiteligent" class="logo">
+  </div>
+  <div class="content">
+    <pre><code class="language-yaml">---
+date_range: &quot;2026-05-31 – 2026-06-05&quot;
+studies_total: 18
+themes:
+  - Obesity &amp; Metabolic Health
+  - Longevity
+  - Strength &amp; Hypertrophy
+  - Supplements
+  - Sleep &amp; Recovery
+  - Skin &amp; Hair Health
+generated: &quot;2026-06-05T00:00:00Z&quot;
+---
+</code></pre>
+<h1>fiteligent Research Digest — Week of 2026-06-05</h1>
+<hr />
+<h2>TL;DR — Top 5 Highlights</h2>
+<ol>
+<li>
+<p>⭐⭐⭐ <strong>Tirzepatide after bariatric surgery failure</strong> — 34 post-bariatric patients achieved a mean 18.1% total body weight loss at 24 weeks with tirzepatide; all adverse events were mild GI and none led to discontinuation. Practical signal for a common clinical dead-end.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐⭐ <strong>Probiotics/synbiotics/berberine in T2DM</strong> — Largest meta-analysis to date (&gt;30 RCTs, &gt;2,000 participants) shows statistically significant but clinically modest glycemic benefits: FPG −0.71 mmol/L, HbA1c −0.19%. Adjunctive role only.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐ <strong>Fisetin + concurrent training in obese men</strong> — 12-week RCT (n=44) combining 200 mg/day fisetin with interval resistance-aerobic training raised Maresin-1 and reduced IL-6, TNF-α, fasting glucose, insulin, and HOMA-IR beyond training alone.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐ <strong>Sleep deprivation shifts fat oxidation during exercise</strong> — Crossover RCT (n=32): total and partial sleep deprivation increased peak fat oxidation rates during an incremental cycling test the following morning in recreationally trained adults, while carbohydrate oxidation fell.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐ <strong>Personalized app ± coaching RCT</strong> — 3-month trial (n=209 office workers/bus drivers) showed both app groups added ~14–16 min/week exercise; only the app+coaching group also improved vegetable intake (+51.8 g/day) and sleep duration (+0.40 h/night).</p>
+</li>
+</ol>
+<hr />
+<h2 class="theme-obesity">Obesity &amp; Metabolic Health</h2>
+<hr />
+<h3><a href="https://doi.org/10.1210/jcemcr/luag152">Tirzepatide for weight and behavior management in a patient with Smith-Magenis syndrome</a></h3>
+<p>⭐⭐⭐ · Liao et al. · JCEM Case Rep (2026)</p>
+<ul>
+<li>Single case report: 31-year-old woman with Smith-Magenis syndrome (SMS; 17p11.2 deletion), a rare neurodevelopmental disorder featuring intellectual disability, behavioral dysregulation, and hyperphagia-driven obesity.</li>
+<li>Baseline BMI range reported as 32.0–32.9 kg/m²; patient treated with tirzepatide, a dual GIP/GLP-1 receptor agonist.</li>
+<li>This is, per the authors, the first described use of tirzepatide (or any dual GIP/GLP-1 agonist) in an SMS patient.</li>
+<li>Case report design: no comparison group, no blinding, generalizability strictly limited to similar rare-disease presentations.</li>
+<li>Abstract is truncated; specific weight-loss magnitude, dose titration schedule, and behavioral outcomes are not reported in the available text.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1001/jama.2026.6202">Metabolic Bariatric Surgery Declines as GLP-1 Drug Use Increases</a></h3>
+<p>⭐⭐⭐ · Anderer · JAMA (2026-06-05)</p>
+<ul>
+<li>Published in JAMA; no abstract available in the source data for this digest.</li>
+<li>Theme: trend/observational reporting on the inverse relationship between GLP-1 receptor agonist prescribing and bariatric surgical procedure volume.</li>
+<li>No quantitative data, study design, or sample size can be extracted from the available metadata.</li>
+<li>Coverage flagged as incomplete — see Run Notes.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s11695-026-08754-7">Tirzepatide for Recurrent Weight Gain after Bariatric Procedures: Real-World Evidence of Efficacy and Safety</a></h3>
+<p>⭐⭐⭐ · Vinciguerra et al. · Obes Surg (2026-06-05)</p>
+<ul>
+<li>Observational cohort study; 34 patients (26 female, 8 male) with documented recurrent weight gain after bariatric surgery (n=32) or endoscopic bariatric therapy (n=2).</li>
+<li>Intervention: once-weekly subcutaneous tirzepatide, dosing range 2.5–10 mg/week, over 24 weeks; anthropometric and adverse-event data collected at baseline and week 24.</li>
+<li>Primary outcome: mean percentage total body weight loss (%TBWL) = 18.1 ± 5.6% (p &lt; 0.0001); waist circumference also significantly reduced (p &lt; 0.0001).</li>
+<li>Most patients shifted to lower BMI categories; the majority reached overweight or normal-weight status by week 24.</li>
+<li>All adverse events were gastrointestinal (constipation, diarrhea, nausea), described as generally mild; no treatment discontinuations due to adverse events reported.</li>
+<li>Limitations: no control group, observational design, small and predominantly female sample, single-center real-world data.</li>
+</ul>
+<hr />
+<h2 class="theme-longevity">Longevity</h2>
+<hr />
+<h3><a href="https://doi.org/10.3892/mmr.2026.13926">SIRT1/AMPK/PGC1α pathway in ischemic stroke: Elucidating neuroprotective strategies (Review)</a></h3>
+<p>⭐⭐⭐ · Abbasi et al. · Mol Med Rep (2026-08-01)</p>
+<ul>
+<li>Narrative/comprehensive review; no primary data, no patient sample, no RCT registration reported.</li>
+<li>Central argument: the SIRT1/AMPK/PGC1α axis is a key neuroprotective pathway in ischemic stroke, with upstream modulation by flavonoids, physical activity, and caloric restriction.</li>
+<li>Reviews proposed mechanisms: oxidative stress attenuation, mitochondrial biogenesis (via PGC1α), and neuroinflammation suppression.</li>
+<li>Specific claim: flavonoid nanoparticles may cross the blood-brain barrier to deliver neuroprotective effects; this is presented as a research avenue, not established clinical evidence.</li>
+<li>No effect sizes, trial data, or p-values available; all findings are mechanistic or based on cited preclinical/early-phase work.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.3892/ijo.2026.5900">Emerging agents that target signaling pathways in cancer fibroblast cells (Review)</a></h3>
+<p>⭐⭐⭐ · Wan et al. · Int J Oncol (2026-07-01)</p>
+<ul>
+<li>Narrative review summarizing small-molecule compounds targeting cancer-associated fibroblasts (CAFs) across multiple signaling pathways: PI3K/AKT/mTOR, JAK/STAT, TGF-β, NF-κB, FAP, ferroptosis, apoptosis, and autophagy.</li>
+<li>Key mechanistic claim: targeting the ferroptosis signaling pathway selectively kills CAFs without broader cytotoxicity — presented as a potentially selective anti-tumor stromal strategy.</li>
+<li>No primary data, no clinical trial results, no patient sample; all findings are based on cited preclinical work and prior literature.</li>
+<li>Thematically relevant to longevity/cancer prevention as a mechanistic landscape review; no actionable clinical guidance can be drawn.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s12035-026-05945-2">Correction: Caloric Restriction Attenuated Nerve Damages Mediated Through SIRT-1 — a Study Using Nerve Crush Injury Model in Rats</a></h3>
+<p>⭐⭐⭐ · Sheu et al. · Mol Neurobiol (2026-06-05)</p>
+<ul>
+<li>This is a published correction notice for a previously published article, not a new study.</li>
+<li>Original study used a rat nerve-crush injury model; topic: caloric restriction and SIRT1-mediated neuroprotection.</li>
+<li>No abstract available in source data; specific corrected elements, original effect sizes, or sample characteristics cannot be extracted.</li>
+<li>Coverage flagged as incomplete — see Run Notes.</li>
+</ul>
+<hr />
+<h2 class="theme-strength">Strength &amp; Hypertrophy</h2>
+<blockquote>
+<p><strong>Note:</strong> The three studies classified under the &quot;strength&quot; theme guess in the source data — cysteine/CSE-transsulfuration pathway in iron-induced cardiac oxidative damage, FGF19 in temporomandibular joint osteoarthritis, and RNA splicing in cardiovascular disease — do not contain content relevant to resistance training, hypertrophy, or athletic performance. They are retained below for completeness but are not strength-and-hypertrophy literature.</p>
+</blockquote>
+<hr />
+<h3><a href="https://doi.org/10.1080/13510002.2026.2684348">The cysteine metabolic regulation through CSE-transsulfuration pathway is essential in iron-induced oxidative damage of heart</a></h3>
+<p>⭐⭐⭐ · Zhang et al. · Redox Rep (2026-12-31)</p>
+<ul>
+<li>Preclinical mechanistic study using genetic deletion models in cardiomyocytes to examine cystathionine γ-lyase (CSE) and the transsulfuration pathway.</li>
+<li>Central finding: CSE-transsulfuration pathway regulates cysteine metabolism and antioxidant signaling in cardiomyocytes under iron overload conditions.</li>
+<li>Iron overload cardiomyopathy framed as a major mortality cause in iron overload disorders; CSE presented as a potential therapeutic target.</li>
+<li>Abstract is partially truncated; specific animal model, sample sizes, and quantitative outcomes (e.g., oxidative stress markers, cardiac function metrics) are not fully reported in the available text.</li>
+<li>No human data; no exercise or hypertrophy relevance.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00441-026-04080-7">FGF19 promotes cartilage destruction in the progress of temporomandibular joint osteoarthritis</a></h3>
+<p>⭐⭐⭐ · Chen et al. · Cell Tissue Res (2026-06-05)</p>
+<ul>
+<li>Mouse model study: TMJ osteoarthritis (TMJOA) induced by unilateral anterior crossbite (UAC); FGF19 overexpressed via direct adeno-associated virus injection carrying the Fgf19 gene.</li>
+<li>FGF19 overexpression accelerated cartilage phenotype transformation: reduced COL2A1 and aggrecan; increased COL10A1, MMP13, ADAMTS5, COL1A1, and COL1A2 expression.</li>
+<li>FGF19 induced calcification of cartilage hypertrophic layer via up-regulation of DMP1 through transcription factor osterix (OSX).</li>
+<li>FGF19 was found substantially up-regulated in the joint cavity of OA patients in prior literature; this study provides mechanistic causation in an animal model.</li>
+<li>No human intervention data; no direct strength or hypertrophy relevance.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1093/eurheartj/ehag374">RNA splicing and cardiovascular disease: a guide for cardiologists</a></h3>
+<p>⭐⭐⭐ · Hunt et al. · Eur Heart J (2026-06-05)</p>
+<ul>
+<li>Narrative review targeting cardiologists; covers alternative splicing (AS) as a mechanism generating protein isoform diversity in cardiac biology.</li>
+<li>Key mechanistic claims: cardiac-enriched RNA-binding proteins establish heart-specific splicing programs; pathological hypertrophy engages distinct splicing signatures compared with physiological hypertrophy.</li>
+<li>Diagnostic/prognostic angle: bulk, long-read, and single-cell transcriptomics can resolve cell-type–specific isoforms; circulating RNA biomarkers (including splice ratios and circularRNAs) may indicate myocardial remodeling and arrhythmic risk.</li>
+<li>Therapeutic strategies reviewed: antisense oligonucleotides, small molecules, CRISPR, base editing, and prime editing to modulate splicing in CVD.</li>
+<li>Neuromuscular disease precedent (e.g., spinal muscular atrophy splice-switching drugs) cited as clinical feasibility proof-of-concept for cardiac translation.</li>
+</ul>
+<hr />
+<h2 class="theme-supplements">Supplements</h2>
+<hr />
+<h3><a href="https://doi.org/10.1371/journal.pone.0348907">Probiotics, synbiotics and berberine in Type 2 diabetes mellitus: A systematic review, meta-analysis, and molecular dynamics simulation study</a></h3>
+<p>⭐⭐⭐⭐⭐ · Shadin et al. · PLoS One (2026)</p>
+<ul>
+<li>Systematic review and meta-analysis of randomized controlled trials; &gt;30 trials, &gt;2,000 participants; PROSPERO registration CRD420251116387.</li>
+<li>Pooled analysis (random-effects models) for fasting plasma glucose (FPG) and HbA1c across interventions (probiotics, synbiotics, berberine) in type 2 diabetes: FPG reduction −0.71 mmol/L; HbA1c reduction −0.19%; both statistically significant.</li>
+<li>Probiotic-specific subgroup vs. placebo: FPG approximately −0.80 mmol/L; HbA1c approximately −0.21%.</li>
+<li>Substantial between-study variability (heterogeneity) reported across all outcomes; authors describe effect sizes as &quot;clinically modest.&quot;</li>
+<li>Exploratory molecular dynamics/docking analysis: berberine showed weaker binding affinity to α-glucosidase than the reference inhibitor acarbose.</li>
+<li>Conclusion: probiotics, synbiotics, and berberine are positioned as adjunctive rather than primary therapeutic options; authors call for larger, longer, standardized trials.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/15502783.2026.2679718">12-week fisetin supplementation and interval resistance with aerobic training: changes in Maresin-1 and inflammatory markers in men with obesity: a randomized controlled trial</a></h3>
+<p>⭐⭐⭐⭐ · Alipour et al. · J Int Soc Sports Nutr (2026)</p>
+<ul>
+<li>12-week parallel-group RCT; 44 obese adult males (BMI &gt; 30 kg/m²) randomized to four arms: control-placebo (CP), fisetin only (F; 200 mg/day), training-placebo (TP), or training-fisetin (TF).</li>
+<li>Training protocol: eight resistance exercises at 60% 1RM with active rest periods, plus progressive aerobic bouts at 50%–70% HRmax.</li>
+<li>Primary and secondary outcomes assessed pre- and post-intervention: plasma Maresin-1 (MaR1), IL-6, TNF-α, fasting blood glucose (FBS), insulin, and HOMA-IR.</li>
+<li>Significant group × time interactions reported for Maresin-1 (specific p-values and effect sizes not fully available in the truncated abstract); the TF group produced the greatest improvements across all biomarkers.</li>
+<li>Reported direction of change in TF group: ↑ Maresin-1, ↓ IL-6, ↓ TNF-α, ↓ FBS, ↓ insulin, ↓ HOMA-IR.</li>
+<li>Limitations: all-male sample, single BMI category (obese), short follow-up, small n per arm (~11 each); precise between-group effect sizes and CIs not recoverable from the available abstract text.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/15502783.2026.2679050">Selected immunoendocrine and performance adaptations to upper-body plyometric training and β-alanine supplementation in male swimmers</a></h3>
+<p>⭐⭐⭐⭐ · Gao et al. · J Int Soc Sports Nutr (2026)</p>
+<ul>
+<li>8-week RCT; 30 trained male swimmers (age 25.7 ± 2.6 years; height 1.83 ± 0.07 m; body mass 81.6 ± 3.2 kg) randomized to three groups: upper-body plyometric training + β-alanine (PT+BA), upper-body plyometric training + placebo (PT+PL), or control (CON).</li>
+<li>Both PT groups showed significant improvements in all performance outcomes vs. baseline (specific effect sizes not recoverable from truncated abstract; reported as &quot;all p &lt; [threshold]&quot;).</li>
+<li>β-alanine supplementation (PT+BA vs. PT+PL) further amplified training-induced adaptations in upper-body power, anaerobic capacity, and swimming performance.</li>
+<li>β-alanine also promoted &quot;a more favorable immunoendocrine adaptation profile&quot; — specific hormonal/immune markers not enumerated in the available abstract text.</li>
+<li>Limitations: all-male, single sport, 8-week duration; dosage of β-alanine not reported in available abstract; immunoendocrine outcomes not fully quantified in the extracted text.</li>
+</ul>
+<hr />
+<h2 class="theme-sleep">Sleep &amp; Recovery</h2>
+<hr />
+<h3><a href="https://doi.org/10.1111/sms.70314">Acute Sleep Deprivation Shifts Substrate Utilization Toward Greater Fat Oxidation During Incremental Exercise in Recreationally Trained Adults</a></h3>
+<p>⭐⭐⭐⭐ · Del Val-Manzano et al. · Scand J Med Sci Sports (2026-06-01)</p>
+<ul>
+<li>Randomized, counterbalanced crossover study; 32 recreationally trained young adults (16 female, 16 male); three within-subject sleep conditions: normal sleep (NS, 8 h), early/partial sleep deprivation (ESD, 4 h), and total sleep deprivation (SD, 0 h).</li>
+<li>Sleep duration verified by wrist actigraphy plus direct researcher monitoring; incremental cycling test performed the morning following each condition to determine maximal fat oxidation (MFO) and maximal carbohydrate oxidation (MCHO), both in absolute and relative (per kg fat-free mass) terms.</li>
+<li>Key finding: both ESD and SD conditions shifted substrate utilization toward greater fat oxidation and reduced carbohydrate oxidation during the incremental cycling test compared with NS; specific MFO values and p-values not fully recoverable from truncated abstract.</li>
+<li>The direction of the finding is counterintuitive relative to common assumptions about sleep deprivation impairing metabolic efficiency.</li>
+<li>Limitations: acute single-night exposure, young recreationally trained adults only, substrate utilization measured via indirect calorimetry during a standardized test (not ad libitum exercise); no data on longer-term or chronic sleep restriction.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1038/s41598-026-54919-w">Effects on secondary outcomes following a three-month personalized app-based lifestyle intervention among working adults: a three-armed randomized controlled trial</a></h3>
+<p>⭐⭐⭐⭐ · Eke et al. · Sci Rep (2026-05-31)</p>
+<ul>
+<li>3-month three-armed RCT; n=209 office workers and bus drivers; randomized 1:1:1 to app only, app + monthly coaching, or control; mean participant age 48.2 years; 42% female.</li>
+<li>Exercise: both intervention groups increased minutes of exercise vs. control — app group β = 15.7 min/week (95% CI: 3.5, 27.9); app+coach group β = 13.8 min/week (95% CI: 1.4, 26.1).</li>
+<li>Diet: only app+coach group increased vegetable intake vs. control — β = 51.8 g/day (95% CI: 2.5, 101.1); fruit and vegetable combined β = 87.7 g/day (95% CI: 8.9, 166.6).</li>
+<li>Sleep: only app+coach group increased time in bed β = 0.43 h/night (95% CI: 0.05, 0.81) and sleep duration β = 0.40 h/night (95% CI: 0.01, 0.78) vs. control.</li>
+<li>No other outcomes (alcohol, stress, smoking) differed significantly between groups.</li>
+<li>Limitations: 3-month follow-up only; self-reported diet and sleep for many outcomes; modest effect sizes on the lower confidence-interval boundary approaching zero; coaching contribution and its mechanism not fully isolated.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/07853890.2026.2671594">Circadian rhythms in major depressive disorder: mechanistic insights and therapeutic frontiers</a></h3>
+<p>⭐⭐⭐ · Saeed et al. · Ann Med (2026-12-01)</p>
+<ul>
+<li>Narrative review synthesizing evidence on circadian system disruption as a pathophysiological mechanism in major depressive disorder (MDD); no primary trial data.</li>
+<li>Epidemiological scope cited: MDD affects over 264 million people globally; framed as a leading cause of disability.</li>
+<li>Genetic evidence reviewed: variants in core clock genes CLOCK, TIMELESS, and CRY1 identified as correlating with both circadian disruption and MDD susceptibility.</li>
+<li>Mechanistic axes reviewed: dysregulated hypothalamus-pituitary-adrenal (HPA) axis function and abnormal melatonin signaling are proposed as potentially causal rather than merely symptomatic in MDD pathogenesis.</li>
+<li>Chronotherapeutic approaches summarized: light therapy, sleep interventions (e.g., sleep deprivation therapy, phase advance), and targeted pharmacology (e.g., agomelatine); personalized circadian-based treatment guided by genetic and molecular markers proposed as a future direction.</li>
+</ul>
+<hr />
+<h2 class="theme-skin-hair">Skin &amp; Hair Health</h2>
+<hr />
+<h3><a href="https://doi.org/10.1111/jocd.70932">Evaluation of a Novel Bimodal-Approach Radiofrequency Device for Lower Facial Tightening in Southeast Asian Patients: An Open-Label Prospective Study</a></h3>
+<p>⭐⭐⭐⭐ · Chottawornsak et al. · J Cosmet Dermatol (2026-06-01)</p>
+<ul>
+<li>Open-label prospective cohort study; 26 adults enrolled (age 30–60 years) with mild-to-moderate lower facial laxity; 23 completed follow-up.</li>
+<li>Device: DENSITY Noir (Jeisys Med Inc., Seoul), a bimodal RF system delivering monopolar and bipolar energy sequentially within a single shot; single treatment session administered.</li>
+<li>Primary efficacy: 47.83% of completers achieved marked improvement (51%–75% on 6-point global improvement scale) at 6 months; facial laxity ratings significantly improved at 1, 3, and 6 months vs. baseline (p &lt; 0.001 for each).</li>
+<li>3D Antera imaging outcomes: nasolabial fold cross-sectional area reduced from 41.94 (baseline) to 35.72 at 6 months (p = 0.02); wrinkle width reduced from 1.98 mm to 1.85 mm at 6 months (p = 0.01).</li>
+<li>Participant satisfaction: ~78% reported high satisfaction at 6 months; adverse events — transient erythema (96.15%), edema (61.53%), mild procedural pain — all minor, transient, and self-limiting.</li>
+<li>Limitations: no control arm, open-label design, predominantly Southeast Asian population (may limit generalizability), single treatment session only, small n.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s40257-026-01044-z">Practical Therapeutic Strategies for Acne-Induced Hyperpigmentation Across all Skin Types</a></h3>
+<p>⭐⭐⭐ · Lopez-Estebaranz et al. · Am J Clin Dermatol (2026-06-03)</p>
+<ul>
+<li>Clinical practice review/guidance article; no primary study design, no patient sample, no randomization.</li>
+<li>Epidemiological figure cited: up to 85% of patients with Fitzpatrick phototypes IV–VI develop post-inflammatory hyperpigmentation (PIH) following inflammatory acne.</li>
+<li>Risk factors for acne-induced hyperpigmentation (AIH) enumerated: female sex, darker skin phototype, severe acne, facial location, excessive sun exposure, traumatized lesions.</li>
+<li>Treatment options reviewed: topical — azelaic acid, retinoids, antioxidants, hydroquinone; systemic — isotretinoin, oral antibiotics, oral tranexamic acid; procedural — chemical peels, laser, microneedling; photoprotection emphasized as foundational.</li>
+<li>Authors note a gap in validated patient-reported outcome measures (PROMs) specific to AIH/acne-induced macular erythema; no head-to-head comparative efficacy data presented.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1038/s41392-026-02665-w">Anti-asthma drug montelukast induces autistic behaviors via disrupting neuronal retinoic acid signaling</a></h3>
+<p>⭐⭐⭐ · Hao et al. · Signal Transduct Target Ther (2026-06-02)</p>
+<ul>
+<li>Multi-modal study: in vitro (primary rat prefrontal cortex neurons), in vivo (wild-type rats, prenatal and early postnatal exposure), brain organoid (human embryonic stem cell-derived), molecular docking, and multi-center clinical cohort components.</li>
+<li>Core mechanistic finding: montelukast (MTK), a cysteinyl leukotriene receptor antagonist, disrupts neuronal retinoic acid (RA) signaling by physically interacting with RA receptors (RARs), particularly RARα, as confirmed by molecular docking and biochemical validation.</li>
+<li>In vivo: prenatal or early postnatal MTK exposure induced autistic-like behaviors in wild-type rats; behaviors were significantly alleviated by supplementation with all-trans retinoic acid (atRA).</li>
+<li>Organoid data: MTK altered neuronal RA signaling and forebrain patterning in human brain organoids.</li>
+<li>Clinical component: multi-center survey in a large Chinese ASD cohort suggested MTK administration during early childhood may increase ASD risk; specific odds ratios, confidence intervals, and cohort size not recoverable from available abstract.</li>
+<li>Note: this study is thematically misclassified as &quot;skin_hair&quot; in the source data; its primary relevance is neurodevelopmental/pharmacovigilance. Retained here per input theme assignment for traceability.</li>
+</ul>
+<hr />
+<h2>Sources Scanned This Week</h2>
+<p>| Source | Items |
+|--------|-------|
+| PubMed | 18    |
+| <strong>Total</strong> | <strong>18</strong> |</p>
+<hr />
+<h2>Run Notes</h2>
+<ul>
+<li><strong>2 items with no abstract available:</strong> &quot;Metabolic Bariatric Surgery Declines as GLP-1 Drug Use Increases&quot; (JAMA, Anderer 2026) and &quot;Correction: Caloric Restriction Attenuated Nerve Damages Mediated Through SIRT-1&quot; (Mol Neurobiol, Sheu et al. 2026). Metadata bullets only for these items; no quantitative data could be extracted.</li>
+<li><strong>Multiple abstracts truncated in source JSON:</strong> Studies by Liao et al. (SMS/tirzepatide), Zhang et al. (CSE/iron), Del Val-Manzano et al. (sleep deprivation), Alipour et al. (fisetin), and Gao et al. (β-alanine/swimmers) all have incomplete abstract text. Effect sizes, p-values, and secondary outcomes may be underreported in this digest relative to the full publications.</li>
+<li><strong>Theme misclassification flagged:</strong> Three studies tagged &quot;strength&quot; in source data (CSE/cardiac, FGF19/TMJOA, RNA splicing/CVD) contain no strength, hypertrophy, or resistance training content; placed in Strength &amp; Hypertrophy section with explicit caveat. Montelukast/ASD study tagged &quot;skin_hair&quot; but is a neurodevelopmental/pharmacovigilance paper; retained under Skin &amp; Hair Health with note.</li>
+<li><strong>Publication dates anomaly:</strong> Several studies carry future publication dates (2026-07-01, 2026-08-01, 2026-12-31) relative to the run date of 2026-06-05; these are likely ahead-of-print/online-first assignments and are included without modification.</li>
+<li><strong>n not reported</strong> for the majority of studies in the source JSON; sample sizes listed only where determinable from abstract text.</li>
+</ul>
+
+  </div>
+  <div class="footer">
+    <p><strong>fiteligent</strong> · Research Digest</p>
+    <p>Optymizacja zdrowia oparta na nauce</p>
+    <p><a href="https://fiteligent.pl">fiteligent.pl</a></p>
+  </div>
+</div>
+</body>
+</html>
