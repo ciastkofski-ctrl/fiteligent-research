@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fiteligent Research Digest — 2026-06-19</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
+:root {
+  /* Surfaces */
+  --bg-page:       #0a0e27;
+  --bg-container:  #1a1f3a;
+  --bg-footer:     #0a0e27;
+
+  /* Brand colors */
+  --brand-primary: #016FFA;
+  --brand-deep:    #0047CC;
+  --brand-light:   #66A8FF;
+  --accent:        #FF7B00;
+  --accent-hover:  #E56A00;
+
+  /* Text */
+  --text-strong:   #ffffff;
+  --text-body:     #e0e0e0;
+  --text-muted:    #c0c0c0;
+  --text-footer:   #808080;
+
+  /* Type */
+  --font-sans:     'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --container-max: 720px;
+  --radius:        12px;
+
+  /* Theme accents */
+  --theme-obesity:    #FF7B00;
+  --theme-longevity:  #66A8FF;
+  --theme-strength:   #016FFA;
+  --theme-supplements:#9D7BFF;
+  --theme-sleep:      #3D5AFE;
+  --theme-skin-hair:  #F472B6;
+}
+
+* { box-sizing: border-box; }
+body { font-family: var(--font-sans); background: var(--bg-page); color: var(--text-body); margin: 0; padding: 24px; line-height: 1.7; }
+.container { max-width: var(--container-max); margin: 0 auto; background: var(--bg-container); border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+.header { background: linear-gradient(165deg, var(--brand-deep) 0%, var(--brand-primary) 55%, var(--brand-light) 100%); padding: 48px 32px; text-align: center; }
+.header .logo { max-width: 200px; height: auto; }
+.content { padding: 48px 56px; }
+h1 { color: var(--text-strong); font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+h1 + .subtitle { color: var(--text-muted); margin: 0 0 32px; font-size: 14px; }
+h2 { color: var(--text-strong); font-size: 22px; margin: 48px 0 16px; padding-left: 16px; border-left: 4px solid var(--theme-accent, var(--accent)); font-weight: 700; }
+h2.theme-obesity     { --theme-accent: var(--theme-obesity); }
+h2.theme-longevity   { --theme-accent: var(--theme-longevity); }
+h2.theme-strength    { --theme-accent: var(--theme-strength); }
+h2.theme-supplements { --theme-accent: var(--theme-supplements); }
+h2.theme-sleep       { --theme-accent: var(--theme-sleep); }
+h2.theme-skin-hair   { --theme-accent: var(--theme-skin-hair); }
+h3 { color: var(--text-strong); font-size: 17px; margin: 32px 0 8px; font-weight: 700; }
+.meta { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
+.stars { color: var(--accent); letter-spacing: 1px; font-weight: 700; }
+a { color: var(--brand-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.why-it-matters { background: rgba(255, 123, 0, 0.1); border-left: 3px solid var(--accent); padding: 12px 16px; margin: 16px 0; border-radius: 4px; color: var(--text-strong); font-weight: 500; }
+.footer { background: var(--bg-footer); padding: 32px; text-align: center; color: var(--text-footer); font-size: 12px; }
+.footer a { color: var(--brand-light); margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="logo.svg" alt="fiteligent" class="logo">
+  </div>
+  <div class="content">
+    <pre><code class="language-yaml">---
+date_range: &quot;2026-06-16 to 2026-06-19&quot;
+studies_total: 17
+unique_studies_after_dedup: 16
+themes:
+  - Obesity &amp; Metabolic Health
+  - Longevity
+  - Strength &amp; Hypertrophy
+  - Supplements
+  - Sleep &amp; Recovery
+  - Skin &amp; Hair Health
+generated: &quot;2026-06-19T00:00:00Z&quot;
+source: fiteligent.pl / Dr. Jakub Stanisławski Research Digest
+---
+</code></pre>
+<h1>fiteligent.pl Research Digest — Week of 2026-06-16</h1>
+<hr />
+<h2>TL;DR</h2>
+<p>| # | Highlight | ⭐ Rating |
+|---|-----------|-----------|
+| 1 | Cochrane meta-analysis of ~13,000 hypertensive participants: evidence remains insufficient to conclude that approved weight-loss drugs reduce mortality or CV morbidity; orlistat significantly increases serious adverse events (RR 1.45, 95% CI 1.10–1.91). | ⭐⭐⭐⭐⭐ |
+| 2 | Accentuated eccentric loading (AEL) meta-analysis: AEL impairs, not enhances, mean concentric velocity on the immediately subsequent rep (ES = −0.25), with impairment dissipating by rep 2–3. | ⭐⭐⭐⭐⭐ |
+| 3 | RCT (n = 299): carnosine supplementation (2 g/day, 12 weeks) improved muscular and cardiorespiratory endurance in select age groups, with benefits limited to males; grip strength unchanged. | ⭐⭐⭐⭐ |
+| 4 | RCT in predominantly breastfed healthy infants: low-dose iron supplementation (≈1 mg/kg/day, 4–9 months) reduced CBCL externalizing T-scores at age 3 years (45.6 vs. 48.6, adjusted p = .006). | ⭐⭐⭐⭐ |
+| 5 | Split-face RCT (n = 30): radiofrequency microneedling (RFMN) and fractional CO₂ laser both significantly reduced atrophic acne scar scores; RFMN showed faster recovery and fewer pigmentary events. | ⭐⭐⭐⭐ |</p>
+<hr />
+<h2 class="theme-obesity">Obesity &amp; Metabolic Health</h2>
+<hr />
+<h3><a href="https://doi.org/10.1002/14651858.CD007654.pub6">Long-term effects of weight-reducing drugs in people with hypertension</a></h3>
+<p>⭐⭐⭐⭐⭐ · Spary-Kainz et al. · Cochrane Database Syst Rev (2026) · meta-analysis</p>
+<ul>
+<li>Cochrane systematic review (4th update, search to April 2024) including 8 RCTs with approximately 13,000 hypertensive participants; drugs evaluated: orlistat (4 trials, n = 3,132), phentermine/topiramate (1 trial, n = 1,305), naltrexone/bupropion (1 trial, n = 8,283), semaglutide (1 trial, n = 274), tirzepatide (1 trial, n = 788); study duration 6–48 months.</li>
+<li><strong>Orlistat vs. placebo:</strong> probable increase in serious adverse events (SAEs), RR 1.45 (95% CI 1.10–1.91; 3 trials, n = 1,476; moderate-certainty evidence); all-cause mortality and CV morbidity evidence rated very low certainty.</li>
+<li><strong>Phentermine/topiramate vs. placebo:</strong> probably increases all adverse events (RR 1.13, 95% CI 1.08–1.20; moderate-certainty evidence); treatment-emergent cardiac events numerically higher at high dose (RR 2.39, 95% CI 0.82–6.69) but confidence intervals wide and evidence very low certainty.</li>
+<li><strong>Naltrexone/bupropion vs. placebo:</strong> probably increases all AEs (RR 1.69, 95% CI 1.58–1.80; moderate-certainty evidence); no significant difference in SAEs (RR 1.05, 95% CI 0.96–1.14); CV morbidity RR 1.11 (95% CI 0.87–1.41), very low certainty.</li>
+<li><strong>Semaglutide and tirzepatide:</strong> no mortality, CV morbidity, SAE, or AE data reported for hypertensive subgroups; 7 of 8 trials were industry-funded; authors conclude evidence is insufficient to draw conclusions on pharmacological weight loss reducing mortality or CV morbidity in hypertensive populations.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s11701-026-03578-0">Robotic conversion of sleeve gastrectomy to single anastomosis sleeve ileal bypass (SASI): feasibility and one-year outcomes</a></h3>
+<p>⭐⭐⭐ · Sureshkumar et al. · J Robot Surg (2026) · single-center observational</p>
+<ul>
+<li>Single-center analysis of robotic-assisted conversion from laparoscopic sleeve gastrectomy (LSG) to single anastomosis sleeve ileal bypass (SASI), conducted 2023–2025; 51 patients (42 F/9 M), mean age 46.3 ± 9.2 years, mean pre-operative BMI 43.3 ± 7.8 kg/m².</li>
+<li>Perioperative safety was assessed using Dindo-Clavien classification; one-year outcomes analyzed in the subset reaching 12-month follow-up at time of analysis.</li>
+<li>Abstract was truncated in source data; weight loss outcomes, complication rates, and comorbidity resolution figures are not fully available for extraction.</li>
+<li>Study design is non-comparative (no control arm); single-center, small sample size limits generalizability.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s11701-026-03532-0">Anatomy and patient comorbidity in robotic partial nephrectomy: predictors of complexity and outcomes</a></h3>
+<p>⭐⭐⭐ · Pumfrey et al. · J Robot Surg (2026) · retrospective single-center</p>
+<ul>
+<li>Retrospective analysis of 197 consecutive patients undergoing transperitoneal robotic partial nephrectomy by a single surgeon at two NHS sites, 2017–2024; primary endpoint: trifecta achievement (warm ischaemia time ≤25 min, negative surgical margins, no perioperative complications).</li>
+<li>Trifecta achieved in 76.1% (95% CI 69.7–81.6%); no significant gradient across PADUA score tiers (low 80.6%, moderate 77.4%, high 71.9%; Cochran-Armitage p = 0.339).</li>
+<li>PADUA score independently predicted warm ischaemia time (β = 0.74 min per point, 95% CI 0.16–1.32, p = 0.013), operative duration (Spearman ρ = 0.17, p = 0.024), and length of stay (ρ = 0.19, p = 0.009).</li>
+<li>Formal PADUA × Obesity interaction term was non-significant (β = 0.34, 95% CI −0.88 to 1.56, p = 0.585); obesity and diabetes contribute additively but did not significantly modify PADUA's predictive relationship.</li>
+<li>Mean eGFR declined from 75.4 to 71.7 mL/min/1.73 m² at 6 months (paired n = 135, p &lt; 0.001) and from 73.5 to 70.3 at 12 months (paired n = 60, p = 0.035); greater functional decline observed in diabetic patients.</li>
+</ul>
+<hr />
+<h2 class="theme-longevity">Longevity</h2>
+<hr />
+<h3><a href="https://doi.org/10.1080/19491034.2026.2688584">The nucleus as a mechanobiological hub in muscle aging</a></h3>
+<p>⭐⭐⭐ · Esen et al. · Nucleus (2026) · narrative review</p>
+<ul>
+<li>Narrative review proposing the cell nucleus as a primary mechanosensory organelle in skeletal muscle, with relevance to sarcopenia pathophysiology.</li>
+<li>Mechanotransduction pathway described: extracellular matrix (ECM) → cytoskeleton → nuclear envelope → LINC (Linker of Nucleoskeleton and Cytoskeleton) complex + nuclear lamina → gene-regulatory events governing protein synthesis, calcium signaling, and metabolism.</li>
+<li>Aging-associated nuclear changes catalogued in the review include: altered nuclear morphology, decreased nuclear stiffness, envelope fragility, and compromised transcriptional control.</li>
+<li>Review posits that impaired nuclear mechanosignaling contributes to muscle fiber dysfunction during physiological aging, independent of and additive to inactivity-related sarcopenia.</li>
+<li>No original data; no systematic search methodology described; mechanistic claims are based on synthesized existing evidence from cited primary studies.</li>
+</ul>
+<p><em>(Note: this study appears in both the Longevity and Strength &amp; Hypertrophy sections of source data; it is covered here and cross-referenced below.)</em></p>
+<hr />
+<h3><a href="https://doi.org/10.1212/WNL.0000000000218161">Mediation Analysis Between Brain Age, Disease-Modifying Factors, and Disability and Cognitive Performance in Multiple Sclerosis</a></h3>
+<p>⭐⭐⭐ · Bos et al. · Neurology (2026) · cross-sectional/mediation analysis</p>
+<ul>
+<li>Study included 117 healthy controls (mean age 52.8 ± 1.1 years, 74.3% female) and 242 people with multiple sclerosis (pwMS; mean age 52.8 ± 0.9 years, 70.6% female); median disease duration 15.2 years (IQR 8.2–24.5); median EDSS 3.5 (IQR 2.5–4.0).</li>
+<li>Brain age estimated via brainageR from 3D T1-weighted MRI; brain-predicted age difference (brain-PAD) = predicted minus chronological age; same-age cohort design used to eliminate calendar age as a confounder.</li>
+<li>Smoking was significantly associated with greater brain-PAD (β = 0.20); alcohol use and BMI at age 18 years were also identified as disease-modifying factors (DMFs) unrelated to MS that accelerate brain aging (specific β values truncated in source abstract).</li>
+<li>Brain-PAD mediated the effects of these lifestyle factors on disability (EDSS, 9-hole peg test, timed 25-foot walk test) and cognition (Minimal Assessment of Cognitive Function in MS battery).</li>
+<li>Cross-sectional mediation design; causal inference limited; BMI and alcohol data appear to be retrospective self-report; abstract was partially truncated in source.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1097/NPT.0000000000000566">Movement Through Time: The Evolution of Treatment for People With Parkinson Disease</a></h3>
+<p>⭐⭐⭐ · Ellis T · J Neurol Phys Ther (2026) · narrative review / lecture summary</p>
+<ul>
+<li>Narrative review based on the 2026 Anne Shumway-Cook Lectureship; summarizes a research program on rehabilitation evidence in Parkinson disease (PD).</li>
+<li>Evidence base for PD rehabilitation has grown from 11 RCTs in 2001 to more than 240 as of the review's writing; PD is the fastest-growing neurological disorder worldwide, projected to affect approximately 25 million people by 2050.</li>
+<li>Four themes addressed: (1) historical development of the RCT evidence base; (2) capacity-performance gap (clinic-based vs. real-world walking); (3) complementary interventions including cognitive-behavioral strategies, closed-loop rhythmic auditory stimulation, and soft-robotic assistance for freezing of gait; (4) a proposed secondary-prevention model initiating rehabilitation at diagnosis.</li>
+<li>No primary data; no systematic literature search; conclusions represent the author's expert synthesis and research program summary.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s12035-026-06015-3">A Comprehensive Review on the Microbial Signatures and Metabolic Mechanisms Underlying the Gut-Alzheimer's Disease Axis</a></h3>
+<p>⭐⭐⭐ · Amruthavarshini et al. · Mol Neurobiol (2026) · narrative review</p>
+<p><em>(Note: source data classified this under Supplements; given primary content, it is placed in Longevity.)</em></p>
+<ul>
+<li>Narrative review synthesizing experimental and clinical evidence on gut microbiota (GM) dysbiosis as a contributor to Alzheimer's disease (AD) pathogenesis via the gut-brain axis.</li>
+<li>Proposed mechanisms include: amyloid-producing gut microbes promoting immune activation and cerebral amyloid accumulation; blood-brain barrier dysfunction; oxidative stress; disrupted short-chain fatty acids (SCFAs) and indole derivatives that normally support neuronal energy metabolism and immune regulation.</li>
+<li>Microbiota-based interventions reviewed: probiotics, prebiotics, dietary modification, and fecal microbiota transplantation (FMT) — beneficial effects reported in preclinical models; clinical human evidence described as limited.</li>
+<li>No original data; no formal systematic search methodology reported; preclinical-to-human translation is not established for most interventions discussed.</li>
+</ul>
+<hr />
+<h2 class="theme-strength">Strength &amp; Hypertrophy</h2>
+<hr />
+<h3><a href="https://doi.org/10.1186/s40798-026-01031-y">Acute Effects of Accentuated Eccentric Loading on Mean Concentric Velocity During Resistance Training: A Systematic Review and Meta-analysis</a></h3>
+<p>⭐⭐⭐⭐⭐ · Yang et al. · Sports Med Open (2026) · meta-analysis</p>
+<ul>
+<li>Systematic review and meta-analysis; databases searched: PubMed, Web of Science, SPORTDiscus, Google Scholar; 8 eligible studies included; total n = 106 (male: n = 90, female: n = 16); all strength-trained, injury-free; pre-registered on OSF (https://doi.org/10.17605/OSF.IO/AYUJH).</li>
+<li>AEL protocol examined: additional eccentric (ECC) load applied on the first repetition only; primary outcome was mean concentric barbell velocity across repetitions 1–3 vs. traditional (TRAD) loading condition.</li>
+<li><strong>Rep 1:</strong> AEL significantly impaired mean CON velocity (ES = −0.25, 95% CI −0.33 to −0.16, p &lt; 0.001); <strong>Rep 2:</strong> impairment not significant (ES = 0.01, 95% CI −0.10 to 0.12, p = 0.822); <strong>Rep 3:</strong> not significant (ES = 0.08, 95% CI −0.08 to 0.23, p = 0.313).</li>
+<li>Moderator analysis: back squat produced greater velocity reduction at rep 1 (ES = −0.33) than bench press (ES = −0.11; p = 0.022); ECC load magnitude and loading differential (≥ vs. &lt; 40% TRAD 1RM) were also examined as moderators.</li>
+<li>GRADE certainty of evidence ranged from moderate to very low; small total sample (n = 106), predominantly male, limits generalizability; AEL protocols varied across studies.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/19491034.2026.2688584">The nucleus as a mechanobiological hub in muscle aging</a> <em>(cross-listed)</em></h3>
+<p>⭐⭐⭐ · Esen et al. · Nucleus (2026) · narrative review</p>
+<p><em>Full coverage in the Longevity section above. Key relevance here: the review proposes that age-related impairment of nuclear mechanosignaling via the LINC complex and nuclear lamina contributes to muscle fiber dysfunction and sarcopenia, with potential implications for understanding why mechanical loading stimuli become less effective at driving anabolic gene expression in aged muscle.</em></p>
+<hr />
+<h2 class="theme-supplements">Supplements</h2>
+<hr />
+<h3><a href="https://doi.org/10.1080/15502783.2026.2679716">Effects of carnosine supplementation on physical endurance: a placebo-controlled randomized clinical trial</a></h3>
+<p>⭐⭐⭐⭐ · O'Toole et al. · J Int Soc Sports Nutr (2026) · RCT · n = 299</p>
+<ul>
+<li>Placebo-controlled RCT; 299 participants randomized to placebo or carnosine (β-alanine-L-histidine dipeptide) at 2 g/day in capsule form; physical performance assessed at baseline (Visit-2), ~6 weeks (Visit-3), and ~12 weeks (Visit-4).</li>
+<li>Outcome measures: hand grip strength, bilateral calf raise, 2-minute step test, gait speed; blood and urine collected at each visit.</li>
+<li>Statistically significant improvement in muscular and cardiorespiratory endurance observed in select age groups at Visit-3 (specific effect sizes and p-values for these outcomes were truncated in the source abstract); grip strength did not significantly improve.</li>
+<li>Benefits appeared limited to male participants; the abstract notes no significant effect in females, though sex-stratified data were not fully reported in the available abstract.</li>
+<li>Authors note that carnosine is an endogenous dipeptide and propose its utility is for short-term repetitive movements; no serious adverse events were described; the abstract was partially truncated.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1038/s41598-026-56401-z">Iron in breastfed infants and behavior at 3 years: a randomized trial</a></h3>
+<p>⭐⭐⭐⭐ · Svensson et al. · Sci Rep (2026) · RCT · n = 221 randomized, 133 completed CBCL</p>
+<ul>
+<li>Double-blind, placebo-controlled RCT; conducted in Warsaw, Poland and Umeå, Sweden; full-term, healthy, predominantly breastfed, non-anemic infants at baseline; randomized to daily low-dose iron (7, 10, or 15 mg micronized microencapsulated ferric pyrophosphate, approximating 1 mg/kg/day) or placebo from 4 to 9 months of age.</li>
+<li>Primary behavioral outcome: Child Behavior Checklist (CBCL) at age 3 years, a pre-specified secondary outcome; 221 randomized, 133 (60%) completed CBCL assessment.</li>
+<li>Iron supplementation significantly reduced CBCL externalizing T-scores vs. placebo: mean (SD) 45.6 (8.5) vs. 48.6 (8.9), adjusted p = .006; aggressive behaviors sub-scale also lower (adjusted p = .0329).</li>
+<li>Three iron dose levels were used (not a single fixed dose); pooled analysis across doses was performed; dose-response analysis was not fully detailed in available abstract.</li>
+<li>40% dropout rate for the behavioral follow-up; authors flag the need for replication; trial registration: NCT02242188.</li>
+</ul>
+<hr />
+<h2 class="theme-sleep">Sleep &amp; Recovery</h2>
+<hr />
+<h3><a href="https://doi.org/10.1212/WNL.0000000000218216">Frequency of Suicidal Ideation and Associations With Autonomic, Motor, and Cognitive Dysfunction in People With REM Sleep Behavior Disorders</a></h3>
+<p>⭐⭐⭐ · Reddy et al. · Neurology (2026) · longitudinal cohort (NAPS2)</p>
+<ul>
+<li>Longitudinal observational study from the North American Prodromal Synucleinopathy 2 (NAPS2) consortium; 489 total participants with isolated REM sleep behavior disorder (iRBD); 40 endorsed suicidal ideation at first visit (22.5% female, mean age 61.5 years); 449 denied suicidal ideation (19.4% female, mean age 64.6 years).</li>
+<li>Suicidal ideation endorsed by approximately 1 in 12 (≈8.2%) iRBD participants; iRBD is a known prodrome of Parkinson disease (PD) and dementia with Lewy bodies (DLB).</li>
+<li>Linear mixed-effects model (adjusted for age, sex, impulsivity, carbidopa/levodopa use, PHQ-9 score): higher PHQ-9 scores associated with higher SCOPA-AUT scores (autonomic dysfunction; +0.566, SE = 0.045), greater motor findings (UPDRS), and greater cognitive deficits (MoCA); specific p-values and confidence intervals for motor/cognitive associations were truncated in source abstract.</li>
+<li>Study identifies a potentially high-risk iRBD phenotype characterized by overlapping depression, autonomic dysfunction, motor impairment, and cognitive deficits.</li>
+<li>Observational design; suicidal ideation assessed at a single visit (first visit only for primary analysis); causal relationships cannot be established.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1212/WNL.0000000000218158">Slow-Wave Sleep Fragmentation in Disorders of Arousal and Sleep-Related Hypermotor Epilepsy: A Multicenter Polysomnographic Study</a></h3>
+<p>⭐⭐⭐ · Cordani et al. · Neurology (2026) · multicenter observational</p>
+<ul>
+<li>Multicenter polysomnographic study; 87 patients total: 47 with disorders of arousal (DOAs; mean age 23.90 ± 13.10 years, 44.7% children) and 40 with sleep-related hypermotor epilepsy (SHE; mean age 25.11 ± 13.08 years, 27.5% children); blinded scoring protocol.</li>
+<li>Primary aim: assess slow-wave sleep (SWS) fragmentation as a differential diagnostic marker between DOAs and SHE; arousals classified as fast, mixed, and slow types.</li>
+<li>Total sleep time and sleep efficiency did not differ between groups; N2 sleep percentage was significantly lower in DOAs vs. SHE (specific values truncated in source abstract).</li>
+<li>Mixed and slow arousals from SWS were identified as potentially discriminating neurophysiologic markers; receiver-operating characteristic (ROC) curves used to define diagnostic cutoff values (thresholds not available in truncated abstract).</li>
+<li>Relatively small sample with mixed adult/pediatric population; observational design; SWS fragmentation is proposed as a supportive, not standalone, diagnostic criterion.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1212/WNL.0000000000218176">The Prodromal Synucleinopathy Rating Scale: An Assessment in Patients With REM Sleep Behavior Disorder</a></h3>
+<p>⭐⭐⭐ · Boeve et al. · Neurology (2026) · multicenter cohort · n = 348</p>
+<ul>
+<li>Multicenter cohort study from the North American Prodromal Synucleinopathy (NAPS) consortium; n = 348 participants with RBD who did not have overt PD, DLB, or MSA; visits from August 2022 to June 2025; 79% male, mean age 65.4 ± 10.4 years.</li>
+<li>The Prodromal Synucleinopathy Rating Scale (PSRS) evaluated; 7 domains: cognitive (COG), behavioral/psychiatric (PSY), motor-axial (MAX), motor-appendicular (MAP), autonomic (AUT), sleep (SLP), and sensory (SEN); total maximum score 25 (range 0–25).</li>
+<li>Moderate-to-strong statistically significant correlations observed between PSRS domain scores and independent measures of corresponding clinical constructs (Spearman correlations; specific r-values truncated in source abstract).</li>
+<li>Test-retest reliability assessed using Bayesian generalized linear mixed-effects model across 20 raters and 20 case-example protocols; reliability characterized as good to excellent.</li>
+<li>PSRS is a newly developed scale; this study represents preliminary validation; longitudinal predictive validity (conversion to PD/DLB/MSA) not yet established; NCT05826457.</li>
+</ul>
+<hr />
+<h2 class="theme-skin-hair">Skin &amp; Hair Health</h2>
+<hr />
+<h3><a href="https://doi.org/10.1080/09546634.2026.2687842">Comparative efficacy, recovery, and pigmentary safety of radiofrequency microneedling and fractional carbon dioxide laser for facial atrophic acne scars: a prospective randomized split-face trial</a></h3>
+<p>⭐⭐⭐⭐ · Li et al. · J Dermatolog Treat (2026) · RCT (split-face) · n = 30 completers</p>
+<ul>
+<li>Prospective, randomized, split-face, evaluator-blinded exploratory trial; 33 patients enrolled, 30 completed; each facial side randomly assigned to radiofrequency microneedling (RFMN) or fractional CO₂ laser (FCO₂); primary outcome: Échelle d'Évaluation Clinique des Cicatrices d'Acné (ECCA) scar score change over time.</li>
+<li>Both modalities significantly improved ECCA scores over the study period; mean ECCA decreased from 54.73 to 30.53 with RFMN and from 53.67 to 31.03 with FCO₂ (specific inter-group p-value for the primary comparison was not reported in the available abstract excerpt).</li>
+<li>RFMN demonstrated faster recovery and fewer pigmentary adverse events vs. FCO₂; higher safety satisfaction reported for the RFMN side.</li>
+<li>Exploratory design; small sample (n = 30); split-face methodology controls for inter-individual variation but does not account for contralateral carryover effects; patient-reported outcomes also collected.</li>
+<li>No long-term follow-up data available in this report; no specific pigmentary event rates numerically reported in the available abstract.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1093/asj/sjaf137">Multicenter, Randomized Split-Face Trial of a Crosslinked Hyaluronic Acid Filler With Lidocaine for Nasolabial Fold Correction</a></h3>
+<p>⭐⭐⭐⭐ · Downie et al. · Aesthet Surg J (2026) · RCT (split-face, multicenter)</p>
+<ul>
+<li>Multicenter, randomized, subject- and investigator-blinded split-face trial; patients with moderate-to-severe nasolabial folds (NLFs) received Princess FILLER Lidocaine (PFL; now saypha filler Lidocaine) on one side and Juvéderm Ultra XC (JUXC) on the other; follow-up assessments at Weeks 12, 24, 36, and/or 48.</li>
+<li>Primary endpoint (Week 24): proportion of NLF-Severity Rating Scale (NLF-SRS) responders — PFL 82.2% vs. JUXC 81.9%; difference 0.37%; non-inferiority demonstrated (p &lt; .0001).</li>
+<li>Secondary endpoints (photographic reviewer assessments, treating investigator assessments, Global Aesthetic Improvement Scale) confirmed non-inferiority findings.</li>
+<li>Adverse events occurred in 24.4% of patients post-PFL, most mild-to-moderate; serious treatment-emergent AEs rare (1.1%); repeat treatment permitted at Week 36 or 48 if needed.</li>
+<li>Patient satisfaction assessed via FACE-Q questionnaire; specific FACE-Q scores not available in the extracted abstract; total n not explicitly stated in source data.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s10522-026-10461-w">Hyperspectral imaging and healthy aging: an observational study using hand skin as surface for monitoring healthy aging processes</a></h3>
+<p>⭐⭐⭐ · Bolognesi et al. · Biogerontology (2026) · observational cohort · n = 101</p>
+<ul>
+<li>Observational study; 101 healthy volunteers over 40 years old; hand-skin hyperspectral reflectance imaging (Vis-NIRHSI) acquired in the 410–820 nm range using a dedicated camera; 224 spectral and texture features extracted at selected wavelengths.</li>
+<li>15 features retained as significant descriptors of the aging process; used to construct reference curves for &quot;healthy status condition&quot; of skin aging.</li>
+<li>Lifestyle and exposome data collected via self-report questionnaire (quality and perception of lifestyle); specific correlations between lifestyle factors and hyperspectral features not numerically reported in the available abstract.</li>
+<li>Study scope: non-invasive biomonitoring tool development for healthy aging surveillance; not a clinical intervention; no validation against histological or molecular aging biomarkers reported.</li>
+<li>Single-center; convenience sample; predominantly or exclusively healthy volunteers; generalizability to clinical or diverse populations is unknown.</li>
+</ul>
+<hr />
+<h2>Sources Scanned This Week</h2>
+<p>| Source | Count |
+|--------|-------|
+| PubMed | 17 |
+| <strong>Total</strong> | <strong>17</strong> |</p>
+<hr />
+<h2>Run Notes</h2>
+<ul>
+<li><strong>Duplicate detected:</strong> &quot;The nucleus as a mechanobiological hub in muscle aging&quot; (doi: 10.1080/19491034.2026.2688584) appeared twice in the input JSON. Covered once in full under <strong>Longevity</strong>, cross-referenced under <strong>Strength &amp; Hypertrophy</strong>.</li>
+<li><strong>Out-of-scope study excluded from digest body:</strong> &quot;Sclerophyllous structural and chemical traits of mite-induced galls on Crinodendron patagua (Elaeocarpaceae) leaves&quot; (doi: 10.1111/plb.70246) has no relevance to human health, performance, or clinical medicine. It is listed in the sources scanned count but not assigned to any theme section.</li>
+<li><strong>Partial abstracts:</strong> Multiple studies had truncated abstracts in the source JSON (Robotic SASI conversion, Mediation Analysis in MS, Carnosine RCT, Suicidal Ideation in RBD, SWS Fragmentation, RFMN vs. FCO₂). Numerical values not present in the source have not been inferred or invented. Where key statistics were unavailable, this is noted per study.</li>
+<li><strong>Theme reassignment:</strong> Gut-Alzheimer review (theme_guess: supplements) reassigned to <strong>Longevity</strong> based on content.</li>
+<li><strong>Published dates:</strong> Two studies carry nominal publication dates of 2026-12-01 (Nucleus, Carnosine RCT) — likely online-first or issue date assignments; included per run date instruction.</li>
+</ul>
+
+  </div>
+  <div class="footer">
+    <p><strong>fiteligent</strong> · Research Digest</p>
+    <p>Optymizacja zdrowia oparta na nauce</p>
+    <p><a href="https://fiteligent.pl">fiteligent.pl</a></p>
+  </div>
+</div>
+</body>
+</html>
