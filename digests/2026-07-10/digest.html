@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fiteligent Research Digest — 2026-07-10</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
+:root {
+  /* Surfaces */
+  --bg-page:       #0a0e27;
+  --bg-container:  #1a1f3a;
+  --bg-footer:     #0a0e27;
+
+  /* Brand colors */
+  --brand-primary: #016FFA;
+  --brand-deep:    #0047CC;
+  --brand-light:   #66A8FF;
+  --accent:        #FF7B00;
+  --accent-hover:  #E56A00;
+
+  /* Text */
+  --text-strong:   #ffffff;
+  --text-body:     #e0e0e0;
+  --text-muted:    #c0c0c0;
+  --text-footer:   #808080;
+
+  /* Type */
+  --font-sans:     'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --container-max: 720px;
+  --radius:        12px;
+
+  /* Theme accents */
+  --theme-obesity:    #FF7B00;
+  --theme-longevity:  #66A8FF;
+  --theme-strength:   #016FFA;
+  --theme-supplements:#9D7BFF;
+  --theme-sleep:      #3D5AFE;
+  --theme-skin-hair:  #F472B6;
+}
+
+* { box-sizing: border-box; }
+body { font-family: var(--font-sans); background: var(--bg-page); color: var(--text-body); margin: 0; padding: 24px; line-height: 1.7; }
+.container { max-width: var(--container-max); margin: 0 auto; background: var(--bg-container); border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+.header { background: linear-gradient(165deg, var(--brand-deep) 0%, var(--brand-primary) 55%, var(--brand-light) 100%); padding: 48px 32px; text-align: center; }
+.header .logo { max-width: 200px; height: auto; }
+.content { padding: 48px 56px; }
+h1 { color: var(--text-strong); font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+h1 + .subtitle { color: var(--text-muted); margin: 0 0 32px; font-size: 14px; }
+h2 { color: var(--text-strong); font-size: 22px; margin: 48px 0 16px; padding-left: 16px; border-left: 4px solid var(--theme-accent, var(--accent)); font-weight: 700; }
+h2.theme-obesity     { --theme-accent: var(--theme-obesity); }
+h2.theme-longevity   { --theme-accent: var(--theme-longevity); }
+h2.theme-strength    { --theme-accent: var(--theme-strength); }
+h2.theme-supplements { --theme-accent: var(--theme-supplements); }
+h2.theme-sleep       { --theme-accent: var(--theme-sleep); }
+h2.theme-skin-hair   { --theme-accent: var(--theme-skin-hair); }
+h3 { color: var(--text-strong); font-size: 17px; margin: 32px 0 8px; font-weight: 700; }
+.meta { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
+.stars { color: var(--accent); letter-spacing: 1px; font-weight: 700; }
+a { color: var(--brand-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.why-it-matters { background: rgba(255, 123, 0, 0.1); border-left: 3px solid var(--accent); padding: 12px 16px; margin: 16px 0; border-radius: 4px; color: var(--text-strong); font-weight: 500; }
+.footer { background: var(--bg-footer); padding: 32px; text-align: center; color: var(--text-footer); font-size: 12px; }
+.footer a { color: var(--brand-light); margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="logo.svg" alt="fiteligent" class="logo">
+  </div>
+  <div class="content">
+    <pre><code class="language-yaml">---
+date_range: &quot;2026-07-01 to 2026-07-10&quot;
+studies_total: 18
+unique_studies: 17  # one duplicate removed (sleep-adipokine review appeared twice)
+themes:
+  - Obesity &amp; Metabolic Health
+  - Longevity
+  - Strength &amp; Hypertrophy
+  - Supplements
+  - Sleep &amp; Recovery
+  - Skin &amp; Hair Health
+generated: &quot;2026-07-10T00:00:00Z&quot;
+source: fiteligent.pl / Dr. Jakub Stanisławski Research Digest
+---
+</code></pre>
+<h1>Weekly Research Digest — 10 July 2026</h1>
+<hr />
+<h2>TL;DR — Top 5 Highlights</h2>
+<ol>
+<li>
+<p>⭐⭐⭐⭐⭐ <strong>GLP-1 RA + SGLT2i combination in heart failure</strong> (n = 75,833): Adding a GLP-1 receptor agonist on top of an SGLT2 inhibitor cut all-cause mortality by 38% (RR 0.62) and worsening heart failure events by 26% (RR 0.74) vs. SGLT2i alone, with no significant increase in adverse events. Moderate GRADE evidence from observational data only — RCTs urgently needed.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐⭐ <strong>GLP-1 RA effect on kidney albumin excretion</strong> (n = 26,088): Across 10 RCTs, GLP-1 RAs reduced urinary albumin-to-creatinine ratio by −27.94% and body weight by −5.85 kg vs. placebo; effect on albuminuria appeared robust even outside type 2 diabetes, though nondiabetic CKD data remain limited.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐⭐ <strong>Potassium citrate for bone turnover in menopause</strong> (5 RCTs, n = 401): Supplementation significantly reduced urinary NTX (bone resorption marker) at 1 month (MD −4.05 nmol BCE/mmol creatinine, p = 0.047) vs. placebo; longer-term bone mineral density data remain sparse.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐ <strong>Resistance training in head &amp; neck cancer during chemoradiation</strong> (n = 50): 12-week progressive resistance training did not attenuate lean soft tissue loss (~3.4 kg in both groups) but did significantly improve functional performance (chair rise, arm curls, p &lt; 0.05) vs. usual care — trial underpowered (target n = 72, enrolled n = 50).</p>
+</li>
+<li>
+<p>⭐⭐⭐ <strong>Sleep–adipokine–metabolism bidirectional crosstalk</strong> (narrative review): Sleep deprivation and OSA dysregulate leptin, adiponectin, IL-6, and ANGPTL4 in mechanistically distinct ways, each linking to insulin resistance and dyslipidemia; conversely, obesity worsens sleep through visceral fat, HPA-axis activation, nocturia, and neuropathic pain.</p>
+</li>
+</ol>
+<hr />
+<h2 class="theme-obesity">Obesity &amp; Metabolic Health</h2>
+<h3><a href="https://doi.org/10.1007/s40256-026-00812-w">Combination Therapy of GLP-1 RA and SGLT2i in Patients with Established Heart Failure: A Systematic Review and Meta-Analysis of Observational Studies</a></h3>
+<p>⭐⭐⭐⭐⭐ · Tristan et al. · Am J Cardiovasc Drugs (2026) · n = 75,833 · meta-analysis</p>
+<ul>
+<li>Systematic review and random-effects meta-analysis of 8 observational cohorts (n = 75,833) comparing GLP-1 RA + SGLT2i combination vs. SGLT2i alone in patients with pre-existing heart failure; searches conducted February 2026 across PubMed, ScienceDirect, and Scopus; quality assessed with NOS; evidence certainty with GRADE.</li>
+<li>Primary endpoint — all-cause mortality: RR 0.62 (95% CI 0.47–0.83; p = 0.0014) in favor of combination therapy at ~1-year follow-up.</li>
+<li>All-cause hospitalization: RR 0.89 (95% CI 0.84–0.96; p = 0.0012); worsening heart failure: RR 0.74 (95% CI 0.64–0.87; p = 0.0001).</li>
+<li>Secondary: LVEF improved by MD +3.83% (95% CI 0.44–7.22; p = 0.0397); acute kidney injury risk reduced (HR 0.70; 95% CI 0.65–0.74).</li>
+<li>No significant increase in hypoglycemia, GI events, pancreatitis, or UTIs with combination vs. SGLT2i alone; GRADE certainty rated moderate for all three primary endpoints; all included studies observational — residual confounding cannot be excluded; PROSPERO CRD420261320840.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1177/03000605261458641">Effect of glucagon-like peptide-1 receptor agonists on body weight and urinary albumin-to-creatinine ratio in patients with and without type 2 diabetes: A systematic review and meta-analysis</a></h3>
+<p>⭐⭐⭐⭐⭐ · Huang R, Wang B · J Int Med Res (2026) · n = 26,088 · meta-analysis</p>
+<ul>
+<li>PRISMA-guided meta-analysis of 10 RCTs (n = 26,088) comparing GLP-1 RAs vs. placebo or standard care; primary outcomes were change in body weight (kg) and percentage change in urinary albumin-to-creatinine ratio (UACR); secondary outcome was change in eGFR; prespecified subgroup analyses by glycemic status conducted.</li>
+<li>Body weight reduction: MD −5.85 kg (95% CI −7.78 to −3.92) with consistent directional effect across trials despite heterogeneity.</li>
+<li>UACR reduction overall: MD −27.94% (95% CI −37.72 to −18.15); stratified analysis in type 2 diabetes: MD −25.70% (I² not fully reported in abstract excerpt).</li>
+<li>Evidence on albuminuria lowering in nondiabetic CKD identified as uncertain — the abstract notes this remains an open question; eGFR changes reported as secondary but full data not extractable from abstract.</li>
+<li>Risk of bias assessed with ROB 2.0; funnel plot and trim-and-fill analyses performed for small-study effects; sensitivity analyses included leave-one-out and low-risk-only subsets; GRADE certainty ratings applied.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/07853890.2026.2699560">Crosstalk between sleep disorders and adipokine secretory profiles: novel mechanisms for metabolic disease risk</a></h3>
+<p>⭐⭐⭐ · Shi et al. · Ann Med (2026) · review</p>
+<p><em>(Also covered under Sleep &amp; Recovery — cross-listed here due to direct metabolic content)</em></p>
+<ul>
+<li>Narrative mechanistic review synthesizing evidence on bidirectional links between sleep disorders (sleep deprivation, OSA, circadian disruption) and metabolic diseases (obesity, T2DM) via adipokine dysregulation.</li>
+<li>Sleep deprivation and fragmentation: leptin dysregulation (direction not specified in abstract as &quot;up&quot; or &quot;down&quot; explicitly, but context implies reduced satiety signaling) and reduced adiponectin — both linked to insulin resistance and chronic low-grade inflammation.</li>
+<li>OSA-driven intermittent hypoxia: potent upregulation of IL-6 and ANGPTL4, contributing to dyslipidemia.</li>
+<li>Reverse causality documented: obesity worsens sleep through visceral adiposity → HPA-axis activation; T2DM worsens sleep via nocturia and neuropathic pain — constituting a described vicious cycle.</li>
+<li>Review (not meta-analysis); no systematic search protocol reported; no quantitative effect estimates; mechanistic claims derived from mixed clinical and preclinical evidence.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1016/j.fm.2026.105216">Microbiota-liver axis and host transcriptomic mechanisms underlying the anti-obesity effects of Bifidobacterium animalis DPU-MWFBA in early-life overfeeding</a></h3>
+<p>⭐⭐⭐ · Gao et al. · Food Microbiol (2026) · preclinical study</p>
+<ul>
+<li>Mouse model study using small-litter rearing (early-life overfeeding model) followed by 2-week oral intervention with Bifidobacterium animalis strain FBA-40; outcomes included body weight, adiposity, glucose tolerance, insulin sensitivity, hepatic histology, and gut microbiota composition.</li>
+<li>FBA-40 attenuated excess body weight gain and adiposity; improved glucose tolerance and insulin sensitivity; reduced dyslipidemia, systemic inflammation, and hepatic lipid accumulation in treated vs. control animals — all effect sizes reported qualitatively, no numerical data in abstract.</li>
+<li>Intestinal barrier integrity: FBA-40 increased ZO-1 and Occludin expression; suppressed TNF-α-associated inflammatory activation per immunohistochemistry.</li>
+<li>Hepatic transcriptomics: FBA-40 reprogrammed PPAR signaling, linoleic acid metabolism, cholesterol metabolism, bile secretion, and arachidonic acid metabolism pathways; suppressed lipogenesis targets (Scd1, Acaca, Lpin1, SCD1); restored PPARα/EHHADH fatty acid β-oxidation and GPX1-mediated antioxidant defense.</li>
+<li>Entirely preclinical (murine); no human data; strain-specific findings may not generalize to other Bifidobacterium strains or human populations.</li>
+</ul>
+<hr />
+<h2 class="theme-longevity">Longevity</h2>
+<h3><a href="https://doi.org/10.3892/ijmm.2026.5916">Single-cell atlas reveals a Wilms' tumor 1-mediated axis driving granulosa cell senescence in human ovarian aging</a></h3>
+<p>⭐⭐⭐ · Du et al. · Int J Mol Med (2026)</p>
+<ul>
+<li>Bioinformatic study analyzing publicly available single-cell transcriptomic data from human ovarian tissues (GEO dataset GSE202601): 4 young donors (ages 23–29) vs. 4 aged donors (ages 49–54); analyses included clustering, CellChat (intercellular communication), pseudotime trajectory, and SCENIC (transcription factor regulon) analyses.</li>
+<li>Focus on identifying cell-type-specific changes in granulosa cell (GC) composition, communication, and transcriptional regulation associated with ovarian aging.</li>
+<li>Wilms' tumor 1 (WT1) identified as a key transcriptional regulator implicated in GC senescence during ovarian aging — mechanistic details not fully extractable from available abstract excerpt.</li>
+<li>Chronic inflammation and GC senescence are positioned as central drivers of reproductive decline; study provides single-cell resolution of age-related changes in ovarian cellular composition.</li>
+<li>Very small sample (n = 8 donors total); retrospective reanalysis of public data; no functional validation in this abstract excerpt; findings require prospective biological confirmation.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.26508/lsa.202603790">CDK4/6 inhibition induces a senescence-associated secretory phenotype via delayed NF-κB activation</a></h3>
+<p>⭐⭐⭐ · Yeung et al. · Life Sci Alliance (2026)</p>
+<ul>
+<li>In vitro mechanistic study profiling transcriptional regulatory dynamics in response to the CDK4/6 inhibitor palbociclib vs. the DNA-damaging agent doxorubicin, specifically examining how SASP (senescence-associated secretory phenotype) is induced under each condition.</li>
+<li>NF-κB-driven SASP gene upregulation was shared across both palbociclib and doxorubicin conditions, but the onset was delayed under CDK4/6i — coinciding with slower enhancer activation and epigenetic changes (chromatin remodeling).</li>
+<li>ATM/ATR inhibition did not affect CDK4/6i-induced NF-κB nuclear localization, suggesting an alternative upstream activator distinct from canonical DNA-damage signaling.</li>
+<li>NF-κB inhibition suppressed SASP gene expression without reversing stable cell cycle arrest — pointing to SASP as a potentially separable, manipulable downstream consequence of CDK4/6i-driven senescence.</li>
+<li>Entirely in vitro / cell line study; no animal or human data; relevance to cancer therapy and senostatic strategies requires in vivo validation.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.3892/ijo.2026.5912">Glycolysis-driven immunosuppression in gastric cancer: Metabolic crosstalk between tumor cells and the immune microenvironment</a></h3>
+<p>⭐⭐⭐ · Zhang et al. · Int J Oncol (2026) · review</p>
+<ul>
+<li>Narrative mechanistic review examining how tumor-intrinsic glycolytic reprogramming and lactate accumulation create an immunosuppressive tumor microenvironment (TME) in gastric cancer, potentially explaining limited response to immune checkpoint blockade (ICB) in a subset of patients.</li>
+<li>Key glycolytic drivers: oncogenic signaling via HIF-1α, PI3K/AKT/mTOR, and noncoding RNA networks upregulate hexokinase 2, PFKFB3, PKM2, LDHA, and monocarboxylate transporters — establishing a high-lactate TME.</li>
+<li>Lactate in the TME: impairs dendritic cell differentiation and cross-priming; weakens cytotoxic T-cell and NK-cell activity; promotes M2-like macrophages and MDSCs via HCA1/GPR81-dependent signaling and histone lactylation.</li>
+<li>Cancer-associated fibroblasts and mesenchymal stromal cells further reinforce immunosuppression through lactate shuttling, cytokine secretion, ECM remodeling, and exosome-mediated transfer of glycolysis-promoting noncoding RNAs.</li>
+<li>Review only; no original data; no systematic search; primarily a mechanistic synthesis relevant to understanding ICB resistance and potential metabolic intervention targets in gastric cancer.</li>
+</ul>
+<hr />
+<h2 class="theme-strength">Strength &amp; Hypertrophy</h2>
+<h3><a href="https://doi.org/10.2340/1651-226X.2026.45545">The effect of progressive resistance training on lean soft tissue mass in head and neck cancer patients during concomitant chemoradiotherapy: the DAHANCA 31 randomized controlled trial</a></h3>
+<p>⭐⭐⭐⭐ · Lonkvist et al. · Acta Oncol (2026) · n = 50 · RCT</p>
+<ul>
+<li>12-week parallel-group RCT (DAHANCA 31) randomizing head and neck cancer patients initiating concurrent chemoradiation (CCRT) to progressive resistance training (PRT; 36 sessions) vs. usual care (no exercise); primary endpoint: total body lean soft tissue mass (LSTM) via DXA; also assessed 1RM chest/leg press, and functional performance (30-s chair rise, 30-s arm curls, stair climb); QoL via EORTC QLQ-C30 and H&amp;N-35.</li>
+<li>Pre-specified sample size: 72 patients (36/group); actual enrollment: 50 patients (25/group) — trial formally underpowered.</li>
+<li>At 12 weeks: PRT group lost 8.6 ± 1.0 kg body mass (10%), 3.4 ± 0.6 kg LSTM (6%), and 5.2 ± 0.8 kg fat mass (21%); CON group lost 7.4 ± 1.0 kg body mass (9%), 3.4 ± 0.6 kg LSTM (6%), and 4.0 ± 0.8 kg fat mass (17%) — LSTM loss not significantly different between groups.</li>
+<li>1RM strength: decreased equally in both groups — no significant between-group difference.</li>
+<li>Functional performance: chair rise and arm curl performance improved significantly more in PRT vs. CON (p &lt; 0.05) despite equivalent LSTM loss.</li>
+<li>Interpretation constrained by underpowering; LSTM primary endpoint negative; functional performance benefit may be clinically relevant for this patient population.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s10103-026-04954-w">Re: Effects of resistance training with/without photobiomodulation on muscle and respiratory function in difficult-to-control asthma: a randomized trial</a></h3>
+<p>⭐⭐⭐⭐ · Li D, Ye Q · Lasers Med Sci (2026) · letter/commentary</p>
+<ul>
+<li>Published commentary on Costa et al.'s triple-blind RCT evaluating resistance training (RT) combined with photobiomodulation therapy (PBMT) in patients with difficult-to-control asthma (DTCA); not an original trial — letter discussing study design and findings.</li>
+<li>RT + PBMT was reported (per the commented trial) to safely improve peripheral muscle strength and exercise capacity to a greater degree than RT alone.</li>
+<li>PBMT characterized as having dose-dependent effects; optimal parameters for chronic respiratory patients stated to remain unclear.</li>
+<li>Critical design limitation noted: absence of a PBMT-only arm prevents evaluation of standalone PBMT for patients unable to tolerate resistance training — a clinically relevant scenario.</li>
+<li>Neither RT nor RT + PBMT improved lung function or asthma control scores in the original trial — effects were exclusively peripheral; commentary calls for future studies optimizing PBMT dosing, wavelength, energy settings, and irradiation sites.</li>
+</ul>
+<hr />
+<h2 class="theme-supplements">Supplements</h2>
+<h3><a href="https://doi.org/10.1007/s00223-026-01569-9">Effects of Potassium Citrate Supplementation on Bone Turnover Markers in Postmenopausal Women: A GRADE-Assessed Systematic Review, Meta-analysis and Trial Sequential Analysis</a></h3>
+<p>⭐⭐⭐⭐⭐ · AlSejari et al. · Calcif Tissue Int (2026) · n = 401 · meta-analysis</p>
+<ul>
+<li>PRISMA-guided systematic review and random-effects meta-analysis of 5 RCTs (n = 401 postmenopausal women) examining potassium citrate supplementation effects on bone health outcomes; databases searched: PubMed, Web of Science, Scopus, Cochrane CENTRAL; GRADE certainty ratings and trial sequential analysis (TSA) conducted to assess evidence sufficiency.</li>
+<li>Primary finding: potassium citrate significantly reduced urinary N-terminal telopeptide (NTX — a bone resorption marker) at 1 month compared with placebo: MD = −4.05 nmol BCE/mmol creatinine (95% CI −8.05 to −0.05; p = 0.0474).</li>
+<li>Five RCTs; n = 401 total — a small evidence base; TSA performed to address whether current evidence is adequate to draw firm conclusions (results of TSA not fully extractable from abstract excerpt).</li>
+<li>Longer-term effects on bone mineral density (BMD) not reported as a significant finding in the available abstract; clinical translation of NTX reduction to fracture risk reduction not established in this dataset.</li>
+<li>Rationale: potassium citrate is an alkaline salt that neutralizes dietary acid load — proposed mechanism is reduction of acid-driven bone mineral dissolution, though direct mechanistic confirmation not provided in this review.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1097/MD.0000000000049587">Genetic predisposition to serum 25 hydroxyvitamin D concentrations does not influence the risk of decreasing celiac disease in European ancestry: Evidence from meta-analysis and Mendelian randomization</a></h3>
+<p>⭐⭐⭐⭐⭐ · Akbarzadeh et al. · Medicine (Baltimore) (2026) · meta-analysis + Mendelian randomization</p>
+<ul>
+<li>Combined systematic review with meta-analysis and two-sample Mendelian randomization (MR) investigating whether serum 25(OH)D causally influences celiac disease (CD) risk in European ancestry populations; vitamin D GWAS: ebi-a-GCST90000618 (n = 496,946); CD GWAS: ebi-a-GCST005523 (11,812 cases, 229 controls).</li>
+<li>Meta-analysis (random-effects model): standardized mean difference −0.79 (95% CI −2.02 to 0.45); not statistically significant (T-statistic = −1.77; p = 0.152); Bayesian meta-analysis point estimate −0.6 (95% credible interval −13.6 to 13.2) — wide uncertainty.</li>
+<li>GSMR: OR = 0.988 (95% CI 0.853–1.145; p = 0.878) — no significant association; two-sample IVW MR: OR = 0.72 (95% CI 0.49–1.05; p = 0.091) — also non-significant.</li>
+<li>Null findings consistent across 14 MR sensitivity methods including MR-Egger, SIMEX, MR-PRESSO, Maximum Likelihood, MR-Mix, RAPS, MR-LASSO, debiased IVW, and contamination mixture; Steiger test confirmed no directional relationship; cluster analysis showed no heterogeneity patterns.</li>
+<li>Conclusion: genetically instrumented vitamin D levels show no causal effect on CD risk — questions the presumed direct connection between vitamin D status and celiac disease; limited to European ancestry.</li>
+</ul>
+<hr />
+<h2 class="theme-sleep">Sleep &amp; Recovery</h2>
+<h3><a href="https://doi.org/10.1080/07853890.2026.2699560">Crosstalk between sleep disorders and adipokine secretory profiles: novel mechanisms for metabolic disease risk</a></h3>
+<p>⭐⭐⭐ · Shi et al. · Ann Med (2026) · review</p>
+<ul>
+<li>Mechanistic narrative review synthesizing bidirectional links between three categories of sleep disorder (sleep deprivation, OSA, circadian rhythm disruption) and metabolic diseases (obesity, T2DM), with adipokine dysregulation as the central mediating mechanism; clinical and preclinical evidence mixed throughout.</li>
+<li>Sleep deprivation and fragmentation: leptin dysregulation and reduced adiponectin — downstream consequences include insulin resistance and chronic low-grade inflammation.</li>
+<li>OSA-specific: intermittent hypoxia potently upregulates IL-6 and ANGPTL4; ANGPTL4 is an inhibitor of lipoprotein lipase — mechanistic link to dyslipidemia.</li>
+<li>Bidirectional component: obesity drives sleep disruption via visceral adiposity → HPA-axis hyperactivation; T2DM further worsens sleep quality through nocturia and neuropathic pain — described as a self-reinforcing cycle.</li>
+<li>No quantitative pooled estimates; not a systematic review or meta-analysis; proposed interventions discussed (CPAP, sleep extension, circadian realignment) but no intervention efficacy data reported.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1371/journal.pone.0341997">Validating a novel driving simulation-based MWT against the standard MWT in an OSA-cohort challenged by CPAP-withdrawal (DS-MWT2) — Protocol for a monocentric, controlled, randomized, crossover trial</a></h3>
+<p>⭐⭐⭐⭐ · Gambin et al. · PLoS One (2026) · n = 54 (planned) · RCT protocol</p>
+<ul>
+<li>Published protocol for a monocentric, within-subject randomized crossover trial (registered ClinicalTrials.gov NCT06872593; SNCTP000006301) aiming to validate a Driving Simulation-based Maintenance of Wakefulness Test (DS-MWT) against the classical MWT; planned n = 54: 36 OSA patients (undergoing ≥7-day CPAP withdrawal [W] or continuation [C]) + 18 healthy controls.</li>
+<li>CPAP withdrawal model used to transiently and controllably induce excessive daytime sleepiness (EDS) under real-world-relevant conditions; four standardized MWT and DS-MWT sessions per condition planned.</li>
+<li>Primary outcome: difference in mean latencies between MWT and DS-MWT sessions; secondary exploratory outcomes include driving performance metrics (lateral position, speed, lane departures), EEG, eye-tracking, subjective sleepiness scores, at-home PSG parameters, and metabolomic biomarkers (saliva, exhaled breath, dried blood spots).</li>
+<li>Statistical plan: linear mixed models, repeated-measures ANOVA, predictive modeling with cross-validation.</li>
+<li>Protocol only — no results available; study addresses the clinical gap between passive-condition wakefulness tests and real-world driving fitness determination; potential implications for clinical decision-making in OSA management.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1111/nicc.70570">Effect of Automatic Infant Swing on Sleep-Wake Cycles and Comfort: A Randomized Controlled Study Protocol</a></h3>
+<p>⭐⭐⭐⭐ · Bolacali et al. · Nurs Crit Care (2026) · n = 40 (planned) · RCT protocol</p>
+<ul>
+<li>Published protocol for a single-blind randomized controlled crossover trial to evaluate effects of an automatic infant swing vs. standard cot bed on sleep-wake cycles, comfort behaviors, and physiological parameters in NICU newborns (gestational age 35–42 weeks); planned n = 40 (20 per group); single center (state hospital, Central Anatolia, Turkey); registered ClinicalTrials.gov NCT07284303.</li>
+<li>Sleep-wake cycles assessed using Bispectral Index (BIS) monitoring; comfort assessed with COMFORTneo scale; measurements at 0, 30, and 60 minutes across four sessions (2 day, 2 night) per condition.</li>
+<li>Sample size determined via G*Power analysis; block randomization used.</li>
+<li>Protocol only — no efficacy or safety results available; addresses a gap in evidence for non-pharmacological NICU sleep interventions.</li>
+<li>Relevance to adult health optimization limited; included under Sleep &amp; Recovery as a methodologically distinct neonatal sleep protocol.</li>
+</ul>
+<hr />
+<h2 class="theme-skin-hair">Skin &amp; Hair Health</h2>
+<h3><a href="https://doi.org/10.1007/s00266-026-06165-8">Laser, Microneedling, and Combination Therapies for Moderate to Severe Acne Atrophic Scars: A Systematic Review and Network Meta-Analysis</a></h3>
+<p>⭐⭐⭐ · Ou et al. · Aesthetic Plast Surg (2026) · n = 1,488 (56 RCTs) · network meta-analysis</p>
+<ul>
+<li>Bayesian network meta-analysis of 56 RCTs (n = 1,488 patients; 34 interventions) comparing laser therapies, microneedling, radiofrequency microneedling (RFMN), chemical reconstruction/peeling, subcision, fillers, and combination treatments for moderate-to-severe atrophic acne scars; search covered PubMed, Embase, Cochrane Library, Web of Science (January 2010 – August 2025); GRADE certainty and risk-of-bias assessment applied.</li>
+<li>Most participants enrolled in split-face or self-controlled designs — this limits between-patient comparisons and may inflate within-person effect estimates.</li>
+<li>Primary SUCRA ranking: RFMN + basic fibroblast growth factor (bFGF) ranked highest for ECCA score improvement; fractional CO₂ laser featured prominently among monotherapy options (full ranking data partially truncated in abstract excerpt).</li>
+<li>Combination therapies generally outperformed monotherapies across primary and secondary outcomes (ECCA score, Goodman-Baron scar score, significant improvement rate, patient satisfaction rate, pain VAS).</li>
+<li>Sensitivity analyses conducted by excluding small-sample and high-risk-of-bias studies; n = 1,488 across 56 trials is relatively small given 34 interventions — network geometry may be sparse for some node comparisons.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00418-026-02508-3">Retinoic acid disrupts cumulus granulosa cells function via EGFR downregulation: induction of PCOS and infertility in adult female mice</a></h3>
+<p>⭐⭐⭐ · Said et al. · Histochem Cell Biol (2026) · n = 12 mice · preclinical</p>
+<ul>
+<li>Mouse study (n = 12 female mice, 2 groups of 6): negative control (DMSO + sunflower oil vehicle) vs. retinoic acid (RA) 10 mg/kg/day intraperitoneal for 15 days; assessed over three estrous cycles; endpoints: histopathology, immunohistochemistry (EGFR expression), and hormonal levels (FSH, LH) on day 16.</li>
+<li>High-dose RA (10 mg/kg/day) significantly increased FSH and reduced LH; induced polycystic ovarian morphology with increased cystic follicles and reduced antral follicles and corpus luteum.</li>
+<li>Immunohistochemistry: excessive RA suppressed EGFR expression in granulosa cells — proposed mechanism by which RA inhibits cumulus granulosa cell proliferation and oocyte maturation.</li>
+<li>Authors conclude that supraphysiological vitamin A exposure may be detrimental to female fertility via EGFR downregulation in granulosa cells.</li>
+<li>Critical limitations: extremely small n (6/group); suprapharmacological dose (10 mg/kg/day far exceeds clinical retinoic acid exposure); murine model only; direct translation to human fertility effects of dietary or supplemental vitamin A is not established.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/09546634.2026.2698368">Commentary on comparative efficacy, recovery, and pigmentary safety of radiofrequency microneedling and fractional carbon dioxide laser for facial atrophic acne scars: a prospective randomized split-face trial</a></h3>
+<p>⭐⭐⭐ · Goyal et al. · J Dermatolog Treat (2026) · commentary</p>
+<ul>
+<li>Commentary (letter format) on a prospective randomized split-face trial comparing radiofrequency microneedling vs. fractional CO₂ laser for facial atrophic acne scars; no abstract text available — content not extractable.</li>
+<li>No quantitative data, study design details, or outcome information available from the provided record.</li>
+<li>Included for completeness; evidence rating and additional analysis not possible without abstract.</li>
+</ul>
+<hr />
+<h2>Sources Scanned This Week</h2>
+<p>| Source | Studies Indexed |
+|--------|----------------|
+| PubMed | 17 |
+| <strong>Total</strong> | <strong>17</strong> |</p>
+<p><em>(One duplicate entry removed: sleep-adipokine review [PMID 42427296] appeared twice in the input list; counted and summarized once under Sleep &amp; Recovery, cross-listed under Obesity &amp; Metabolic Health.)</em></p>
+<hr />
+<h2>Run Notes</h2>
+<ul>
+<li><strong>Duplicate detected and removed:</strong> &quot;Crosstalk between sleep disorders and adipokine secretory profiles&quot; (doi: 10.1080/07853890.2026.2699560) appeared twice in the input JSON. It is cross-listed in Obesity &amp; Metabolic Health (abbreviated) and fully reported under Sleep &amp; Recovery. Study count adjusted from 18 input items to 17 unique studies.</li>
+<li><strong>ECG/LVH pediatric study</strong> (Liu et al., Eur J Pediatr): Assigned to the Strength &amp; Hypertrophy section in the input (<code>theme_guess: strength</code>) but is clinically a pediatric cardiology/hypertension topic with no direct relevance to strength or hypertrophy. Omitted from Strength &amp; Hypertrophy section; not suitable for any of the six standard theme sections. Excluded from digest body — flagged here. Recommend reclassifying as &quot;Cardiovascular / Out of Scope&quot; in future runs.</li>
+<li><strong>Two RCT protocols included</strong> (Bolacali et al. infant swing; Gambin et al. DS-MWT2): Both are registered protocols without results. Included under Sleep &amp; Recovery with explicit labeling as protocol-only; findings not available.</li>
+<li><strong>Commentary with null abstract</strong> (Goyal et al., J Dermatolog Treat): No abstract text provided. Reported under Skin &amp; Hair Health with explicit note; no quantitative data could be extracted.</li>
+<li><strong>Several studies lacked <code>n</code> values</strong> in the input JSON: Where sample sizes appeared in abstract text, they were extracted verbatim. Where not available, <code>n</code> is omitted from the metadata line per digest instructions.</li>
+<li><strong>Published dates in 2026-09-01 and 2026-12-01</strong> (e.g., Int J Oncol, Int J Mol Med, Ann Med entries): These reflect online-ahead-of-print or issue date formatting; included as received.</li>
+</ul>
+
+  </div>
+  <div class="footer">
+    <p><strong>fiteligent</strong> · Research Digest</p>
+    <p>Optymizacja zdrowia oparta na nauce</p>
+    <p><a href="https://fiteligent.pl">fiteligent.pl</a></p>
+  </div>
+</div>
+</body>
+</html>
