@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fiteligent Research Digest — 2026-07-17</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
+:root {
+  /* Surfaces */
+  --bg-page:       #0a0e27;
+  --bg-container:  #1a1f3a;
+  --bg-footer:     #0a0e27;
+
+  /* Brand colors */
+  --brand-primary: #016FFA;
+  --brand-deep:    #0047CC;
+  --brand-light:   #66A8FF;
+  --accent:        #FF7B00;
+  --accent-hover:  #E56A00;
+
+  /* Text */
+  --text-strong:   #ffffff;
+  --text-body:     #e0e0e0;
+  --text-muted:    #c0c0c0;
+  --text-footer:   #808080;
+
+  /* Type */
+  --font-sans:     'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --container-max: 720px;
+  --radius:        12px;
+
+  /* Theme accents */
+  --theme-obesity:    #FF7B00;
+  --theme-longevity:  #66A8FF;
+  --theme-strength:   #016FFA;
+  --theme-supplements:#9D7BFF;
+  --theme-sleep:      #3D5AFE;
+  --theme-skin-hair:  #F472B6;
+}
+
+* { box-sizing: border-box; }
+body { font-family: var(--font-sans); background: var(--bg-page); color: var(--text-body); margin: 0; padding: 24px; line-height: 1.7; }
+.container { max-width: var(--container-max); margin: 0 auto; background: var(--bg-container); border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+.header { background: linear-gradient(165deg, var(--brand-deep) 0%, var(--brand-primary) 55%, var(--brand-light) 100%); padding: 48px 32px; text-align: center; }
+.header .logo { max-width: 200px; height: auto; }
+.content { padding: 48px 56px; }
+h1 { color: var(--text-strong); font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+h1 + .subtitle { color: var(--text-muted); margin: 0 0 32px; font-size: 14px; }
+h2 { color: var(--text-strong); font-size: 22px; margin: 48px 0 16px; padding-left: 16px; border-left: 4px solid var(--theme-accent, var(--accent)); font-weight: 700; }
+h2.theme-obesity     { --theme-accent: var(--theme-obesity); }
+h2.theme-longevity   { --theme-accent: var(--theme-longevity); }
+h2.theme-strength    { --theme-accent: var(--theme-strength); }
+h2.theme-supplements { --theme-accent: var(--theme-supplements); }
+h2.theme-sleep       { --theme-accent: var(--theme-sleep); }
+h2.theme-skin-hair   { --theme-accent: var(--theme-skin-hair); }
+h3 { color: var(--text-strong); font-size: 17px; margin: 32px 0 8px; font-weight: 700; }
+.meta { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
+.stars { color: var(--accent); letter-spacing: 1px; font-weight: 700; }
+a { color: var(--brand-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.why-it-matters { background: rgba(255, 123, 0, 0.1); border-left: 3px solid var(--accent); padding: 12px 16px; margin: 16px 0; border-radius: 4px; color: var(--text-strong); font-weight: 500; }
+.footer { background: var(--bg-footer); padding: 32px; text-align: center; color: var(--text-footer); font-size: 12px; }
+.footer a { color: var(--brand-light); margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="logo.svg" alt="fiteligent" class="logo">
+  </div>
+  <div class="content">
+    <pre><code class="language-yaml">---
+date_range: &quot;2026-07-10 – 2026-07-17&quot;
+studies_total: 18
+themes:
+  - Obesity &amp; Metabolic Health
+  - Longevity
+  - Strength &amp; Hypertrophy
+  - Supplements
+  - Sleep &amp; Recovery
+  - Skin &amp; Hair Health
+generated: &quot;2026-07-17T00:00:00Z&quot;
+curator: &quot;fiteligent.pl / Dr. Jakub Stanisławski Research Digest&quot;
+---
+</code></pre>
+<h1>Weekly Research Digest — 17 July 2026</h1>
+<hr />
+<h2>TL;DR — Top 5 Highlights This Week</h2>
+<p>| # | Finding | Rating |
+|---|---------|--------|
+| 1 | <strong>Unilateral vs. bilateral training (meta-analysis, 24 RCTs):</strong> Unilateral training significantly outperforms bilateral for unilateral strength (g = 0.42) and unilateral jump (g = 0.35); bilateral training wins for bilateral strength (g = −0.28); hypertrophy outcomes are equivalent. | ⭐⭐⭐⭐⭐ |
+| 2 | <strong>Circadian rhythm disruption &amp; cognitive decline (systematic review, n = 5,731):</strong> Across 10 studies, circadian dysregulation — measured actigraphically and via sleep quality — was consistently associated with higher risk of MCI onset and progression to dementia in adults ≥60. | ⭐⭐⭐⭐⭐ |
+| 3 | <strong>Delayed school start times (meta-analysis, 6 studies):</strong> Pushing back school start times associated with +69 min/night sleep gain (SMD = 0.63, moderate effect); depressive symptoms showed a smaller reduction (SMD = −0.20). | ⭐⭐⭐⭐⭐ |
+| 4 | <strong>Creatine + resistance training in colorectal cancer survivors (pilot RCT, n = 27):</strong> Hybrid resistance exercise was feasible (88.9% retention, &gt;85% adherence), safe (no serious AEs), and produced modest strength and SPPB gains; creatine 5 g/day showed no significant additive benefit over placebo in this underpowered pilot. | ⭐⭐⭐⭐ |
+| 5 | <strong>Acute Cordyceps militaris supplementation (crossover RCT, n = 12):</strong> 1 g CM extract accelerated post-exercise Stroop reaction time vs. placebo (963.9 ms vs. 1034.3 ms; p = 0.042, d = 0.88) and elevated resting VO₂ (0.37 vs. 0.24 L/min; p = 0.022); peak exercise VO₂ unaffected. | ⭐⭐⭐⭐ |</p>
+<hr />
+<h2 class="theme-obesity">Obesity &amp; Metabolic Health</h2>
+<h3><a href="https://doi.org/10.1080/19490976.2026.2701446">Ecological Restructuring of the Nonbacterial Fecal Microbiome in Obesity Across Human Cohorts</a></h3>
+<p>⭐⭐⭐ · Gallardo-Nuell et al. · Gut Microbes (2026) · multicohort cross-sectional analysis</p>
+<ul>
+<li>Multicohort analysis of three independent human cohorts examining nonbacterial gut microbiome components (viruses, archaea, eukaryotic microorganisms) in obesity — a domain historically underrepresented in gut microbiome research.</li>
+<li>Compositional analyses adjusted for key covariates and network-based approaches were used to identify multikingdom alterations consistently associated with obesity status.</li>
+<li>Individuals without obesity showed a reproducible enrichment of methanogenic archaea (specific taxon name truncated in available abstract text).</li>
+<li>Study did not report sample sizes or specific effect estimates in the available abstract; full results require access to the complete publication.</li>
+<li>Represents a methodological contribution by applying cross-kingdom compositional frameworks rather than focusing exclusively on bacteria; clinical implications remain preliminary pending replication.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/02813432.2026.2703168">Experiences and Perceptions of Pharmacological Treatment of Obesity Among Primary Health Care Physicians in Sweden</a></h3>
+<p>⭐⭐⭐ · Hellgren et al. · Scand J Prim Health Care (2026) · n = 11 · qualitative (in-depth interviews)</p>
+<ul>
+<li>Qualitative content analysis of 11 in-depth interviews with primary care physicians (PCPs) in regional and private health centers in Skåne, Sweden.</li>
+<li>Overarching theme identified: pharmacological treatment of obesity was perceived as useful for initiating patient discussions and supporting weight loss initiation.</li>
+<li>PCPs reported four principal challenges: complexity of obesity as a condition; lack of consensus on classification and treatment targets; unclear guidance on treatment duration; and economic/reimbursement barriers for anti-obesity medications (AOMs).</li>
+<li>High BMI accounts for approximately 7% of total mortality in Sweden per the study's background framing.</li>
+<li>Small purposive sample from a single Swedish region; findings are not statistically generalizable but provide hypothesis-generating qualitative data for guideline development.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/17512433.2026.2706660">Obese and Overweight Patients with Type 2 Diabetes Mellitus Are Not Treated Optimally — Is It Time to Reconsider Clinical Practice?</a></h3>
+<p>⭐⭐⭐ · Milardović et al. · Expert Rev Clin Pharmacol (2026-07-17) · narrative review</p>
+<ul>
+<li>PubMed narrative review (search up to August 2025) examining the rationale for prioritizing weight reduction as a primary treatment strategy in overweight/obese T2DM patients.</li>
+<li>Current T2DM pharmacotherapy guidelines assess cardiovascular (CV) risk but do not consistently place obesity reduction at the center of the treatment algorithm, according to the authors' framing.</li>
+<li>Review notes that obesity-targeting agents may require higher doses in T2DM management than currently recommended for glycemic control alone.</li>
+<li>Identified barriers to weight-centric treatment: high drug costs, absent or limited reimbursement policies, and drug side-effect profiles that reduce adherence.</li>
+<li>Authors call for a multidisciplinary approach involving clinicians, health systems, and policymakers to address health inequity and disparities in medication access; no meta-analytic effect sizes reported.</li>
+</ul>
+<hr />
+<h2 class="theme-longevity">Longevity</h2>
+<h3><a href="https://doi.org/10.3892/mmr.2026.13964">From Cell to Disease: Regulatory Networks and Mechanisms of Super-Enhancers in Aging</a></h3>
+<p>⭐⭐⭐ · Wang et al. · Mol Med Rep (2026-09-01) · narrative review</p>
+<ul>
+<li>Narrative review synthesizing the past decade of super-enhancer (SE) research in the context of aging biology and age-related disease.</li>
+<li>Super-enhancers are cis-regulatory elements with strong transcriptional activation capacity, bound by dense clusters of key transcription factors and cofactors; they are notably activated in response to aging-related stimuli.</li>
+<li>Review covers two mechanistic angles: SE contributions to cellular senescence via DNA damage responses and mitochondrial dysfunction — both established hallmarks of aging.</li>
+<li>Pathogenic SE dysregulation is discussed in two specific age-related disorders: atherosclerosis and type II diabetes.</li>
+<li>No primary data; no effect sizes reported; authors identify SEs as candidate therapeutic targets and acknowledge significant challenges in clinical translation.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.3892/ijmm.2026.5927">Targeting Alveolar Type II Cell Dysfunction in Idiopathic Pulmonary Fibrosis: Molecular Mechanisms and Emerging Therapeutic Strategies</a></h3>
+<p>⭐⭐⭐ · Xie et al. · Int J Mol Med (2026-09-01) · narrative review</p>
+<ul>
+<li>Narrative review of alveolar type II (AT2) cell biology in idiopathic pulmonary fibrosis (IPF), a fatal progressive interstitial lung disease characterized by fibroblast proliferation and extracellular matrix deposition leading to respiratory failure.</li>
+<li>AT2 cells are identified as facultative stem cells of the distal lung; the review maps regulatory pathways governing AT2 proliferation and differentiation.</li>
+<li>Current approved antifibrotic agents (e.g., nintedanib, pirfenidone) slow progression by inhibiting fibroblast pathways but do not halt or reverse underlying pathology; this gap is the motivation for the review.</li>
+<li>Two pathogenic drivers highlighted as key targets: cellular senescence and mechanical tension on the alveolar epithelium.</li>
+<li>No primary data or quantitative effect estimates; clinical translation of AT2-targeting strategies faces unspecified limitations acknowledged by the authors.</li>
+</ul>
+<hr />
+<p><em>Note: One study tagged <code>theme_guess: longevity</code> (cPKCγ/spermatogonial apoptosis in cryptorchidism, PMID 42464609) and one tagged <code>theme_guess: strength</code> (feline hypertrophic cardiomyopathy biomarkers, PMID 42467289) were excluded from their respective sections as they fall outside the digest's human health optimization scope. One study tagged <code>theme_guess: strength</code> (neural write-cost bottleneck in cognitive neuroscience, PMID 42465671) is similarly excluded from Strength &amp; Hypertrophy — see Run Notes.</em></p>
+<hr />
+<h2 class="theme-strength">Strength &amp; Hypertrophy</h2>
+<h3><a href="https://doi.org/10.1186/s13102-026-01834-2">Comparative Effects of Unilateral Versus Bilateral Training on Performance Adaptations: A Systematic Review and Multilevel Meta-Analysis</a></h3>
+<p>⭐⭐⭐⭐⭐ · Xin et al. · BMC Sports Sci Med Rehabil (2026-07-16) · meta-analysis of 24 RCTs</p>
+<ul>
+<li>Systematic search across PubMed, Web of Science, Cochrane Library, Embase, and EBSCO; 24 RCTs included; three-level meta-analysis under random-effects models using Hedges' g as effect size metric.</li>
+<li>Unilateral training significantly outperformed bilateral training for <strong>unilateral strength</strong>: g = 0.42 (95% CI 0.23–0.60, p &lt; 0.001) and <strong>unilateral jump performance</strong>: g = 0.35 (95% CI 0.14–0.56, p = 0.002).</li>
+<li>Bilateral training showed a small but significant advantage for <strong>bilateral strength</strong>: g = −0.28 (95% CI −0.54 to −0.02, p = 0.034).</li>
+<li>No significant between-group differences were observed for muscle <strong>hypertrophy</strong>, <strong>bilateral jump performance</strong>, <strong>sprint performance</strong>, or <strong>change-of-direction performance</strong>.</li>
+<li>Subgroup analyses and meta-regression identified no significant moderators for unilateral jump performance or change-of-direction performance; sensitivity analyses confirmed robustness of main findings.</li>
+</ul>
+<hr />
+<h2 class="theme-supplements">Supplements</h2>
+<h3><a href="https://doi.org/10.29063/ajrh2026/v30i13.11">Efficacy of Live Lactobacillus Preparations in Treating Cervical Inflammation and Clearing Viral Infections in Patients with HPV Infection Complicated by Bacterial Vaginosis</a></h3>
+<p>⭐⭐⭐⭐ · Cui &amp; Cheng · Afr J Reprod Health (2026-07-15) · n = 152 · retrospective analysis (described as randomized)</p>
+<ul>
+<li>Retrospective analysis of 152 women with HPV infection + bacterial vaginosis (BV); observation group (n = 87) received standard antibacterial therapy plus Dingjunsheng (live Lactobacillus preparation); control group (n = 65) received standard antibacterial therapy alone; 6-month follow-up.</li>
+<li><strong>HPV clearance rate</strong>: 73.6% (observation) vs. 53.9% (control) — statistically significant difference reported but p-value not specified in abstract.</li>
+<li><strong>Cervical inflammation improvement rate</strong>: 90.8% vs. 76.9%; <strong>BV recurrence rate</strong>: 3.1% vs. 13.9%.</li>
+<li>Dingjunsheng identified as an independent protective factor for HPV clearance in multivariate analysis: OR = 2.5 (95% CI 1.3–5.1).</li>
+<li>Adverse reaction incidence was similar between groups; described as retrospective despite &quot;randomly divided&quot; language — methodology warrants scrutiny; single-center; sample imbalance between arms (87 vs. 65).</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1371/journal.pone.0353630">Examining the Feasibility and Preliminary Effects of Resistance Exercise Training and Creatine Supplementation in Individuals Treated for Colorectal Cancer</a></h3>
+<p>⭐⭐⭐⭐ · Fairman et al. · PLoS One (2026-01-01) · n = 27 · RCT (pilot)</p>
+<ul>
+<li>10-week hybrid (in-clinic + virtual) resistance exercise training (RET) pilot RCT; 27 participants randomized to RET + creatine monohydrate 5 g/day (EXSUPP; n = 13) or RET + corn-starch maltodextrin placebo (EXPLA; n = 14); 3 sessions/week; all participants were post-chemotherapy colorectal cancer survivors.</li>
+<li>Registry-based recruitment contacted 1,378 potentially eligible individuals; 410 were assessed; 27 enrolled (enrollment rate: 6.6%), indicating substantial recruitment challenges for this population.</li>
+<li><strong>Retention</strong>: 24/27 (88.9%); <strong>adherence to RET and supplementation</strong>: both &gt;85%; <strong>serious adverse events</strong>: none reported.</li>
+<li>No significant between-group differences observed for any secondary outcomes (body composition, muscular strength, physical function assessed via SPPB); both groups showed modest improvements in strength and SPPB scores from baseline.</li>
+<li>Underpowered pilot design; baseline-adjusted ANCOVA models used; authors conclude a fully powered RCT is warranted; NCT06420726.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1371/journal.pone.0351725">Acute Cordyceps militaris Supplementation and Elevated Resting Oxygen Uptake with Faster Reaction Times: A Randomized Crossover Trial</a></h3>
+<p>⭐⭐⭐⭐ · Farzan &amp; Koushkie Jahromi · PLoS One (2026-01-01) · n = 12 · randomized double-blind placebo-controlled crossover RCT</p>
+<ul>
+<li>Double-blind, placebo-controlled crossover design; 7-day washout; 12 recreationally active young men (mean age 21.6 ± 2.9 years; VO₂max 38.6 ± 5.5 mL·kg⁻¹·min⁻¹); 1 g standardized Cordyceps militaris (CM) extract or cornstarch placebo ingested 30 min before maximal cycling test to exhaustion.</li>
+<li><strong>Post-exercise Stroop reaction time</strong>: CM condition 963.92 ± 84.99 ms vs. placebo 1034.33 ± 84.16 ms (p = 0.042, d = 0.88); significant main effect of Condition (F(1,11) = 5.45, p = 0.040) and Time (F(1,11) = 16.37, p = 0.002); Condition × Time interaction non-significant (p = 0.337).</li>
+<li><strong>Resting VO₂</strong>: CM elevated vs. placebo (0.37 vs. 0.24 L/min; p = 0.022); <strong>peak exercise VO₂</strong>: no significant between-condition difference (p = 0.490).</li>
+<li>Cognitive accuracy remained near-ceiling (&gt;99%) in both conditions with no condition differences.</li>
+<li>No significant condition effects for blood glucose, blood pressure, or heart rate (all p &gt; 0.05); very small sample (n = 12), male-only, single acute dose — limits generalizability substantially.</li>
+</ul>
+<hr />
+<h2 class="theme-sleep">Sleep &amp; Recovery</h2>
+<h3><a href="https://doi.org/10.1007/s10072-026-09221-y">Association Between Circadian Rhythm Disturbances and Cognitive Decline in the Elderly: A Systematic Review</a></h3>
+<p>⭐⭐⭐⭐⭐ · Lopes et al. · Neurol Sci (2026-07-16) · n = 5,731 · systematic review</p>
+<ul>
+<li>Systematic review of 10 studies; 5,731 participants screened, 5,707 eligible for analysis; inclusion criterion: adults ≥60 years with self-reported or objectively measured sleep data and cognitive assessment; studies tracking MCI-to-Alzheimer's progression were retained.</li>
+<li>Circadian exposures organized into three domains: (1) actigraphic rest-activity rhythm metrics (amplitude, robustness, interdaily stability, intradaily variability, acrophase); (2) sleep quality and architecture parameters (efficiency, fragmentation, latency, WASO, melatonin timing); (3) circadian-disrupting lifestyle exposures (rotating night shift work).</li>
+<li>Across all three domains, circadian dysregulation was consistently associated with higher risk of MCI development or progression to dementia.</li>
+<li>No quantitative pooling (meta-analysis) was performed; findings are narrative synthesis across heterogeneous study designs and measurement tools.</li>
+<li>Authors flag implications for public health and call for further research; study excluded conditions other than MCI/dementia and did not include participants with unspecified mean ages.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s44470-026-00116-5">Delayed School Start Times to Improve Sleep Duration and Mitigate Depression in Adolescents: A Systematic Review and Meta-Analysis</a></h3>
+<p>⭐⭐⭐⭐⭐ · Wang et al. · J Clin Sleep Med (2026-07-14) · meta-analysis of 6 studies</p>
+<ul>
+<li>Systematic search across Medline, Google Scholar, and Science Direct; 6 studies included in final meta-analysis; 4 independent reviewers conducted risk-of-bias and quality assessments.</li>
+<li><strong>Sleep duration</strong>: pooled analysis showed delayed school start time (DSST) associated with an average increase of <strong>69 minutes/night</strong>; SMD = 0.63 (moderate effect size); analyses demonstrated high inter-study heterogeneity.</li>
+<li><strong>Depressive symptoms</strong>: pooled SMD = −0.20 (small effect); based on 5 studies; also showed high heterogeneity.</li>
+<li>Minimal evidence of publication bias and small-study effects for both sleep duration and depression outcomes per authors' assessment.</li>
+<li>Small number of included studies (6 for sleep, 5 for depression); high heterogeneity limits precision of pooled estimates; authors call for larger studies with standardized outcome measures.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.12659/MSM.952465">Effect of Dexmedetomidine Hydrochloride Nasal Spray on Anxiety and Sleep in Patients Undergoing Gynecological Laparoscopic Surgery</a></h3>
+<p>⭐⭐⭐⭐ · Zhao et al. · Med Sci Monit (2026-07-15) · n = 80 · prospective single-blind RCT</p>
+<ul>
+<li>Single-center, prospective, single-blind, parallel-group RCT; 80 patients undergoing elective gynecological laparoscopic surgery (June–December 2024); both groups received 50 μg dexmedetomidine hydrochloride nasal spray 30 min pre-anesthesia; intervention group (n = 40) received an additional 75 μg at 21:30 on the night of surgery; control group (n = 40) did not.</li>
+<li><strong>Total AIS score</strong> on the night of surgery: no significant between-group difference (p = 0.771); however, the dexmedetomidine group had a significantly higher proportion of patients without subjective sleep deterioration (25.0% vs. 5.0%; p = 0.012).</li>
+<li><strong>Objective sleep metrics</strong> (wristband-measured): dexmedetomidine group showed longer total sleep time (p = 0.030), higher proportion of deep sleep (p = 0.040), and fewer awakenings (p = 0.020).</li>
+<li><strong>Hospital stay</strong>: significantly shorter in the dexmedetomidine group (p &lt; 0.001).</li>
+<li>Baseline characteristics, postoperative pain, and PONV were comparable between groups (all p &gt; 0.05); single-blind design (patients unblinded); single-center; results limited to this specific perioperative context.</li>
+</ul>
+<hr />
+<h2 class="theme-skin-hair">Skin &amp; Hair Health</h2>
+<h3><a href="https://doi.org/10.1007/s10103-026-04946-w">Fractional Microneedle Radiofrequency for Photoaging and Atrophic Acne Scar: A Split-Face Clinical Observation of Two Devices</a></h3>
+<p>⭐⭐⭐⭐ · Sun et al. · Lasers Med Sci (2026-07-10) · n = 20 · split-face RCT</p>
+<ul>
+<li>Split-face design; 20 participants; treatment side received Peninsula Timerevert Needle (fractional microneedle RF, FMR); control side received EndyMed (established FMR device); outcomes included melanin index (MI), erythema index (EI), stratum corneum hydration (SCH), sebum, and dermal density.</li>
+<li>Dermal density increased gradually following FMR treatment and was statistically significantly higher at 3 months than at all other follow-up time points on both sides.</li>
+<li>No statistically significant between-device differences for participant satisfaction score, physician global assessment (PGA), erythema score, erythema/edema duration, MI, EI, SCH, sebum, or dermal density at forehead, cheek, or chin at any follow-up point.</li>
+<li>Treatment side (Peninsula Timerevert Needle) showed shorter procedure time and lower pain score vs. control side (EndyMed), but higher bleeding score.</li>
+<li>Very small sample (n = 20); no untreated control arm; outcomes limited to a 3-month maximum follow-up; findings on between-device differences are primarily non-inferiority in nature.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s10103-026-04942-0">Dual-Depth 25-Pin Insulated Microneedle Radiofrequency for Moderate-to-Severe Periorbital Wrinkles</a></h3>
+<p>⭐⭐⭐ · Bae et al. · Lasers Med Sci (2026-07-17) · n = 32 · observational cohort</p>
+<ul>
+<li>Observational study; 32 adults aged 30–60 years with baseline Fitzpatrick Wrinkle Assessment Scale (FWAS) scores ≥4; three microneedle RF sessions at 4-week intervals; dual-shot mechanism delivering energy sequentially to 1.5 mm and 1.0 mm depth within a single needle insertion; outcomes assessed at baseline, weeks 16 and 24.</li>
+<li><strong>FWAS score</strong>: decreased from 5.44 ± 0.80 at baseline to 3.38 ± 0.61 at week 24 (p &lt; 0.001).</li>
+<li>Quantitative imaging (Antera 3D) revealed reductions in average wrinkle depth, maximum wrinkle depth, and indentation index; Cutometer parameters R2, R5, R7 all increased throughout follow-up (all p &lt; 0.001).</li>
+<li><strong>Patient satisfaction</strong> at week 24: 90.63% satisfied or very satisfied; mean procedure time 7.2 ± 1.4 min; mean pain score 3.3 ± 0.9 (10-point scale assumed); adverse events limited to transient mild erythema and edema; mean downtime 1.5 ± 0.5 days.</li>
+<li>No control arm; single-center; no blinding of treating physicians; observational design precludes causal inference.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00266-026-06012-w">Microneedle Therapy System Combined with Glucose 10% for the Treatment of Enlarged Pores and Fine Wrinkles</a></h3>
+<p>⭐⭐⭐ · Yi et al. · Aesthetic Plast Surg (2026-07-15) · n = 40 · prospective single-arm observational study</p>
+<ul>
+<li>Prospective single-arm observational study; 40 Korean patients (24 women, 16 men; aged 28–72 years); 3–4 MTS (microneedling) sessions at 4-week intervals; immediately post-procedure, glucose 10% + hyaluronic acid (Sihler G) applied topically; outcomes at 12–16 weeks.</li>
+<li>At final follow-up (12–16 weeks): two independent physicians rated <strong>73%</strong> of patients as &quot;much improved&quot; or &quot;very much improved&quot; on GAIS; patient-reported GAIS in the same categories: <strong>80%</strong>.</li>
+<li>Mean satisfaction scores (VAS): 2.3 at baseline → 8.5 at study completion.</li>
+<li>Pore grading improvements observed in <strong>78%</strong> of patients; WSRS (fine wrinkle) scores improved in <strong>68%</strong> of patients.</li>
+<li>No control arm; single-center; Asian (Korean) patient population only; analyses primarily descriptive given the absence of a comparator; results are preliminary and hypothesis-generating per the authors.</li>
+</ul>
+<hr />
+<h2>Sources Scanned This Week</h2>
+<p>| Source | Studies |
+|--------|---------|
+| PubMed | 18 |
+| <strong>Total</strong> | <strong>18</strong> |</p>
+<hr />
+<h2>Run Notes</h2>
+<ol>
+<li>
+<p><strong>Three studies excluded from primary digest sections</strong> due to scope mismatch with fiteligent.pl's human health optimization remit:</p>
+<ul>
+<li><em>cPKCγ/UCHL1/HIF-1α in spermatogonial apoptosis</em> (PMID 42464609): mechanistic cell-line study in mouse GC-1 spg cells; no direct applicability to the six digest themes; <code>theme_guess: longevity</code> likely a pipeline misclassification.</li>
+<li><em>Cardiovascular biomarkers in feline HCM</em> (PMID 42467289): veterinary (cat) cardiology; classified <code>study_type: meta-analysis</code> and <code>evidence_rating: 5</code> but is outside scope; <code>theme_guess: strength</code> is a clear pipeline error.</li>
+<li><em>Write-cost bottleneck: energy constraints on continual learning in brains and machines</em> (PMID 42465671): computational neuroscience/AI theory review; no direct human health application; <code>theme_guess: strength</code> is a pipeline error.</li>
+</ul>
+</li>
+<li>
+<p><strong>Sample sizes (n):</strong> Several studies did not provide <code>n</code> values in the JSON; where recoverable from the abstract, these were inserted. Where not recoverable, the <code>n =</code> field is omitted per digest style rules.</p>
+</li>
+<li>
+<p><strong>Publication dates:</strong> Two studies carry <code>published: 2026-12-31</code> (Gut Microbes, Gallardo-Nuell) and <code>published: 2026-09-01</code> (two Mol Med/Int J Mol Med reviews) — these appear to be online-first publications with placeholder journal issue dates; treated as current-week publications per the run date.</p>
+</li>
+<li>
+<p><strong>Lactobacillus/HPV study (PMID 42454452):</strong> The abstract describes participants as &quot;randomly divided&quot; but the study_type is listed as RCT in the JSON while the methodology description says &quot;retrospective analysis.&quot; This discrepancy is flagged; the study is included but the methodological label inconsistency is noted in the relevant bullet point.</p>
+</li>
+<li>
+<p><strong>Cordyceps militaris study (PMID 42455764):</strong> n = 12, male-only, single acute dose — effect sizes (d = 0.88 for reaction time) should be interpreted cautiously given the very small sample and associated uncertainty in effect size estimation.</p>
+</li>
+<li>
+<p><strong>Neural write-cost review (PMID 42465671):</strong> Contains potentially relevant content for sleep-dependent memory consolidation (SWS/REM plasticity windows), but the primary framing is AI/computational neuroscience rather than applied sleep science. Not included in Sleep &amp; Recovery to avoid scope inflation; flagged for potential future angle on sleep and synaptic consolidation.</p>
+</li>
+</ol>
+
+  </div>
+  <div class="footer">
+    <p><strong>fiteligent</strong> · Research Digest</p>
+    <p>Optymizacja zdrowia oparta na nauce</p>
+    <p><a href="https://fiteligent.pl">fiteligent.pl</a></p>
+  </div>
+</div>
+</body>
+</html>
