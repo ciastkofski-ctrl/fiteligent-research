@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ============================================================================
+  FESTIVAL ROADMAP — wersja "dla krasnoludków"
+  ============================================================================
+  Zbudowane na podstawie Twojej listy must-see. UWAGA: nie było timetable
+  (godzin/scen), więc klasze są SZACOWANE po profilu artysty i porze dnia,
+  w której realnie grają. Jak wrzucisz grafik godzinowy -> dopniemy co do minuty.
+
+  Jak czytać:
+    priority  S = świętość, nie ma opcji że nie idziesz
+              A = mocno chcesz, ustępujesz tylko przy twardym klaszu
+              B = fajnie jakby wyszło, elastyczne
+    slot      przewidywana pora, w której ten typ artysty zwykle gra
+    clash     ryzyko nałożenia z innym Twoim must-see (bo ten sam slot-typ)
+  ============================================================================
+-->
+<festivalRoadmap wersja="1.0" dataUtworzenia="2026-07-29" jezyk="pl" krasnoludkiReady="true">
+
+  <meta>
+    <opis>Roadmapa setów + alternatywy. Miks: deep/hypnotic techno, house, disco, organic, Detroit legends.</opis>
+    <brakujaceDane>timetable (godziny + sceny) — bez tego klasze są szacowane</brakujaceDane>
+    <legendaEnergii>
+      <poziom kod="chill">rozgrzewka / sunrise / downtempo — nogi odpoczywają, uszy pracują</poziom>
+      <poziom kod="groove">house/disco, głowa kiwa, uśmiech na ryju</poziom>
+      <poziom kod="peak">pełny młyn, ręce w górze, ziomek gubi znajomych</poziom>
+      <poziom kod="hipnoza">deep/hypnotic techno, wpadasz w trans, tracisz poczucie czasu</poziom>
+    </legendaEnergii>
+  </meta>
+
+  <!-- =====================================================================
+       STREFY CZASOWE — grupujemy must-see po porze dnia, w której GRAJĄ.
+       To jest sedno: artyści z tej samej strefy = największe ryzyko klaszu.
+       ===================================================================== -->
+
+  <strefy>
+
+    <!-- ================= DZIEŃ / POPOŁUDNIE ================= -->
+    <strefa nazwa="Dzień &amp; Popołudnie" pora="ok. 13:00–18:00" energia="chill→groove">
+      <klimat>Słońce, cień, pierwsze piwo, rozgrzewka. Tu się nie zabijasz — budujesz bazę.</klimat>
+
+      <artysta priority="A" slot="popołudnie/sunset" clash="ŚREDNI (walczy z Palms Trax / Theus Mago)">
+        <nazwa>Kassian</nazwa>
+        <kto>UK duo, dubby/deep house + disco edity, ciepło i groove</kto>
+        <dlaczegoIsc>Idealny warm-up dla całej ekipy — wchodzi jak masło, nikt się nie spina.</dlaczegoIsc>
+        <protip>Świetny moment żeby zebrać krasnoludki w jedno miejsce ZANIM się porozłażą na noc. Punkt zborny.</protip>
+        <alternatywy>Palms Trax (jak Kassian klaszuje) • Massimiliano Pagliara</alternatywy>
+      </artysta>
+
+      <artysta priority="B" slot="dzień" clash="NISKI">
+        <nazwa>Pappenheimer</nazwa>
+        <kto>Diggy, playful DJ (klimaty Cocktail d'Amore / Berlin), disco-house z jajem</kto>
+        <dlaczegoIsc>Zabawa bez zadęcia, świetne kawałki których nie znasz. Dobry na luz w cieniu.</dlaczegoIsc>
+        <protip>Tu się dobrze robi przerwę "regeneracyjną" — tańczysz, ale ciśnienie niskie.</protip>
+        <alternatywy>Theus Mago • Kotelett &amp; Zadak</alternatywy>
+        <uwaga>W Twojej liście było "pappenheimer cooking cooqueen" — nie mam pewności co do drugiego członu. Daj znać czy to b2b / nazwa imprezy, to dopiszę.</uwaga>
+      </artysta>
+
+      <artysta priority="B" slot="rano/dzień" clash="NISKI">
+        <nazwa>Kotelett &amp; Zadak</nazwa>
+        <kto>Hamburg, organic/melodic, ciepłe hippisowskie deep house, często na żywca</kto>
+        <dlaczegoIsc>Najlepsze na poranek po nocy albo leniwe popołudnie — leczy kaca duszy.</dlaczegoIsc>
+        <protip>Jak ekipa dała wycisk w nocy, to jest wasz "reset". Weź wodę i coś do jedzenia na ten set.</protip>
+        <alternatywy>Paula Tape • Kassian</alternatywy>
+      </artysta>
+    </strefa>
+
+    <!-- ================= SUNSET / ZŁOTA GODZINA ================= -->
+    <strefa nazwa="Sunset / Złota godzina" pora="ok. 18:00–21:00" energia="groove→peak melodyjny">
+      <klimat>Najbardziej zatłoczony i najbardziej "instagramowy" slot. Tu będzie NAJWIĘCEJ Twoich klaszy — melodyjne gwiazdy grają właśnie o zachodzie.</klimat>
+
+      <artysta priority="S" slot="sunset/noc" clash="WYSOKI (Adam Port ↔ Leon Vynehall ↔ Palms Trax)">
+        <nazwa>Âme (DJ set)</nazwa>
+        <kto>Kristian Beyer, Innervisions — głębokie, emocjonalne, melodyjne house/techno</kto>
+        <dlaczegoIsc>DJ set Âme to jazda po całości — od deep po podniosłe momenty. Jeden z lepszych "feelsów" na całym festiwalu.</dlaczegoIsc>
+        <protip>To NIE jest live (to DJ set), więc setlist mniej przewidywalny — spoko, tym lepiej. Ustaw się bliżej środka, bas Innervisions robi robotę na klacie.</protip>
+        <alternatywy>Adam Port (podobny melodyjny sunset feel) • Leon Vynehall</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="sunset/noc" clash="WYSOKI (↔ Âme, ↔ Leon Vynehall)">
+        <nazwa>Adam Port</nazwa>
+        <kto>Keinemusik, melodyjny/afro house, groove, wokale — crowd pleaser klasy premium</kto>
+        <dlaczegoIsc>Największy "sing-along" moment dla ekipy. Duża scena, duży wjazd, dużo ludzi.</dlaczegoIsc>
+        <protip>Będzie TŁUM. Ustalcie punkt zborny PRZED setem, bo w tłumie krasnoludki znikają jak piwo z lodówki. I trzymajcie telefony na oku.</protip>
+        <alternatywy>Âme (ten sam vibe, jak wolisz mniej tłoku) • Palms Trax</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="sunset" clash="ŚREDNI/WYSOKI">
+        <nazwa>Leon Vynehall</nazwa>
+        <kto>UK, house→electronica, muzyczny, emocjonalny, potrafi zrobić "podróż"</kto>
+        <dlaczegoIsc>Dla tych momentów gdy chcesz POCZUĆ, nie tylko podskakiwać. Głęboki i piękny.</dlaczegoIsc>
+        <protip>Jak klaszuje z Adam Port / Âme — to jest Twój wybór "artystowski" vs "imprezowy". Zdecyduj z ekipą kto gdzie idzie i podzielcie się (potem relacje!).</protip>
+        <alternatywy>Roman Flügel (bardziej nieprzewidywalny) • Eduardo de la Calle</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="sunset/dzień" clash="ŚREDNI (↔ Kassian, ↔ Adam Port)">
+        <nazwa>Palms Trax</nazwa>
+        <kto>UK, kolorowy house/disco, radość w czystej postaci ("Cooking with Palms Trax")</kto>
+        <dlaczegoIsc>Najweselszy set weekendu. Zero mroku, same uśmiechy — idealny na zachód słońca z ekipą.</dlaczegoIsc>
+        <protip>To jest set "wszyscy tańczą razem". Weź krasnoludki w kółko i lećcie. Idealny przed nocnym techno.</protip>
+        <alternatywy>Kassian • Massimiliano Pagliara • Theus Mago</alternatywy>
+      </artysta>
+
+      <artysta priority="B" slot="sunset" clash="NISKI/ŚREDNI">
+        <nazwa>Massimiliano Pagliara</nazwa>
+        <kto>Ostgut Ton / Live Slow — italo, disco, house, często LIVE, retro-futurystyczny</kto>
+        <dlaczegoIsc>Ciepły, analogowy, taneczny. Jak grają live — podwójna wartość.</dlaczegoIsc>
+        <protip>Sprawdź czy to live czy DJ — live warty odstania z przodu.</protip>
+        <alternatywy>Theus Mago • Palms Trax</alternatywy>
+      </artysta>
+
+      <artysta priority="B" slot="sunset/dzień" clash="NISKI">
+        <nazwa>Theus Mago</nazwa>
+        <kto>Cosmic disco, nu-disco, leftfield groove (Argentyna/Berlin)</kto>
+        <dlaczegoIsc>Kosmiczny odjazd na zachodzie słońca. Idealny łącznik dnia z nocą.</dlaczegoIsc>
+        <protip>Dobry set na "reset przed nocnym młynem" — tańczysz ale się nie spalasz.</protip>
+        <alternatywy>Massimiliano Pagliara • Pappenheimer</alternatywy>
+      </artysta>
+
+      <artysta priority="B" slot="sunset/sunrise" clash="NISKI">
+        <nazwa>Paula Tape</nazwa>
+        <kto>Chile, organic house/downtempo, perkusja, etniczne faktury</kto>
+        <dlaczegoIsc>Piękne otwarcie albo domknięcie dnia. Ziemisty, ciepły klimat.</dlaczegoIsc>
+        <protip>Jak wypadnie o wschodzie — zostaw ją sobie jako "closer" i nie zarywaj przed nią do końca.</protip>
+        <alternatywy>Kotelett &amp; Zadak • Kassian</alternatywy>
+      </artysta>
+    </strefa>
+
+    <!-- ================= NOC / PEAK TECHNO ================= -->
+    <strefa nazwa="Noc / Peak Techno" pora="ok. 23:00–04:00" energia="peak→hipnoza">
+      <klimat>TU JEST TWÓJ NAJWIĘKSZY BÓL GŁOWY. Masz 5 nocnych technoiarzy i wszyscy grają w tych samych godzinach. Realnie nie zobaczysz wszystkich w całości — patrz sekcja &lt;klasze&gt; niżej.</klimat>
+
+      <artysta priority="S" slot="noc/closing" clash="WYSOKI (↔ Fadi Mohem, ↔ Vril, ↔ Abstract Division)">
+        <nazwa>Rødhåd</nazwa>
+        <kto>Dystopian (założyciel), Berlin — kinowe, epickie, głębokie-ale-mocne techno, mistrz opowieści</kto>
+        <dlaczegoIsc>Jeden z najlepszych nocnych/closingowych setów jakie w ogóle istnieją. Buduje jak reżyser.</dlaczegoIsc>
+        <protip>Nie wchodź w środku — Rødhåd to narracja od zera. Bądź na start i daj się zabrać na całe 2h. To jest TEN set nocy.</protip>
+        <alternatywy>Fadi Mohem (mocniej, szybciej) • Abstract Division (bardziej hipnotycznie)</alternatywy>
+      </artysta>
+
+      <artysta priority="S" slot="noc/hipnoza" clash="WYSOKI (↔ Luigi Tozzi, ↔ Rødhåd)">
+        <nazwa>Vril</nazwa>
+        <kto>Delsin/Giegling-adjacent — deep hypnotic dub techno, mrok i przestrzeń</kto>
+        <dlaczegoIsc>Immersja totalna. Na dobrym systemie i w ciemności — jedno z najgłębszych przeżyć na fest.</dlaczegoIsc>
+        <protip>Wymaga CIEMNOŚCI i dobrego sound-systemu — wybierz jego set na najlepszej pod tym względem scenie. Zamknij oczy, odpłyń. Nie miejsce na gadanie z ekipą.</protip>
+        <alternatywy>Luigi Tozzi (siostrzana głębia) • Abstract Division</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="noc" clash="WYSOKI (↔ Rødhåd, ↔ Vril)">
+        <nazwa>Fadi Mohem</nazwa>
+        <kto>Młody Berlin, SPE:C / okolice Dettmanna — szybkie, dubowe, napędzone techno</kto>
+        <dlaczegoIsc>Najświeższa, najbardziej "kopiąca" energia z całej nocnej ekipy. Peak w czystej postaci.</dlaczegoIsc>
+        <protip>Jak chcesz się WYŻYĆ fizycznie — to jego set. Zostaw go jako "energetyczny zastrzyk" gdy nogi jeszcze chcą.</protip>
+        <alternatywy>Rødhåd • Abstract Division</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="noc/hipnoza" clash="WYSOKI (↔ Vril, ↔ Konstantin)">
+        <nazwa>Luigi Tozzi</nazwa>
+        <kto>Hypnus Records, Włochy — deep hypnotic techno, "akwatyczny", wolniejsze BPM, immersja</kto>
+        <dlaczegoIsc>Jak Vril, ale bardziej organiczny i "podwodny". Trans gwarantowany.</dlaczegoIsc>
+        <protip>Bliźniak Vrila klimatem — jak klaszują, wybierz jednego a drugiego "odzyskasz" z nagrania. Nie da się być głęboko na dwóch transach naraz.</protip>
+        <alternatywy>Vril • Abstract Division • Eduardo de la Calle</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="noc/hipnoza" clash="WYSOKI">
+        <nazwa>Abstract Division</nazwa>
+        <kto>Holenderskie duo, hipnotyczne/deep techno — napędzane, mroczne, transowe</kto>
+        <dlaczegoIsc>Solidny hipnotyczny młyn. Dobry "pomost" między głębią (Vril/Tozzi) a mocą (Fadi/Rødhåd).</dlaczegoIsc>
+        <protip>Jeśli musisz coś poświęcić z nocnej piątki — to najczęściej ten jest najłatwiejszy do "zaliczenia we fragmencie" bo trzyma poziom cały set.</protip>
+        <alternatywy>Vril • Fadi Mohem • Luigi Tozzi</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="noc/live" clash="ŚREDNI (własny slot 'live', może nie klaszować z DJ-ami)">
+        <nazwa>Mathew Jonson (LIVE)</nazwa>
+        <kto>Wagon Repair, Kanada — legendarny live modularny, emocjonalne deep techno ("Marionette", "Decompression")</kto>
+        <dlaczegoIsc>To jest LIVE, nie DJ set — kompletnie inne przeżycie. Budowanie utworów na żywo, gęsia skórka murowana.</dlaczegoIsc>
+        <protip>PRIORYTET dla live'ów — takich rzeczy nie odtworzysz z playlisty. Bądź z przodu, patrz na ręce. Jak zagra "Marionette" — koniec, płaczesz.</protip>
+        <alternatywy>Eduardo de la Calle (deep, analogowy) • Roman Flügel</alternatywy>
+      </artysta>
+    </strefa>
+
+    <!-- ================= DEEP NIGHT / SUNRISE / MARATON ================= -->
+    <strefa nazwa="Deep Night / Sunrise" pora="ok. 04:00–08:00" energia="hipnoza→chill">
+      <klimat>Dla wytrwałych krasnoludków. Sety wolniejsze, dłuższe, dziwniejsze — i najbardziej magiczne. Tu odpadną słabsi z ekipy.</klimat>
+
+      <artysta priority="A" slot="deep night / sunrise" clash="ŚREDNI">
+        <nazwa>Konstantin</nazwa>
+        <kto>Giegling (współzałożyciel) — słynne wolne, hipnotyczne, przekorne, długie sety, niskie BPM</kto>
+        <dlaczegoIsc>Doświadczenie "kochasz albo nienawidzisz". Cierpliwym daje trans jakiego nie da nikt inny.</dlaczegoIsc>
+        <protip>WYMAGA CIERPLIWOŚCI. Nie wchodź zmęczony i zły — wejdź w dobrym stanie, poddaj się tempu. Pierwsze 30 min to test, potem wciąga. Nie dla ekipy która chce "kopa".</protip>
+        <alternatywy>Luigi Tozzi (jak chcesz głębi ale z mocniejszym pulsem) • Eduardo de la Calle</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="noc/deep" clash="ŚREDNI (↔ Konstantin, ↔ nocne techno)">
+        <nazwa>Eduardo de la Calle</nazwa>
+        <kto>Hiszpania — głębokie analogowe house/techno, jazzowe, duchowe, sprzętowe sety</kto>
+        <dlaczegoIsc>Prawdziwy muzyk-rzemieślnik. Głęboki, ciepły, mądry set dla koneserów.</dlaczegoIsc>
+        <protip>Idealny na intymniejszą scenę o późnej porze. Jak jest mała scena z dobrym systemem — tam go łap.</protip>
+        <alternatywy>Konstantin • Mathew Jonson • Roman Flügel</alternatywy>
+      </artysta>
+    </strefa>
+
+    <!-- ================= LEGENDY / WILDCARD (elastyczny slot) ================= -->
+    <strefa nazwa="Legendy &amp; Wildcard" pora="różnie — sprawdź grafik" energia="różna">
+      <klimat>Ci mogą wpaść o dowolnej porze. Traktuj jako priorytet "historyczny" — takie nazwiska widuje się rzadko.</klimat>
+
+      <artysta priority="S" slot="prime (różnie)" clash="do sprawdzenia">
+        <nazwa>Kevin Saunderson</nazwa>
+        <kto>Detroit techno — jeden z "Belleville Three", Inner City, żywa legenda gatunku</kto>
+        <dlaczegoIsc>To jest HISTORIA. Bez tego człowieka nie byłoby połowy reszty tego lineupu. Set "byłem tam".</dlaczegoIsc>
+        <protip>Idziesz dla szacunku i klasyków Detroit. Nawet jak klaszuje z czymś — legendę Detroit zobaczysz może raz. Opowiesz o tym wnukom.</protip>
+        <alternatywy>(brak — takiego nazwiska się nie zastępuje. Poświęć coś innego.)</alternatywy>
+      </artysta>
+
+      <artysta priority="A" slot="wildcard (różnie)" clash="do sprawdzenia">
+        <nazwa>Roman Flügel</nazwa>
+        <kto>Niemiecki legenda (Cocoon/Dial) — house, techno, electro, leftfield; totalnie nieprzewidywalny</kto>
+        <dlaczegoIsc>Nigdy nie wiesz co zagra i to jest piękne. Inteligentny, zabawny, sprawny set dla otwartych głów.</dlaczegoIsc>
+        <protip>Idealny "joker" gdy między dużymi klaszami masz lukę — Flügel zawsze dowiezie, o dowolnej porze.</protip>
+        <alternatywy>Leon Vynehall • Eduardo de la Calle</alternatywy>
+      </artysta>
+    </strefa>
+
+  </strefy>
+
+  <!-- =====================================================================
+       KLASZE — najważniejsza sekcja. Które must-see wpadną na siebie
+       i co wtedy robić. (Szacowane po slocie; potwierdzimy grafikiem.)
+       ===================================================================== -->
+  <klasze>
+    <klaszWezel ryzyko="WYSOKI" nazwa="Sunset melodyjny">
+      <konflikt>Âme ↔ Adam Port ↔ Leon Vynehall ↔ Palms Trax</konflikt>
+      <problem>Wszyscy grają melodyjnie o zachodzie. Fizycznie nie ogarniesz 4 pełnych setów.</problem>
+      <planEkipy>Rozdziel krasnoludki: część na Adam Port (impreza/tłum), część na Leon Vynehall (feels). Âme priorytet S — tu iść większością. Palms Trax złap we fragmencie na wejściu/wyjściu.</planEkipy>
+    </klaszWezel>
+
+    <klaszWezel ryzyko="WYSOKI" nazwa="Nocne techno — piątka śmierci">
+      <konflikt>Rødhåd ↔ Vril ↔ Fadi Mohem ↔ Luigi Tozzi ↔ Abstract Division</konflikt>
+      <problem>Pięciu nocnych technoiarzy, ~3-4 godziny prime-time. Matematyka się nie zgadza.</problem>
+      <planEkipy>
+        Priorytet S: Rødhåd (cały set) + Vril (cały set, w ciemności).
+        Z pozostałej trójki (Fadi/Tozzi/Abstract Division) wybierz 1 na całość wg nastroju:
+        chcesz KOPA -> Fadi Mohem; chcesz GŁĘBI -> Luigi Tozzi; pomost -> Abstract Division.
+        Dwóch niewybranych złap we fragmentach między głównymi setami.
+      </planEkipy>
+    </klaszWezel>
+
+    <klaszWezel ryzyko="ŚREDNI" nazwa="Głęboka hipnoza">
+      <konflikt>Vril ↔ Luigi Tozzi ↔ Konstantin</konflikt>
+      <problem>Nie da się być "głęboko" na dwóch transach naraz — rozmieniasz przeżycie na drobne.</problem>
+      <planEkipy>Rozłóż w czasie: Vril w peak nocy, Konstantin na sunrise. Tozzi jako zapchajdziura tylko jeśli terminy pozwolą.</planEkipy>
+    </klaszWezel>
+
+    <klaszWezel ryzyko="ŚREDNI" nazwa="Dzień — punkt zborny">
+      <konflikt>Kassian ↔ Palms Trax ↔ Pappenheimer ↔ Kotelett &amp; Zadak</konflikt>
+      <problem>Mniejsze ryzyko, ale łatwo tu przepalić energię na dzień i paść przed nocą.</problem>
+      <planEkipy>Wybierz JEDEN dzienny set jako "baza ekipy", reszta dnia luz/regeneracja. Nie spalaj się przed nocnym młynem.</planEkipy>
+    </klaszWezel>
+  </klasze>
+
+  <!-- =====================================================================
+       PLAN AWARYJNY — "jak mogę zobaczyć tylko X"
+       ===================================================================== -->
+  <planMinimum opis="Gdyby wszystko poszło nie tak / mało czasu / kac">
+    <absolutneMustSee kolejnosc="1">Rødhåd — closing set nocy, bezkonkurencyjny</absolutneMustSee>
+    <absolutneMustSee kolejnosc="2">Mathew Jonson LIVE — bo live się nie powtarza</absolutneMustSee>
+    <absolutneMustSee kolejnosc="3">Kevin Saunderson — legenda Detroit, raz w życiu</absolutneMustSee>
+    <absolutneMustSee kolejnosc="4">Âme (DJ set) — najlepszy feels sunsetu</absolutneMustSee>
+    <absolutneMustSee kolejnosc="5">Vril — najgłębsza immersja weekendu</absolutneMustSee>
+  </planMinimum>
+
+  <!-- =====================================================================
+       SMACZKI & PROTIPY DLA KRASNOLUDKÓW (survival rider)
+       ===================================================================== -->
+  <riderKrasnoludkow>
+    <protip kat="logistyka">Ustalcie STAŁY punkt zborny na wypadek zgubienia (np. "prawa strona baru głównego"). Zasięgu i baterii nie będzie, więc "spotkajmy się o X przy Y" > "napiszę".</protip>
+    <protip kat="bateria">Powerbank naładowany = złoto. Telefon w tryb oszczędzania. Jeden ziomek = "nawigator" z pełną baterią.</protip>
+    <protip kat="uszy">Zatyczki (filtrowane, nie z apteki-piankowe). Uratują słuch i pozwolą wytrzymać do sunrise. Serio, weź.</protip>
+    <protip kat="woda">Woda między setami, nie tylko browar. Deep techno o 4:00 wybacza wiele, odwodnienie nie.</protip>
+    <protip kat="energia">Zasada 70%: nie dawaj 100% w dzień. Nocna piątka techno + Konstantin o świcie = maraton, nie sprint.</protip>
+    <protip kat="dzielenie">Przy klaszach rozdzielcie ekipę i UMÓWCIE relację potem. Dwie perspektywy > jedno przeżycie. "Ty na Adam Port, ja na Vynehall, gadamy po".</protip>
+    <protip kat="ciemnosc">Vril / Luigi Tozzi / Konstantin = wybieraj najciemniejszą, najlepiej brzmiącą scenę. Te sety padają w słońcu i na słabym systemie.</protip>
+    <protip kat="live">Priorytetyzuj LIVE-y (Mathew Jonson, może Pagliara) nad DJ setami przy równym klaszu — live'a nie odtworzysz.</protip>
+    <protip kat="jedzenie">Zjedz PORZĄDNIE koło 20:00 przed nocnym blokiem. Głodny krasnoludek pada o 2:00.</protip>
+    <protip kat="closing">Zostaw sobie siłę na jeden sunrise set (Konstantin / Paula Tape / Kotelett). Wschód słońca na dobrej muzyce to najlepsza pamiątka.</protip>
+  </riderKrasnoludkow>
+
+  <naDoprecyzowanie>
+    <punkt>Dorzuć timetable (godziny + sceny) — zamienię szacowane klasze na twarde konflikty co do minuty.</punkt>
+    <punkt>"pappenheimer cooking cooqueen" — co to dokładnie? B2B? Nazwa imprezy/sceny? Dopiszę profil.</punkt>
+    <punkt>"Mathew Johnson Vril" rozbiłem na dwóch (Mathew Jonson + Vril). Potwierdź czy o to chodziło.</punkt>
+    <punkt>Ile dni trwa festiwal i który jest "wasz"? Rozłożę roadmapę na dni.</punkt>
+  </naDoprecyzowanie>
+
+</festivalRoadmap>
