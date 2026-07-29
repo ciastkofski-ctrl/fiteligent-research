@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ============================================================================
+  GARBICZ FESTIVAL 2026 (GF26) — ROADMAPA "dla krasnoludków"
+  ============================================================================
+  Zbudowane 1:1 z oficjalnego timetable (plik GF26LineUp). Godziny TWARDE.
+  Twoje 20 must-see rozpisane dzień po dniu, z realnymi klaszami i planem B.
+
+  ODKRYCIE #1: "Mathew Johnson Vril" = JEDEN set -> "Mathew Jonson & .Vril live"
+               (WALD, Thursday 19:30). Dostajesz OBU naraz. Dobra intuicja.
+  ODKRYCIE #2: "kassian" na lineupie to "Alex Kassian" (WIESE Thu 22:00).
+  ODKRYCIE #3: "pappenheimer cooking cooqueen" = "Pappenheimer «Cooking &
+               Cooqueen»" Performance (SEE, Friday 14:00). Zagadka rozwiązana.
+
+  Legenda priorytetu:  S = świętość  |  A = mocno chcesz  |  B = elastyczne
+  Legenda scen:  WALD = techno las | WIESE = house łąka | LOCO PARAISO = disco/organic
+                 SEE = jezioro/eklektyka | BUK = house/deep | (reszta = bonus)
+  ============================================================================
+-->
+<festivalRoadmap festiwal="Garbicz Festival 2026" zrodlo="oficjalny timetable GF26" wersja="2.0-timetable" jezyk="pl">
+
+  <meta>
+    <mustSeeRozpisane>20/20 — wszystkie Twoje typy są w gridzie</mustSeeRozpisane>
+    <najciezszaDecyzja>Piątkowa noc: Rødhåd vs Palms Trax→Leon Vynehall (pełny klasz)</najciezszaDecyzja>
+    <najlepszyDzien>Niedziela — Pagliara→Saunderson→Âme→Flügel niemal bez klaszy, jeden ciąg</najlepszyDzien>
+    <uwagaGeografia>Przejścia WALD↔WIESE krótkie; do LOCO PARAISO / SEE / BUK licz 10–15 min marszu. Wliczaj to w klasze.</uwagaGeografia>
+  </meta>
+
+  <!-- ==================================================================== -->
+  <!--  THURSDAY — dzień otwarcia, od razu MEGA gęsty (6 must-see!)         -->
+  <!-- ==================================================================== -->
+  <dzien nazwa="THURSDAY" charakter="Od strzału najgęstszy wieczór — 6 must-see, 3 klasze">
+
+    <ciagGlowny opis="Rekomendowana ścieżka wieczoru">
+      19:30 MJ &amp; Vril (WALD) → 21:30 doskok na końcówkę Adam Port (WIESE) →
+      22:00 Alex Kassian (WIESE) → 23:30 Luigi Tozzi (WALD) → [przerwa 01:00–03:00] →
+      03:00 Fadi Mohem (WALD) → 05:00 końcówka Theus Mago (LOCO, sunrise)
+    </ciagGlowny>
+
+    <slot priorytet="S" czas="19:30–21:30" scena="WALD">
+      <nazwa>Mathew Jonson &amp; .Vril — LIVE</nazwa>
+      <dlaczego>DWA Twoje must-see w jednym LIVE secie. To się nie powtórzy — live modularny + hipnoza Vrila. Absolutny priorytet wieczoru.</dlaczego>
+      <protip>Bądź od 19:30, live buduje się od zera. Z przodu, patrz na ręce. To otwiera Twój festiwal — nie spóźnij się przez kolejkę do baru.</protip>
+    </slot>
+
+    <slot priorytet="A" czas="20:00–22:00" scena="WIESE" klasz="MJ &amp; Vril 20:00–21:30">
+      <nazwa>Adam Port</nazwa>
+      <dlaczego>Keinemusik, wielki melodyjny wjazd dla ekipy. Ale nakłada się na MJ&amp;Vril przez 90 minut.</dlaczego>
+      <rozwiazanie>MJ&amp;Vril to S — zostań na WALD do 21:30, potem TRUCHTEM na WIESE i łap końcówkę Adam Port (21:30–22:00). Albo: podziel ekipę — część na Adam Port od 20:00, spotkanie o 22:00 na WIESE na Kassiana.</rozwiazanie>
+    </slot>
+
+    <slot priorytet="B" czas="22:00–00:00" scena="WIESE" klasz="Luigi Tozzi 23:30–00:00">
+      <nazwa>Alex Kassian</nazwa>
+      <dlaczego>Ciepły, balearic/melodyjny set — miła kontynuacja na WIESE po Adam Port. Zostajecie na tej samej scenie, zero marszu.</dlaczego>
+      <rozwiazanie>Graj Kassiana 22:00–23:30, potem odejdź na WALD na Tozziego (poświęcasz ostatnie 30 min Kassiana — mały koszt).</rozwiazanie>
+    </slot>
+
+    <slot priorytet="A" czas="23:30–01:00" scena="WALD">
+      <nazwa>Luigi Tozzi — LIVE</nazwa>
+      <dlaczego>Hypnus, deep hipnotyczne techno na żywo. Akwatyczny trans — jeden z głębszych momentów całego weekendu.</dlaczego>
+      <protip>Ciemność + zamknięte oczy. Nie miejsce na gadki z ekipą. Po nim masz naturalną przerwę do 03:00.</protip>
+    </slot>
+
+    <slot priorytet="A" czas="03:00–05:00" scena="WALD" klasz="Theus Mago 04:00–05:00">
+      <nazwa>Fadi Mohem b2b Ignez</nazwa>
+      <dlaczego>Najostrzejsza, najbardziej kopiąca energia nocy. B2B = jeszcze więcej ciśnienia. Peak fizyczny.</dlaczego>
+      <rozwiazanie>Graj Fadiego 03:00–05:00, potem prosto na LOCO na ostatnią godzinę Theus Mago (05:00–06:00) jako kosmiczny sunrise-zjazd. Idealne domknięcie nocy.</rozwiazanie>
+    </slot>
+
+    <slot priorytet="B" czas="04:00–06:00" scena="LOCO PARAISO">
+      <nazwa>Theus Mago</nazwa>
+      <dlaczego>Cosmic/nu-disco na wschód słońca — łagodne wyjście z technowego młyna.</dlaczego>
+      <protip>Nie idź na start (04:00) bo tniesz Fadiego. Wejdź o 05:00 na finał. Woda, oddech, sunrise.</protip>
+    </slot>
+
+    <przerwa czas="01:00–03:00">Gigi FM gra na WALD (nie must). Regeneracja: woda, jedzenie, siad. Nie przepal się — przed Tobą 3 kolejne noce.</przerwa>
+
+    <klaszeDnia>
+      <klasz waga="DUŻY">MJ&amp;Vril (S) × Adam Port (A) 20:00–21:30 → wybierz MJ&amp;Vril, Adam Port łap na końcówce lub podziel ekipę.</klasz>
+      <klasz waga="MAŁY">Kassian × Tozzi 23:30–00:00 → zagraj Kassiana do 23:30, idź na Tozziego.</klasz>
+      <klasz waga="ŚREDNI">Fadi × Theus Mago 04:00–05:00 → Fadi w całości, Theus na finał o 05:00.</klasz>
+    </klaszeDnia>
+  </dzien>
+
+  <!-- ==================================================================== -->
+  <!--  FRIDAY — dzienny performance + NAJTRUDNIEJSZA decyzja weekendu      -->
+  <!-- ==================================================================== -->
+  <dzien nazwa="FRIDAY" charakter="Leniwy dzień z Pappenheimerem, potem BRUTALNY klasz nocy: Rødhåd vs Palms Trax→Vynehall">
+
+    <ciagGlowny opis="Rekomendowana ścieżka">
+      14:00 Pappenheimer «Cooking &amp; Cooqueen» (SEE, wpadaj/wypadaj) → 17:00 Paula Tape (LOCO) →
+      18:00 Kotelett (BUK) → [dłuższa przerwa/kolacja] → 00:00 DECYZJA: Rødhåd (WALD)
+      LUB Palms Trax→Leon Vynehall (WIESE)
+    </ciagGlowny>
+
+    <slot priorytet="B" czas="14:00–19:00" scena="SEE">
+      <nazwa>Pappenheimer «Cooking &amp; Cooqueen» — Performance (ft. Demi Tomato &amp; Rico Loop)</nazwa>
+      <dlaczego>To 5-godzinny performance, nie zwykły set — diggy, kampowy, z jajem. Idealny na luźne piątkowe popołudnie.</dlaczego>
+      <protip>Format "wpadaj/wypadaj" — nie musisz siedzieć 5h. Zajrzyj 14:00–17:00, potem lecisz na Paulę Tape. Świetny start dnia bez ciśnienia.</protip>
+    </slot>
+
+    <slot priorytet="B" czas="17:00–19:00" scena="LOCO PARAISO" klasz="Pappenheimer + Kotelett (18:00)">
+      <nazwa>Paula Tape</nazwa>
+      <dlaczego>Organic house / downtempo, ciepły ziemisty sunset nad jeziorem. Reset przed nocą.</dlaczego>
+      <rozwiazanie>Pappenheimer do 17:00 → Paula Tape 17:00–18:00 → o 18:00 skok na BUK na Koteletta. Albo Paula Tape w całości i łap Koteletta 19:00–20:00.</rozwiazanie>
+    </slot>
+
+    <slot priorytet="B" czas="18:00–20:00" scena="BUK">
+      <nazwa>Kotelett</nazwa>
+      <dlaczego>Ciepły, melodyjny/organic deep house — domyka popołudniowy blok idealnie.</dlaczego>
+      <protip>Po nim ZRÓB PORZĄDNĄ KOLACJĘ (~20:00–22:00). Piątkowa noc to maraton — głodny krasnoludek nie dożyje Rødhåda.</protip>
+    </slot>
+
+    <decyzjaKluczowa czas="00:00" waga="NAJTRUDNIEJSZA W WEEKENDZIE">
+      <opis>O północy startują JEDNOCZEŚNIE: Rødhåd (WALD 00:00–02:30) ORAZ Palms Trax→Leon Vynehall (WIESE 00:00–04:00). Pełny klasz. Nie da się mieć obu w całości.</opis>
+      <opcjaA rekomendacja="dla technoheadów">
+        Rødhåd 00:00–02:30 w CAŁOŚCI (S, kinowy closing-mistrz, wchodzi się od zera) → potem WIESE na końcówkę Leon Vynehall (02:30–04:00). Tracisz Palms Traxa.
+      </opcjaA>
+      <opcjaB rekomendacja="dla house'owców">
+        Palms Trax 00:00–02:00 → Leon Vynehall 02:00–04:00 — cały blok na WIESE, wymarzona 4-godzinna podróż house. Tracisz Rødhåda.
+      </opcjaB>
+      <rekomendacjaEkipy>
+        PODZIELCIE EKIPĘ. Technoheadzi → Rødhåd (WALD). House'owcy → Palms Trax + Vynehall (WIESE). Zbiórka o 04:00, relacje przy piwie. Obie ścieżki to killery — nikt nie przegrywa. Jak ekipa musi trzymać się razem: Rødhåd w całości + końcówka Vynehalla (Opcja A), bo Rødhåd to Twój priorytet S.
+      </rekomendacjaEkipy>
+    </decyzjaKluczowa>
+
+    <slot priorytet="S" czas="00:00–02:30" scena="WALD">
+      <nazwa>Rødhåd</nazwa>
+      <dlaczego>Dystopian, epicki kinowy techno-set. Twój priorytet S. Buduje jak reżyser — 2.5h narracji.</dlaczego>
+      <protip>Wejdź o 00:00, NIE w środku. Daj się zabrać na całość. To jest TEN set piątkowej nocy.</protip>
+    </slot>
+
+    <slot priorytet="A" czas="00:00–02:00" scena="WIESE" klasz="Rødhåd (pełny)">
+      <nazwa>Palms Trax</nazwa>
+      <dlaczego>Najweselszy house/disco set weekendu. Pełny klasz z Rødhådem — patrz decyzja wyżej.</dlaczego>
+    </slot>
+
+    <slot priorytet="A" czas="02:00–04:00" scena="WIESE" klasz="Rødhåd 02:00–02:30">
+      <nazwa>Leon Vynehall</nazwa>
+      <dlaczego>Muzyczna, emocjonalna podróż house→electronica. Ratunkowo osiągalny nawet dla technoheadów: po Rødhådzie (02:30) łapiesz jego drugą połowę.</dlaczego>
+      <protip>Jeśli szedłeś na Rødhåda — Vynehall od 02:30 to Twoja nagroda pocieszenia (i wcale nie gorsza).</protip>
+    </slot>
+
+    <klaszeDnia>
+      <klasz waga="ŚREDNI">Popołudnie: Pappenheimer × Paula Tape × Kotelett 17:00–20:00 → da się zaliczyć wszystkie trzy fragmentami (patrz slot Paula Tape).</klasz>
+      <klasz waga="DUŻY/NAJWIĘKSZY">Rødhåd × Palms Trax × Vynehall od 00:00 → podział ekipy albo Rødhåd + końcówka Vynehalla.</klasz>
+    </klaszeDnia>
+  </dzien>
+
+  <!-- ==================================================================== -->
+  <!--  SATURDAY — dzień oddechu: tylko 2 must-see, ZERO klaszy             -->
+  <!-- ==================================================================== -->
+  <dzien nazwa="SATURDAY" charakter="Luz — 2 must-see, bez klaszy. Dzień na regenerację i eksplorację innych scen">
+
+    <ciagGlowny opis="Rekomendowana ścieżka">
+      21:30 Abstract Division (WALD) → [wolna noc, opcjonalne perły] → 03:00 Eduardo de la Calle (BUK, sunrise deep)
+    </ciagGlowny>
+
+    <slot priorytet="A" czas="21:30–23:30" scena="WALD">
+      <nazwa>Abstract Division</nazwa>
+      <dlaczego>Holenderskie hipnotyczne/deep techno — solidny transowy młyn. Twój jedyny wieczorny must-see w sobotę, więc bez pośpiechu.</dlaczego>
+      <protip>Nie musisz nic poświęcać — graj w całości i ciesz się luzem.</protip>
+    </slot>
+
+    <slot priorytet="A" czas="03:00–05:00" scena="BUK">
+      <nazwa>Eduardo de la Calle</nazwa>
+      <dlaczego>Głębokie analogowe house/techno, jazzowe, duchowe — koneserski set na małej scenie o świcie. Perła.</dlaczego>
+      <protip>BUK ma bardziej intymny klimat — idealne dla tego setu. Zostaw sobie energię na tę godzinę, warto.</protip>
+    </slot>
+
+    <smaczkiDodatkowe opis="Nie-must-see perły dla otwartych krasnoludków w sobotę (luźny dzień = czas na odkrycia)">
+      <perla czas="12:00" scena="AMBIENT FLOOR">giegling — kultowy label, dzienny ambient/eklektyka</perla>
+      <perla czas="00:00" scena="WIESE">Cassy — house/techno weteranka, świetny groove</perla>
+      <perla czas="23:00" scena="BUK">Gene on Earth — topowy deep house, tuż przed Twoim Eduardo</perla>
+    </smaczkiDodatkowe>
+
+    <klaszeDnia>Brak klaszy między must-see. Najspokojniejszy dzień — wykorzystaj na sen i inne sceny.</klaszeDnia>
+  </dzien>
+
+  <!-- ==================================================================== -->
+  <!--  SUNDAY — najlepszy dzień: 4 must-see w jednym ciągu, prawie 0 klaszy -->
+  <!-- ==================================================================== -->
+  <dzien nazwa="SUNDAY" charakter="Perła weekendu — Pagliara→Saunderson→Âme→Flügel niemal ciągiem">
+
+    <ciagGlowny opis="Prawie idealny łańcuch, tylko jedno przejście scen">
+      19:00 Massimiliano Pagliara (LOCO) → 21:00 Kevin Saunderson (WIESE) →
+      23:00 Âme DJ (WIESE, ta sama scena!) → 01:00 końcówka Roman Flügel (WALD)
+    </ciagGlowny>
+
+    <slot priorytet="B" czas="19:00–21:00" scena="LOCO PARAISO">
+      <nazwa>Massimiliano Pagliara</nazwa>
+      <dlaczego>Italo/disco/house, ciepły retro-futurystyczny groove — idealne otwarcie niedzielnego ciągu.</dlaczego>
+      <protip>Kończy 21:00 równo gdy Saunderson startuje na WIESE — wyjdź 5 min wcześniej, żeby zdążyć na początek legendy.</protip>
+    </slot>
+
+    <slot priorytet="S" czas="21:00–23:00" scena="WIESE">
+      <nazwa>Kevin Saunderson</nazwa>
+      <dlaczego>Żywa legenda Detroit techno (Belleville Three, Inner City). Bez tego człowieka nie byłoby połowy tego lineupu. Set "byłem tam".</dlaczego>
+      <protip>Idziesz dla historii i klasyków Detroit. Zero klaszy z Twoimi mustami — pełny set, pełny szacunek.</protip>
+    </slot>
+
+    <slot priorytet="A" czas="23:00–01:00" scena="WIESE" klasz="Roman Flügel 00:00–01:00">
+      <nazwa>Âme — DJ set</nazwa>
+      <dlaczego>Innervisions, głęboki emocjonalny house/techno. I gra ZARAZ po Saundersonie na TEJ SAMEJ scenie — zero marszu, płynne przejście legenda→feels.</dlaczego>
+      <rozwiazanie>Graj Âme do 01:00, potem przejdź na WALD na drugą połowę Roman Flügel (01:00–02:00). Masz oba, tylko Flügela w połowie.</rozwiazanie>
+    </slot>
+
+    <slot priorytet="A" czas="00:00–02:00" scena="WALD" klasz="Âme 00:00–01:00">
+      <nazwa>Roman Flügel</nazwa>
+      <dlaczego>Nieprzewidywalny mistrz (house/techno/electro/leftfield). Zawsze dowozi.</dlaczego>
+      <rozwiazanie>Nakłada się z Âme przez pierwszą godzinę. Bo Saunderson→Âme to złoty ciąg na WIESE — zostań na nim, a Flügela łap 01:00–02:00 na finał.</rozwiazanie>
+    </slot>
+
+    <smaczkiDodatkowe opis="Niedzielne perły jeśli zaczynasz dzień wcześniej">
+      <perla czas="12:00" scena="LOCO PARAISO">Kalabrese — organic/live groove</perla>
+      <perla czas="15:00" scena="LOCO PARAISO">Fort Romeau — melodyjny house klasy premium</perla>
+      <perla czas="22:00" scena="WALD">Function (przed Flüglem) — legendarne techno, jak zostajesz na WALD zamiast WIESE</perla>
+      <perla czas="21:00–22:00" scena="BUK">map.ache live → Francesco del Garda — deep/hipnotyka dla wytrwałych</perla>
+    </smaczkiDodatkowe>
+
+    <klaszeDnia>
+      <klasz waga="MAŁY">Pagliara→Saunderson: brak nakładki, tylko szybkie przejście LOCO→WIESE o 21:00.</klasz>
+      <klasz waga="ŚREDNI">Âme × Roman Flügel 00:00–01:00 → zostań na Âme (WIESE), Flügel na finał (WALD 01:00).</klasz>
+    </klaszeDnia>
+  </dzien>
+
+  <!-- ==================================================================== -->
+  <!--  MONDAY — closing marathon dla najtwardszych                          -->
+  <!-- ==================================================================== -->
+  <dzien nazwa="MONDAY" charakter="Domknięcie dla wytrwałych — jeden must-see, ale jaki">
+
+    <slot priorytet="A" czas="11:00–14:00" scena="BUK">
+      <nazwa>Konstantin</nazwa>
+      <dlaczego>Giegling — słynne wolne, hipnotyczne, przekorne, długie sety. Poranny closing-maraton w świetle dnia. "Kochasz albo nienawidzisz".</dlaczego>
+      <protip>WYMAGA CIERPLIWOŚCI I DOBREGO STANU. Nie idź zmęczony i wkurzony — wejdź spokojny, poddaj się tempu. Pierwsze 30 min to test, potem wciąga. Jak dożyjesz poniedziałku i wejdziesz w to świadomie — najlepsza kropka nad "i" całego festiwalu.</protip>
+    </slot>
+
+    <smaczkiDodatkowe opis="Poniedziałkowe domknięcia na BUK po Konstantinie">
+      <perla czas="16:00" scena="BUK">D.Tiffany — kolorowy, zabawny house/electro</perla>
+      <perla czas="18:00" scena="BUK">Eli Verveine — diggy, hipnotyczny closing</perla>
+    </smaczkiDodatkowe>
+
+    <klaszeDnia>Brak. Jeden set, pełna uważność.</klaszeDnia>
+  </dzien>
+
+  <!-- ==================================================================== -->
+  <!--  MAPA DECYZJI — 3 najważniejsze wybory całego weekendu                -->
+  <!-- ==================================================================== -->
+  <mapaDecyzji>
+    <decyzja nr="1" dzien="Thursday 20:00" waga="ŚREDNIA">MJ&amp;Vril (S) vs Adam Port → MJ&amp;Vril, Adam Port na końcówce/podział ekipy.</decyzja>
+    <decyzja nr="2" dzien="Friday 00:00" waga="NAJWIĘKSZA">Rødhåd vs Palms Trax→Vynehall → podział ekipy albo Rødhåd + końcówka Vynehalla.</decyzja>
+    <decyzja nr="3" dzien="Sunday 00:00" waga="MAŁA">Âme vs Roman Flügel → Âme do 01:00, Flügel na finał.</decyzja>
+  </mapaDecyzji>
+
+  <!-- ==================================================================== -->
+  <!--  PLAN MINIMUM — gdyby kac/czas/pech ograniczał                        -->
+  <!-- ==================================================================== -->
+  <planMinimum opis="5 setów których nie odpuszczasz pod żadnym pozorem">
+    <mustSee kolejnosc="1" kiedy="Thu 19:30 WALD">Mathew Jonson &amp; Vril LIVE — dwóch artystów w jednym, live się nie powtarza</mustSee>
+    <mustSee kolejnosc="2" kiedy="Fri 00:00 WALD">Rødhåd — closing-mistrz, priorytet S</mustSee>
+    <mustSee kolejnosc="3" kiedy="Sun 21:00 WIESE">Kevin Saunderson — legenda Detroit, raz w życiu</mustSee>
+    <mustSee kolejnosc="4" kiedy="Sun 23:00 WIESE">Âme DJ — najlepszy feels, zaraz po Saundersonie</mustSee>
+    <mustSee kolejnosc="5" kiedy="Thu 23:30 WALD">Luigi Tozzi LIVE — najgłębsza hipnoza weekendu</mustSee>
+  </planMinimum>
+
+  <!-- ==================================================================== -->
+  <!--  RIDER KRASNOLUDKÓW — survival                                        -->
+  <!-- ==================================================================== -->
+  <riderKrasnoludkow>
+    <protip kat="klasze">Zapamiętaj 3 decyzje z &lt;mapaDecyzji&gt;. Reszta gridu jest praktycznie bezkonfliktowa — te trzy momenty to całe ryzyko.</protip>
+    <protip kat="podzialEkipy">Piątek 00:00 = podzielcie się (Rødhåd vs WIESE house) i UMÓWCIE zbiórkę 04:00. Dwie relacje &gt; jedno przeżycie.</protip>
+    <protip kat="punktZborny">Stały punkt zborny na scenę (np. "prawa strona baru na WIESE"). Zasięgu nie ma — "spotkajmy się o X przy Y" &gt; "napiszę".</protip>
+    <protip kat="geografia">Marsz do LOCO/SEE/BUK to 10–15 min. Przy przejściach (Fadi→Theus, Pagliara→Saunderson, Âme→Flügel) wychodź parę minut wcześniej.</protip>
+    <protip kat="energia">4 noce z rzędu. Zasada 70% w dzień. Czwartek jest najgęstszy — nie spal się na starcie, bo poniedziałkowy Konstantin nie wybaczy.</protip>
+    <protip kat="jedzenie">Piątek: PORZĄDNA kolacja 20:00–22:00 przed blokiem Rødhåd/Palms Trax. Głodny nie dożyje 02:30.</protip>
+    <protip kat="live">Priorytet LIVE-om: MJ&amp;Vril (Thu), Luigi Tozzi (Thu). Live'a nie odtworzysz z playlisty — bądź z przodu.</protip>
+    <protip kat="ciemnosc">Głęboka hipnoza (Tozzi, Abstract Division, Vril-w-MJ) = ciemność + zamknięte oczy, nie gadanie z ekipą.</protip>
+    <protip kat="uszy">Zatyczki filtrowane. 4 noce techno bez nich = piszczenie do przyszłego roku.</protip>
+    <protip kat="bateria">Powerbank = złoto. Jeden ziomek "nawigator" z pełną baterią i tym plikiem offline.</protip>
+    <protip kat="sunrise">Masz gotowe wschody: Thu Theus Mago (05:00 LOCO), Sat Eduardo de la Calle (03:00 BUK). Zostaw na nie siłę.</protip>
+    <protip kat="closing">Poniedziałkowy Konstantin (11:00 BUK) to nagroda dla tych co dotrwają. Wejdź świadomie, nie z rozpędu.</protip>
+  </riderKrasnoludkow>
+
+  <podsumowanieMustSee>
+    <pozycja>Thu 19:30 WALD — Mathew Jonson &amp; Vril LIVE (S)</pozycja>
+    <pozycja>Thu 20:00 WIESE — Adam Port (A)</pozycja>
+    <pozycja>Thu 22:00 WIESE — Alex Kassian (B)</pozycja>
+    <pozycja>Thu 23:30 WALD — Luigi Tozzi LIVE (A)</pozycja>
+    <pozycja>Thu 03:00 WALD — Fadi Mohem b2b Ignez (A)</pozycja>
+    <pozycja>Thu 04:00 LOCO — Theus Mago (B)</pozycja>
+    <pozycja>Fri 14:00 SEE — Pappenheimer «Cooking &amp; Cooqueen» (B)</pozycja>
+    <pozycja>Fri 17:00 LOCO — Paula Tape (B)</pozycja>
+    <pozycja>Fri 18:00 BUK — Kotelett (B)</pozycja>
+    <pozycja>Fri 00:00 WALD — Rødhåd (S)</pozycja>
+    <pozycja>Fri 00:00 WIESE — Palms Trax (A)</pozycja>
+    <pozycja>Fri 02:00 WIESE — Leon Vynehall (A)</pozycja>
+    <pozycja>Sat 21:30 WALD — Abstract Division (A)</pozycja>
+    <pozycja>Sat 03:00 BUK — Eduardo de la Calle (A)</pozycja>
+    <pozycja>Sun 19:00 LOCO — Massimiliano Pagliara (B)</pozycja>
+    <pozycja>Sun 21:00 WIESE — Kevin Saunderson (S)</pozycja>
+    <pozycja>Sun 23:00 WIESE — Âme DJ (A)</pozycja>
+    <pozycja>Sun 00:00 WALD — Roman Flügel (A)</pozycja>
+    <pozycja>Mon 11:00 BUK — Konstantin (A)</pozycja>
+  </podsumowanieMustSee>
+
+</festivalRoadmap>
