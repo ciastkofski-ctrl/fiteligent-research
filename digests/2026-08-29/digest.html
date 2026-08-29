@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fiteligent Research Digest — 2026-08-29</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
+:root {
+  /* Surfaces */
+  --bg-page:       #0a0e27;
+  --bg-container:  #1a1f3a;
+  --bg-footer:     #0a0e27;
+
+  /* Brand colors */
+  --brand-primary: #016FFA;
+  --brand-deep:    #0047CC;
+  --brand-light:   #66A8FF;
+  --accent:        #FF7B00;
+  --accent-hover:  #E56A00;
+
+  /* Text */
+  --text-strong:   #ffffff;
+  --text-body:     #e0e0e0;
+  --text-muted:    #c0c0c0;
+  --text-footer:   #808080;
+
+  /* Type */
+  --font-sans:     'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --container-max: 720px;
+  --radius:        12px;
+
+  /* Theme accents */
+  --theme-obesity:    #FF7B00;
+  --theme-longevity:  #66A8FF;
+  --theme-strength:   #016FFA;
+  --theme-supplements:#9D7BFF;
+  --theme-sleep:      #3D5AFE;
+  --theme-skin-hair:  #F472B6;
+}
+
+* { box-sizing: border-box; }
+body { font-family: var(--font-sans); background: var(--bg-page); color: var(--text-body); margin: 0; padding: 24px; line-height: 1.7; }
+.container { max-width: var(--container-max); margin: 0 auto; background: var(--bg-container); border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+.header { background: linear-gradient(165deg, var(--brand-deep) 0%, var(--brand-primary) 55%, var(--brand-light) 100%); padding: 48px 32px; text-align: center; }
+.header .logo { max-width: 200px; height: auto; }
+.content { padding: 48px 56px; }
+h1 { color: var(--text-strong); font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+h1 + .subtitle { color: var(--text-muted); margin: 0 0 32px; font-size: 14px; }
+h2 { color: var(--text-strong); font-size: 22px; margin: 48px 0 16px; padding-left: 16px; border-left: 4px solid var(--theme-accent, var(--accent)); font-weight: 700; }
+h2.theme-obesity     { --theme-accent: var(--theme-obesity); }
+h2.theme-longevity   { --theme-accent: var(--theme-longevity); }
+h2.theme-strength    { --theme-accent: var(--theme-strength); }
+h2.theme-supplements { --theme-accent: var(--theme-supplements); }
+h2.theme-sleep       { --theme-accent: var(--theme-sleep); }
+h2.theme-skin-hair   { --theme-accent: var(--theme-skin-hair); }
+h3 { color: var(--text-strong); font-size: 17px; margin: 32px 0 8px; font-weight: 700; }
+.meta { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
+.stars { color: var(--accent); letter-spacing: 1px; font-weight: 700; }
+a { color: var(--brand-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.why-it-matters { background: rgba(255, 123, 0, 0.1); border-left: 3px solid var(--accent); padding: 12px 16px; margin: 16px 0; border-radius: 4px; color: var(--text-strong); font-weight: 500; }
+.footer { background: var(--bg-footer); padding: 32px; text-align: center; color: var(--text-footer); font-size: 12px; }
+.footer a { color: var(--brand-light); margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="logo.svg" alt="fiteligent" class="logo">
+  </div>
+  <div class="content">
+    <pre><code class="language-yaml">---
+date_range: &quot;2026-08-18 to 2026-10-01&quot;
+studies_total: 15
+unique_studies: 14  # PEA/Pflugers Arch study appears twice in input; counted once per theme
+themes:
+  - Obesity &amp; Metabolic Health
+  - Longevity
+  - Strength &amp; Hypertrophy
+  - Supplements
+  - Sleep &amp; Recovery
+  - Skin &amp; Hair Health
+generated: &quot;2026-08-29T00:00:00Z&quot;
+source: fiteligent.pl research digest
+---
+</code></pre>
+<h1>Fiteligent Research Digest — Week of 2026-08-29</h1>
+<hr />
+<h2>TL;DR — Top 5 Highlights</h2>
+<ol>
+<li>
+<p>⭐⭐⭐⭐⭐ <strong>Short sleep → obesity in youth (meta-analysis, OR 1.25):</strong> Across 10 pooled studies, short sleep duration was associated with 25% higher odds of obesity in children and adolescents aged 6–18; the effect was slightly stronger in teens (OR 1.38) than younger children (OR 1.20).</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐ <strong>Vitamin D doesn't shrink waistlines in shift workers (RCT, n=198):</strong> Four months of cholecalciferol at 14,000 or 28,000 IU/week successfully raised serum 25(OH)D but produced zero significant change in waist circumference or waist-to-height ratio vs placebo.</p>
+</li>
+<li>
+<p>⭐⭐⭐ <strong>Adipose-derived mitochondrial vesicles activate cGAS-STING in joints:</strong> A mechanistic study identifies a novel EV-Mito-mtDNA → cGAS-STING axis linking body fat to cartilage degeneration; HIIT selectively reduced adiposity and was associated with lower synovial mtDNA and improved OA symptoms.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐ <strong>PEA supplementation preserves bioactive lipid tone post-exercise:</strong> In a 10-person double-blind crossover RCT, PEA (700 mg/d) attenuated the post-eccentric-exercise decline in 12 distinct lipid mediators within skeletal muscle, with MCTR3 consistently higher in the PEA condition.</p>
+</li>
+<li>
+<p>⭐⭐⭐⭐⭐ <strong>Nutritional interventions modulate neuroinflammation in AD/MCI (systematic review, 22 studies):</strong> Omega-3 fatty acids showed the most consistent clinical evidence for reducing TNF-α, IL-1β, IL-6, and NF-κB/NLRP3 signaling; ketogenic diet evidence was predominantly preclinical; B-vitamins, vitamin D, and microbiota strategies had limited eligible studies.</p>
+</li>
+</ol>
+<hr />
+<h2 class="theme-obesity">Obesity &amp; Metabolic Health</h2>
+<hr />
+<h3><a href="https://doi.org/10.1590/0001-3765202620260077">Relationship Between Sleep Duration and Obesity in Children Aged 6–12 Years and Adolescents Aged 13–18 Years: A Meta-Analysis</a></h3>
+<p>⭐⭐⭐⭐⭐ · Hayli et al. · An Acad Bras Cienc (2026) · meta-analysis</p>
+<ul>
+<li>Systematic search across PubMed, ProQuest, Google Scholar, EBSCO, and Web of Science for articles published 2010–2024; 1,116 articles identified, 17 systematically reviewed, 10 included in the meta-analysis.</li>
+<li>Primary finding: combined OR for short sleep duration and obesity = <strong>1.25 (95% CI: 1.12–1.42)</strong> across the full 6–18 age range.</li>
+<li>Subgroup (children 6–12 years): combined OR = <strong>1.20 (95% CI: 1.08–1.42)</strong>.</li>
+<li>Subgroup (adolescents 13–18 years): combined OR = <strong>1.38 (95% CI: 1.18–1.63)</strong> — the stronger association in the older age group.</li>
+<li>Limitation: total pooled n not reported in the abstract; heterogeneity statistics not provided; observational designs within the included studies preclude causal inference.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1590/1516-3180.2025.2955.18032026">Vitamin D Supplementation and Central Adiposity in Male Shift Workers: A Randomized Clinical Trial on Metabolic Health</a></h3>
+<p>⭐⭐⭐⭐ · Menezes-Júnior et al. · Sao Paulo Med J (2026) · n = 198 · RCT</p>
+<ul>
+<li>Double-blind, placebo-controlled RCT; 198 male shift workers employed at an iron ore extraction company in Minas Gerais, Brazil; inclusion required 25(OH)D &lt; 30 ng/mL plus ≥1 metabolic abnormality (metabolic syndrome, impaired fasting glucose, dyslipidemia, elevated BP, or elevated WC).</li>
+<li>Three arms: placebo, cholecalciferol 14,000 IU/week, or cholecalciferol 28,000 IU/week; duration = 4 months.</li>
+<li>Primary outcomes (WC and WHtR): <strong>no significant differences</strong> between either supplementation group and placebo (p &gt; 0.05 for both outcomes at 4 months).</li>
+<li>25(OH)D increased significantly: +6.23 ng/mL (IQR: 0.58–10.61) in the 14,000 IU/week group; +15.25 ng/mL (IQR: 10.57–19.68) in the 28,000 IU/week group; placebo showed −0.50 ng/mL (IQR: −1.03 to 2.71).</li>
+<li>Registered in ReBEC (RBR-6CS352, October 2017); all-male, single occupational setting limits generalizability to other populations.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1126/sciadv.aee6780">Adipose-Cartilage Communication via EV-Mito-mtDNA Signaling Promotes Osteoarthritis Progression</a></h3>
+<p>⭐⭐⭐ · Gu et al. · Sci Adv (2026-08-28) · study type not reported</p>
+<ul>
+<li>Mechanistic study: adipocyte-derived extracellular vesicles enriched in mitochondrial components (EV-Mito) transfer mitochondrial DNA (mtDNA) to chondrocytes in both murine and human models.</li>
+<li>Internalized mtDNA activates the <strong>cGAS-STING</strong> cytosolic DNA-sensing pathway, triggering inflammatory signaling, metabolic dysfunction, senescence, and cartilage degeneration.</li>
+<li>Genetic and pharmacological inhibition of cGAS-STING signaling attenuated cartilage damage, pain behaviors, and gait abnormalities in mouse models.</li>
+<li>Population-level and interventional data reported: <strong>body fat percentage</strong> (rather than BMI) showed a closer association with OA risk and severity.</li>
+<li>In an exercise cohort, HIIT selectively reduced adiposity and was associated with lower mtDNA abundance in synovial EV fractions enriched for adipose-associated EV markers, reduced synovial 2′,3′-cyclic GMP-AMP levels, and superior improvement in OA symptoms compared with other interventions.</li>
+</ul>
+<hr />
+<h2 class="theme-longevity">Longevity</h2>
+<hr />
+<h3><a href="https://doi.org/10.1097/QAD.0000000000004514">The Additive Value of Coronary Calcium in Identifying Cardiovascular Risk in Ageing People with HIV</a></h3>
+<p>⭐⭐⭐ · Varadarajan et al. · AIDS (2026-10-01) · n = 779 · study type not reported</p>
+<ul>
+<li>Retrospective data from 779 individuals with HIV who underwent coronary artery calcium scoring (CACS); median age 55 years.</li>
+<li>CACS outperformed Q-risk scores in predicting adverse outcomes including major adverse cardiovascular events (MACE), death, and heart failure.</li>
+<li>HIV is associated with elevated CACS, but risk factors beyond smoking and diabetes are not well established in this population.</li>
+<li>Study design (likely observational/registry-based) and lack of a non-HIV comparator group are notable limitations; study type not specified in the abstract.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1212/WNL.0000000000218472">Lesion-Level Subtypes of White Matter Hyperintensity Evolution Beyond Spatial Location</a></h3>
+<p>⭐⭐⭐ · Gonzalez-Gomez et al. · Neurology (2026-09-22) · n = 403 · cohort</p>
+<ul>
+<li>Longitudinal observational study: 3,224 MRI scans from 403 participants spanning cognitively normal aging, mild cognitive impairment, Alzheimer's disease, and Parkinson's disease; baseline + 2-year follow-up using structural, diffusion, and resting-state MRI.</li>
+<li>2,107 WMH lesions identified; unsupervised clustering of lesion-wise longitudinal changes yielded <strong>three distinct lesion subtypes</strong> with differential neurobiological and clinical significance.</li>
+<li>Results indicate WMHs are not a homogeneous entity; lesion subtype composition was associated with neurodegeneration and vascular risk factors in multivariable models with FDR correction.</li>
+<li>Three subtypes (labels not fully specified in the abstract) differ in progression trajectories, suggesting lesion composition provides more informative risk stratification than global WMH burden alone.</li>
+<li>Associations assessed with multivariable models and FDR correction; specific effect sizes not provided in the abstract.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1126/sciimmunol.aec9853">Platelet-Derived Serotonin Drives Age-Related Lung Pathology in SARS-CoV-2 Infection</a></h3>
+<p>⭐⭐⭐ · Marotta et al. · Sci Immunol (2026-08-28) · study type not reported</p>
+<ul>
+<li>Mouse model of age-associated SARS-CoV-2 severity: platelet serotonin release upon activation was enhanced in middle-aged mice and aged human healthy donors.</li>
+<li>Activated platelets aggregated and promoted <strong>fibrin deposition in lung microvasculature</strong>, associated with increased morbidity and respiratory dysfunction.</li>
+<li>Pharmacologic or genetic disruption of serotonin uptake, or blockade of serotonin-dependent signaling, attenuated platelet activation and protected against respiratory distress <strong>independently of viral replication and immune responses</strong>.</li>
+<li>Inhibition of fibrin formation similarly reduced disease severity, implicating serotonin-driven platelet procoagulant activity as a key contributor to age-related lung dysfunction.</li>
+<li>Findings are predominantly preclinical (murine); translation to human therapeutic applications requires further clinical validation.</li>
+</ul>
+<hr />
+<h2 class="theme-strength">Strength &amp; Hypertrophy</h2>
+<hr />
+<h3><a href="https://doi.org/10.1371/journal.pone.0355692">The Effect of Integrating Pain Neuroscience Education with Stabilization Exercises Using a Flexi-Bar on Functional Disability, Pain, and Geometry of Abdominal and Multifidus Muscles in Patients with Chronic Non-Specific Low Back Pain</a></h3>
+<p>⭐⭐⭐⭐ · Dehghani et al. · PLoS One (2026) · n = 48 · RCT</p>
+<ul>
+<li>48 participants with chronic non-specific low back pain randomized to (1) pain neuroscience education (PNE) + Flexi-Bar stabilization exercises or (2) Flexi-Bar stabilization exercises alone; 3 sessions/week for 6 weeks.</li>
+<li>Primary outcome (Roland-Morris Questionnaire for functional disability) and secondary outcome (pain intensity): significant Time × Group interaction effects, main effects of time, and main effects of Group (p &lt; 0.05) favoring the combined PNE + exercise group.</li>
+<li>Ultrasound showed significant post-intervention increases in <strong>Transverse Abdominis and lumbar Multifidus muscle thickness</strong> across supine, seated, and standing positions (p &lt; 0.05); PNE + exercise group showed significantly greater increases vs exercise-only.</li>
+<li>Secondary outcomes also included kinesiophobia, pain catastrophizing, and fear-avoidance beliefs, measured at baseline, post-intervention, and 4-week follow-up.</li>
+<li>Limitation: no PNE-only group, precluding isolation of the educational component's unique contribution; trial registered prospectively (IRCT20230505058095N1, Iranian Registry of Clinical Trials).</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.62675/2965-2774.20260486">Electromyographic Respiratory Muscle Analysis in the Spontaneous Breathing Trial: A Randomized Crossover Trial Comparing T-Piece and Pressure Support</a></h3>
+<p>⭐⭐⭐⭐ · Bordin et al. · Crit Care Sci (2026) · n = 16 · RCT</p>
+<ul>
+<li>Randomized crossover trial; 16 patients weaning from mechanical ventilation; each underwent two 30-minute spontaneous breathing trials (T-piece vs. pressure support ventilation at 7 cmH₂O) separated by ≥30-minute washout.</li>
+<li>Surface EMG assessed pectoralis major, rectus abdominis, and external intercostal muscles at T0, T15, and T30 (% root mean square activation and median frequency).</li>
+<li><strong>Median frequency</strong> remained stable for all muscles in both conditions (p &gt; 0.05), indicating no electromyographic fatigue over 30 minutes.</li>
+<li>During T-piece trial: progressive increase in % RMS in pectoralis major, rectus abdominis, and external intercostals (p &lt; 0.05); under pressure support, only pectoralis major showed a modest increase (p &lt; 0.05), other muscles stable.</li>
+<li>Intergroup delta comparisons (ANCOVA, adjusted for baseline): greater activation during T-piece for pectoralis major (p = 0.048) and rectus abdominis (p = 0.009); no significant difference for external intercostals.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> This study concerns mechanical ventilation weaning in ICU patients. It is categorized under Strength &amp; Hypertrophy based on its EMG muscle analysis methodology but is primarily a critical care investigation; applicability to fitness or sports science is indirect.</p>
+</blockquote>
+<hr />
+<h2 class="theme-supplements">Supplements</h2>
+<hr />
+<h3><a href="https://doi.org/10.1186/s12877-026-08126-x">Nutritional Modulation of Neuroinflammation in Alzheimer's Disease and Mild Cognitive Impairment: A Systematic Review of Clinical and Preclinical Evidence</a></h3>
+<p>⭐⭐⭐⭐⭐ · Sayed et al. · BMC Geriatr (2026-08-25) · meta-analysis / systematic review</p>
+<ul>
+<li>Systematic review across PubMed/MEDLINE, Embase, Scopus, and Web of Science; 22 studies met eligibility (10 clinical RCTs, 12 preclinical experimental investigations).</li>
+<li>Interventions reviewed: <strong>omega-3 fatty acids</strong>, ketogenic dietary interventions, B-vitamin supplementation, vitamin D, and microbiota-targeted strategies.</li>
+<li>Primary outcomes: inflammatory cytokines (TNF-α, IL-1β, IL-6), NF-κB and NLRP3 signaling, microglial activation, and oxidative stress biomarkers.</li>
+<li>Omega-3 fatty acids showed the <strong>most consistent</strong> clinical evidence for modulating neuroinflammatory biomarkers; ketogenic strategies showed promising results predominantly from preclinical data; evidence for B-vitamins, vitamin D, and microbiota interventions was limited by small numbers of eligible studies.</li>
+<li>Considerable heterogeneity in intervention protocols, outcome measures, and study populations; the authors call for larger, well-designed RCTs with standardized neuroinflammatory biomarker panels.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00424-026-03208-6">Palmitoylethanolamide Supplementation Partly Modulates Eccentric Exercise-Induced Changes in the Bioactive Lipid Profile of Skeletal Muscle Tissue</a></h3>
+<p>⭐⭐⭐⭐ · Schouten et al. · Pflugers Arch (2026-08-28) · n = 10 · RCT</p>
+<ul>
+<li>Double-blind crossover RCT; 10 healthy males received PEA (2 × 350 mg/d, Levagen+) or placebo (maltodextrin) in randomized order; muscle-damaging exercise = 24 × 10 eccentric contractions of the knee extensors on an isokinetic dynamometer.</li>
+<li>Muscle biopsies collected at baseline and 48 h post-exercise; lipid mediator profile analyzed via <strong>LC-MS/MS-based lipidomics</strong>.</li>
+<li>In the placebo condition, many lipid mediators <strong>decreased</strong> 48 h post-exercise; in the PEA condition, the same mediators remained unchanged or increased — pattern observed across mediators derived from AA (12-HHTrE, 11-HETE, 12-HETE, 15-HETE, 15-epi-LXA4, 14,15-EpETrE, 5,6-DiHETrE), DHA (4-HDoHE), LA (9-HODE, 13-HODE), and ALA (9-HOTrE, 13-HOTrE).</li>
+<li>MCTR3 was <strong>consistently higher</strong> in PEA vs placebo; LXB4 and AT-RvD3 were consistently <strong>lower</strong> in PEA vs placebo, independent of exercise.</li>
+<li>Very small sample (n = 10); no functional outcomes (soreness, strength recovery) reported in this analysis; results are mechanistic/lipidomic in nature.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.3390/nu18162697">Methodological Approaches to Bioavailability of Oral Creatine in Randomized Controlled Trials: A Meta-Research Study</a></h3>
+<p>⭐⭐⭐⭐⭐ · Bučević Popović et al. · Nutrients (2026-08-18) · meta-analysis</p>
+<ul>
+<li>Meta-research study examining methodological approaches used to assess oral creatine bioavailability across published RCTs.</li>
+<li>Abstract not available in the input data; specific findings, effect sizes, and sample characteristics cannot be reported.</li>
+<li>Study type: meta-analysis/meta-research; journal: Nutrients; published 2026-08-18.</li>
+</ul>
+<blockquote>
+<p><strong>Run note:</strong> No abstract was provided for this study. Bullet-point detail is limited to available metadata only.</p>
+</blockquote>
+<hr />
+<h2 class="theme-sleep">Sleep &amp; Recovery</h2>
+<blockquote>
+<p><strong>Coverage note:</strong> No studies in this digest's input set were primarily classified under Sleep &amp; Recovery beyond the sleep-obesity meta-analysis (filed under Obesity &amp; Metabolic Health). The sleep-obesity meta-analysis above addresses sleep duration directly. No additional sleep-specific studies were present in this batch.</p>
+</blockquote>
+<hr />
+<h2 class="theme-skin-hair">Skin &amp; Hair Health</h2>
+<hr />
+<h3><a href="https://doi.org/10.1097/01.JAA.0000000000000405">Hair Loss: A Systematic Approach to Evaluation, Diagnosis, and Management</a></h3>
+<p>⭐⭐⭐ · Walker et al. · JAAPA (2026-09-01) · review</p>
+<ul>
+<li>Evidence-based review targeting physician associates (PAs); covers differential diagnosis of alopecia including <strong>telogen effluvium</strong> (diffuse), <strong>alopecia areata</strong> (focal), and <strong>androgenetic alopecia</strong> (patterned).</li>
+<li>Recommended diagnostic workup: TSH, complete blood count, iron studies; scalp biopsy reserved for confirming scarring alopecia.</li>
+<li>Trichoscopy integrated with selective lab testing and etiology-specific treatment recommended to optimize diagnostic accuracy.</li>
+<li>Treatment overview: avoidance of triggers for effluvium; intralesional steroids or <strong>baricitinib</strong> for alopecia areata; <strong>minoxidil-based therapy</strong> for androgenetic alopecia; antifungals for tinea capitis.</li>
+<li>Narrative/educational review format; no original data, n, or effect sizes reported; evidence quality depends on the guidelines cited.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00347-026-02511-y">Botulinum Toxin A in Ophthalmological Practice: Therapeutic and Aesthetic Applications — Indications, Prerequisites and Procedure</a></h3>
+<p>⭐⭐⭐ · Lanzl et al. · Ophthalmologie (2026-09-01) · review</p>
+<ul>
+<li>CME-format review covering botulinum toxin A (BoNT-A) use in ophthalmology; primary indications include benign essential <strong>blepharospasm</strong>, hemifacial spasm, selected strabological conditions, and rare off-label uses; aesthetic use for mimetic wrinkles covered as secondary application.</li>
+<li>Prerequisites for safe use: thorough indication evaluation, detailed knowledge of periocular anatomy, precise injection technique, and careful patient selection.</li>
+<li>Covers mechanisms of action, injection techniques, adverse effects, and legal/regulatory aspects relevant to ophthalmological practice.</li>
+<li>CME educational article; no original trial data, no effect sizes, no n reported.</li>
+<li>Article published in German-language journal (Ophthalmologie); title brackets indicate translated/non-English original.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1084/jem.20252333">PML-Driven Sumoylation of PML::RARA-Bound Repressors Drives Hematopoietic Progenitor Immortalization</a></h3>
+<p>⭐⭐⭐ · Wu et al. · J Exp Med (2026-09-07) · study type not reported</p>
+<ul>
+<li>Mechanistic study of acute promyelocytic leukemia (APL): PML::RARA fusion protein requires NCoR corepressor binding on the RARA moiety for hematopoietic progenitor immortalization.</li>
+<li>PML mediates tethering of the UBC9 SUMO-conjugating enzyme onto PML::RARA, enforcing <strong>SUMO2 conjugation</strong> of multiple RARA partner proteins including the NCoR complex, amplifying transcriptional repression.</li>
+<li>PML mutants failing to recruit UBC9 yield PML::RARA fusions that promote neither NCoR sumoylation nor cellular transformation.</li>
+<li><strong>Sumoylation inhibitors</strong> reactivated retinoic acid target genes in PML::RARA-expressing (but not RARA-expressing) progenitors and triggered APL differentiation.</li>
+<li>Basic science/mechanistic study; no human clinical data; no direct relevance to skin or hair health beyond the input system's theme classification.</li>
+</ul>
+<blockquote>
+<p><strong>Curation note:</strong> This study (Wu et al., J Exp Med) was classified as <code>skin_hair</code> by the upstream theme-guesser but concerns APL leukemia biology. It has been retained in the Skin &amp; Hair Health section to reflect the input as received, but editors should note the classification is likely erroneous.</p>
+</blockquote>
+<hr />
+<h2>Sources Scanned This Week</h2>
+<p>| Source | Studies |
+|--------|---------|
+| PubMed | 14 |
+| <strong>Total</strong> | <strong>14</strong> |</p>
+<p><em>(One study — Schouten et al., Pflugers Arch — appeared twice in the input JSON; counted once in the Supplements section where it is most relevant, and once in the Strength section where it was first filed by theme_guess. Unique study count = 14.)</em></p>
+<hr />
+<h2>Run Notes</h2>
+<ol>
+<li><strong>Missing abstract:</strong> Bučević Popović et al. (Nutrients, creatine bioavailability meta-research) had a null abstract in the input. Only metadata-level bullets were generated; no effect sizes or findings could be confirmed.</li>
+<li><strong>Duplicate entry:</strong> Schouten et al. (PEA/Pflugers Arch) appears twice in the input JSON with identical DOI and content — once tagged <code>strength</code>, once tagged <code>supplements</code>. Full bullets appear under Supplements; a cross-reference note is included under Strength &amp; Hypertrophy.</li>
+<li><strong>Misclassified study:</strong> Wu et al. (J Exp Med, PML::RARA sumoylation) was tagged <code>skin_hair</code> by theme_guess but concerns APL leukemia molecular biology. Retained under Skin &amp; Hair Health per input, with editorial flag added.</li>
+<li><strong>Sleep &amp; Recovery section:</strong> No studies in this batch were primarily sleep/recovery-focused beyond the sleep-obesity meta-analysis. Section retained with coverage note; the sleep meta-analysis is under Obesity &amp; Metabolic Health where it fits best thematically.</li>
+<li><strong>Respiratory muscle EMG study (Bordin et al.):</strong> Classified under Strength &amp; Hypertrophy per theme_guess, but concerns mechanical ventilation weaning in ICU; an editorial note was added to flag the population specificity.</li>
+<li><strong>Sample sizes:</strong> Several studies did not report n in the input JSON fields (n = null); where n was derivable from the abstract text (e.g., 198 for Menezes-Júnior et al., 403 for Gonzalez-Gomez et al., 779 for Varadarajan et al., 48 for Dehghani et al., 16 for Bordin et al., 10 for Schouten et al.), it was extracted directly from the abstract and included in metadata lines.</li>
+</ol>
+
+  </div>
+  <div class="footer">
+    <p><strong>fiteligent</strong> · Research Digest</p>
+    <p>Optymizacja zdrowia oparta na nauce</p>
+    <p><a href="https://fiteligent.pl">fiteligent.pl</a></p>
+  </div>
+</div>
+</body>
+</html>
