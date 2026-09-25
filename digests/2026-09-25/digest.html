@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fiteligent Research Digest — 2026-09-25</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&display=swap');
+:root {
+  /* Surfaces */
+  --bg-page:       #0a0e27;
+  --bg-container:  #1a1f3a;
+  --bg-footer:     #0a0e27;
+
+  /* Brand colors */
+  --brand-primary: #016FFA;
+  --brand-deep:    #0047CC;
+  --brand-light:   #66A8FF;
+  --accent:        #FF7B00;
+  --accent-hover:  #E56A00;
+
+  /* Text */
+  --text-strong:   #ffffff;
+  --text-body:     #e0e0e0;
+  --text-muted:    #c0c0c0;
+  --text-footer:   #808080;
+
+  /* Type */
+  --font-sans:     'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --container-max: 720px;
+  --radius:        12px;
+
+  /* Theme accents */
+  --theme-obesity:    #FF7B00;
+  --theme-longevity:  #66A8FF;
+  --theme-strength:   #016FFA;
+  --theme-supplements:#9D7BFF;
+  --theme-sleep:      #3D5AFE;
+  --theme-skin-hair:  #F472B6;
+}
+
+* { box-sizing: border-box; }
+body { font-family: var(--font-sans); background: var(--bg-page); color: var(--text-body); margin: 0; padding: 24px; line-height: 1.7; }
+.container { max-width: var(--container-max); margin: 0 auto; background: var(--bg-container); border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+.header { background: linear-gradient(165deg, var(--brand-deep) 0%, var(--brand-primary) 55%, var(--brand-light) 100%); padding: 48px 32px; text-align: center; }
+.header .logo { max-width: 200px; height: auto; }
+.content { padding: 48px 56px; }
+h1 { color: var(--text-strong); font-size: 28px; margin: 0 0 8px; font-weight: 700; }
+h1 + .subtitle { color: var(--text-muted); margin: 0 0 32px; font-size: 14px; }
+h2 { color: var(--text-strong); font-size: 22px; margin: 48px 0 16px; padding-left: 16px; border-left: 4px solid var(--theme-accent, var(--accent)); font-weight: 700; }
+h2.theme-obesity     { --theme-accent: var(--theme-obesity); }
+h2.theme-longevity   { --theme-accent: var(--theme-longevity); }
+h2.theme-strength    { --theme-accent: var(--theme-strength); }
+h2.theme-supplements { --theme-accent: var(--theme-supplements); }
+h2.theme-sleep       { --theme-accent: var(--theme-sleep); }
+h2.theme-skin-hair   { --theme-accent: var(--theme-skin-hair); }
+h3 { color: var(--text-strong); font-size: 17px; margin: 32px 0 8px; font-weight: 700; }
+.meta { color: var(--text-muted); font-size: 13px; margin: 0 0 12px; }
+.stars { color: var(--accent); letter-spacing: 1px; font-weight: 700; }
+a { color: var(--brand-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.why-it-matters { background: rgba(255, 123, 0, 0.1); border-left: 3px solid var(--accent); padding: 12px 16px; margin: 16px 0; border-radius: 4px; color: var(--text-strong); font-weight: 500; }
+.footer { background: var(--bg-footer); padding: 32px; text-align: center; color: var(--text-footer); font-size: 12px; }
+.footer a { color: var(--brand-light); margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <img src="logo.svg" alt="fiteligent" class="logo">
+  </div>
+  <div class="content">
+    <pre><code class="language-yaml">---
+date_range: &quot;2026-09-11 – 2026-10-01&quot;
+studies_total: 18
+themes:
+  - Obesity &amp; Metabolic Health
+  - Longevity
+  - Strength &amp; Hypertrophy
+  - Supplements
+  - Sleep &amp; Recovery
+  - Skin &amp; Hair Health
+generated: &quot;2026-09-25T00:00:00Z&quot;
+source: fiteligent.pl research digest — Dr. Jakub Stanisławski
+---
+</code></pre>
+<h1>Fiteligent Research Digest — Week of 25 September 2026</h1>
+<hr />
+<h2>TL;DR</h2>
+<p>| # | Highlight | Rating |
+|---|-----------|--------|
+| 1 | <strong>Creatine + resistance training meta-analysis (63 RCTs):</strong> significant gains in muscle strength and lean mass vs. RT alone; fat mass unchanged; age moderates strength effects. | ⭐⭐⭐⭐⭐ |
+| 2 | <strong>Pediatric obesity &amp; cardiac autonomic function (18 studies, 1,590 participants):</strong> excess weight associated with meaningfully lower parasympathetic HRV indices (pNN50 SMD −0.48; RMSSD SMD −1.00) and higher LF/HF ratio. | ⭐⭐⭐⭐⭐ |
+| 3 | <strong>Nocturnal pressurization for high-altitude workers (RCT, n=24):</strong> simulated stepwise descent to 2000 m increased deep sleep percentage (+3.25%, p=0.010) and cut arousal index by up to 7.01 events/h (p&lt;0.001). | ⭐⭐⭐⭐ |
+| 4 | <strong>UPF diet &amp; satiety (crossover RCT, n=32):</strong> 14 days of high-UPF exposure produced only a small aggregate difference in subjective hunger/fullness; satiety hormone responses did not differ — does not support major satiety disruption hypothesis. | ⭐⭐⭐⭐ |
+| 5 | <strong>Epigenetic skin clocks:</strong> exogenous skin clock age acceleration significantly correlated with sun-seeking behaviour (ρ=0.18, p=0.004) and facial photodamage (ρ=0.33, p=0.028); endogenous and Horvath clocks were not. | ⭐⭐⭐ |</p>
+<hr />
+<h2 class="theme-obesity">Obesity &amp; Metabolic Health</h2>
+<h3><a href="https://doi.org/10.1590/1984-0462/2026/44/2026017">Cardiac Autonomic Dysfunction in Children and Adolescents with Obesity: A Systematic Review and Meta-Analysis</a></h3>
+<p>⭐⭐⭐⭐⭐ · Dornelles et al. · Rev Paul Pediatr (2026) · n = 1,590 · meta-analysis</p>
+<ul>
+<li>18 observational studies (1,590 participants) comparing short-term resting HRV in children/adolescents with excess weight vs. normal-weight controls; protocol pre-registered in PROSPERO (CRD420251005501).</li>
+<li>Random-effects meta-analysis: RMSSD SMD −1.00 (95% CI −1.68 to −0.31) and pNN50 SMD −0.48 (95% CI −0.68 to −0.28) — both lower in excess-weight group, indicating reduced parasympathetic modulation.</li>
+<li>LF/HF ratio was higher in the excess-weight group (SMD +0.70; 95% CI 0.30 to 1.10), consistent with sympathetic predominance.</li>
+<li>No significant between-group differences observed for SDNN or mean NN interval.</li>
+<li>Between-group BMI difference significantly moderated LF/HF (β = −0.15; p = 0.045) but not RMSSD; leave-one-out analyses supported directional robustness; pNN50 showed the most consistent reduction across studies.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.2196/89548">Caregiver App Use and Child Behavioral Adherence in Relation to Obesity-Related Outcomes in an mHealth App-Assisted Childhood Obesity Intervention: Secondary Analysis of a Cluster Randomized Trial</a></h3>
+<p>⭐⭐⭐⭐ · Yan et al. · JMIR Mhealth Uhealth (2026) · RCT (secondary analysis)</p>
+<ul>
+<li>Secondary analysis of 684 child-caregiver dyads in the intervention arm of the DECH-children cluster-RCT, implemented across 3 socioeconomically diverse regions in China; 9-month follow-up.</li>
+<li>Caregiver app-use adherence operationalized as app-use frequency and total usage duration (app-recorded); child behavioral adherence measured via weekly monitoring scores covering diet, screen time, and physical activity.</li>
+<li>Higher caregiver app-use frequency and duration were both significantly associated with reductions in children's BMI (β = −0.19 per adherence unit reported); linear mixed models used.</li>
+<li>Joint adherence (high caregiver + high child) associated with more favorable changes in both weight status and physical fitness outcomes compared with low-adherence dyads.</li>
+<li>Causal directionality cannot be established from secondary/observational analysis; selection into high adherence may reflect unmeasured motivation.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00394-026-04111-7">Satiety Responsiveness Following Dietary Exposure to Ultra-Processed Foods Differing in Texture-Derived Eating Rate: A Secondary Analysis of a Randomized Controlled Crossover Diet Intervention</a></h3>
+<p>⭐⭐⭐⭐ · van Bruinessen et al. · Eur J Nutr (2026) · n = 32 · RCT (crossover, secondary analysis)</p>
+<ul>
+<li>Randomized crossover design; n = 32 (mean age 27 ± 2 y; BMI 23.6 ± 2.3 kg/m²); two 14-day high-UPF diet periods compared with baseline; pre-registered at ClinicalTrials.gov (NCT06113146).</li>
+<li>Small but significant aggregate difference observed in subjective satiety AUC: higher hunger and lower fullness AUCs following high-UPF diets vs. baseline; no significant differences at individual timepoints (all p &gt; 0.05).</li>
+<li>Satiety hormone responses to a fixed-calorie load did not differ between baseline and after 14-day high-UPF exposure (all p &gt; 0.05).</li>
+<li>Fasting-state appetite ratings remained stable across days within each diet period on both UPF conditions.</li>
+<li>Results do not support the hypothesis that short-term (14-day) high-UPF exposure meaningfully disrupts satiety responsiveness; small sample, lean participants, and secondary-analysis status limit generalizability.</li>
+</ul>
+<hr />
+<h2 class="theme-longevity">Longevity</h2>
+<h3><a href="https://doi.org/10.1038/s41392-026-02935-7">Inotodiol Prevents Age-Related Muscle Wasting by Restoring Mitochondrial Function Through Liver X Receptor Beta Signaling</a></h3>
+<p>⭐⭐⭐ · You et al. · Signal Transduct Target Ther (2026) · preclinical</p>
+<ul>
+<li>Investigated the mycosterol inotodiol (Ino) — derived from <em>Inonotus obliquus</em> (chaga mushroom) — as a candidate for mitigating sarcopenia; experimental models included aged mice and dexamethasone-induced atrophy in vitro.</li>
+<li>Ino treatment improved muscle mass and function in aged mice and attenuated DEX-induced atrophy; increased mitochondrial content, elevated oxidative capacity, reduced lipid accumulation, and decreased oxidative stress were reported.</li>
+<li>Mechanistically, Ino was found to activate liver X receptor β (LXRβ) and promote its interaction with PPARδ, thereby increasing SIRT3 transcription and activating the LXRβ/SIRT3/PGC-1α axis.</li>
+<li>Ino also attenuated palmitic acid-induced lipotoxicity in muscle cells by restoring lipid metabolism.</li>
+<li>Entirely preclinical (mouse/cell); no human data; no effect sizes or statistics reported in abstract.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1080/14728222.2026.2737637">Sirtuin Signaling as Therapeutic Targets of Immunosenescence</a></h3>
+<p>⭐⭐⭐ · Calabrò et al. · Expert Opin Ther Targets (2026) · review</p>
+<ul>
+<li>Narrative/expert review examining the role of sirtuin signaling in immunosenescence (immune aging + inflammaging) and its intersection with NAD⁺ metabolism, oxidative stress, and inflammatory pathways.</li>
+<li>Reviews pharmacological strategies for enhancing sirtuin activity: natural activators, synthetic activators, and NAD⁺ precursors (e.g., NR, NMN); emphasizes integration across metabolic, mitochondrial, epigenetic, and inflammatory axes.</li>
+<li>Authors conclude sirtuin modulation is &quot;biologically plausible&quot; for targeting immunosenescence but characterize it as &quot;investigational rather than an established therapeutic approach.&quot;</li>
+<li>No original data; no meta-analytic pooling; conclusions are narrative synthesis of existing literature.</li>
+<li>NAD⁺ precursor findings discussed but no specific effect sizes provided in the abstract.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1016/j.mtbio.2026.103674">Digestive-Transformed Titanium Dioxide Nanoparticles Disrupt Intestinal Barrier via Mitoxyperilysis Mediated by mTOR-Cytoskeleton Axis Dysregulation</a></h3>
+<p>⭐⭐⭐ · Zhang et al. · Mater Today Bio (2026) · preclinical</p>
+<ul>
+<li>Investigated gastrointestinal transformation and intestinal toxicity of titanium dioxide nanoparticles (TiO₂ NPs) — a common food additive (E171) — following in vitro digestive processing.</li>
+<li>Proposes a novel cell-death mechanism termed &quot;mitoxyperilysis&quot; mediated by dysregulation of the mTOR-cytoskeleton axis as the primary driver of intestinal barrier disruption.</li>
+<li>Abstract is truncated; study type not specified; no sample size, effect sizes, or p-values available from abstract.</li>
+<li>Relevance to human exposure levels from dietary TiO₂ cannot be assessed from available information.</li>
+<li>Evidence rating reflects preclinical/mechanistic scope and incomplete abstract.</li>
+</ul>
+<hr />
+<h2 class="theme-strength">Strength &amp; Hypertrophy</h2>
+<h3><a href="https://doi.org/10.1080/15502783.2026.2718316">Resistance Training Combined with Creatine Supplementation: A Three-Level Meta-Analysis of Multidimensional Outcomes from Strength Enhancement to Body Composition Remodeling</a></h3>
+<p>⭐⭐⭐⭐⭐ · Wang et al. · J Int Soc Sports Nutr (2026) · meta-analysis</p>
+<ul>
+<li>Systematic search of PubMed, Web of Science, Cochrane, Embase, EBSCO through April 21, 2025, plus backward citation tracking; 63 RCTs included; three-level random-effects model in metafor (R); Hedge's g used as summary effect size.</li>
+<li>Creatine + RT significantly enhanced muscle strength (upper- and lower-body) and lean body mass compared with RT alone; fat mass was not significantly affected.</li>
+<li>Modest increase in total body mass was primarily attributable to lean mass gains, with a slight accompanying reduction in body fat percentage.</li>
+<li>Age appeared associated with magnitude of strength effects in subgroup/meta-regression analyses, though this is flagged as exploratory given uneven representation of age subgroups.</li>
+<li>Intervention-protocol variables (duration, weekly frequency, dosing strategy, daily dose, supplementation timing) did not significantly moderate outcomes; nutritional intake and training background were heterogeneously and incompletely reported across trials.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1002/lary.70916">Correlating Vocal Fold Bowing and Thyroarytenoid Myocyte Dimensions in an Aging Rat Model</a></h3>
+<p>⭐⭐⭐ · Miller et al. · Laryngoscope (2026) · n = 24 (rats) · animal study</p>
+<ul>
+<li>24 Sprague-Dawley rats across three age groups (4-, 18-, and 24-month) used to examine laryngeal aging; endoscopic video collected and Bowing Index (BI) independently scored by two reviewers; thyroarytenoid muscle histomorphometry performed.</li>
+<li>Bowing Index was greater in 18- and 24-month rats vs. 4-month (MD 7.15, 95% CI 4.39–9.90; and MD 4.26, 95% CI 1.50–7.01, respectively), paralleling clinical age-related vocal atrophy (ARVA) findings in humans.</li>
+<li>Mean minimum Feret diameter (MFD) increased with age: 19.8 ± 1.3 µm at 4 months → 22.1 ± 1.7 µm at 18 months → 22.5 ± 1.5 µm at 24 months (4 vs. 18, p = 0.014; 4 vs. 24, p = 0.005; 18 vs. 24, p = 0.87).</li>
+<li>Aged rats showed increased myofiber size (cross-sectional area also increased), contrary to the atrophy hypothesis; authors suggest compensatory hypertrophy or fiber-type shifts as possible mechanisms.</li>
+<li>Animal model; direct translation to human laryngeal pathology requires further investigation; n per group not explicitly stated.</li>
+</ul>
+<hr />
+<p><em>Note: Two additional studies tagged under &quot;strength&quot; theme (FOXC1-FTO axis in cardiac hypertrophy; congenital levator synkinesis) were excluded from this section as they address cardiac pathology and ophthalmic neurodevelopment respectively, with no relevance to skeletal muscle hypertrophy or resistance training. See Run Notes.</em></p>
+<hr />
+<h2 class="theme-supplements">Supplements</h2>
+<h3><a href="https://doi.org/10.1080/15502783.2026.2718316">Resistance Training Combined with Creatine Supplementation: A Three-Level Meta-Analysis</a></h3>
+<p><em>Cross-listed under Strength &amp; Hypertrophy — see full entry above.</em></p>
+<hr />
+<h3><a href="https://doi.org/10.3390/medsci14050562">Vitamin D and Gastric Cancer: A Systematic Review and Meta-Analysis</a></h3>
+<p>⭐⭐⭐⭐⭐ · Pântea &amp; Meliț · Med Sci (Basel) (2026) · meta-analysis</p>
+<ul>
+<li>Systematic review and meta-analysis examining the association between vitamin D status and/or supplementation and gastric cancer risk or outcomes.</li>
+<li>Abstract not available in input data; no effect sizes, sample sizes, p-values, or specific conclusions can be reported.</li>
+<li>Journal and study type (meta-analysis) are confirmed; published 2026-09-11.</li>
+<li>Coverage is flagged as partial — see Run Notes.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00223-026-01612-9">Low Prevalence of Exploratory Biochemical Patterns Compatible with Osteomalacia in a Large Cohort of Participants with Low Serum 25-Hydroxyvitamin D Levels</a></h3>
+<p>⭐⭐⭐⭐ · Jorde et al. · Calcif Tissue Int (2026) · RCT + cross-sectional</p>
+<ul>
+<li>Cross-sectional component: 423 participants from the population-based Tromsø Study with low vitamin D status (mean serum 25-OHD = 34 nmol/L); RCT component: 382 completers (194 vitamin D, 188 placebo); trial registered NCT02750293.</li>
+<li>Vitamin D RCT arm received 100,000 IU loading dose followed by 20,000 IU/week for 4 months; outcomes: parathyroid hormone (PTH), calcium, alkaline phosphatase (ALP), and bone-specific ALP.</li>
+<li>Zero participants met the strictest biochemical definition of osteomalacia (simultaneous elevation of PTH and ALP + low calcium); with the most permissive exploratory biochemical pattern, prevalence was 8.3%.</li>
+<li>In the RCT, vitamin D supplementation significantly reduced plasma PTH and ALP and increased serum calcium compared with placebo.</li>
+<li>Authors note findings cannot determine the true prevalence of osteomalacia or establish an appropriate 25-OHD threshold without validation against bone histomorphometry (biopsy).</li>
+</ul>
+<hr />
+<h2 class="theme-sleep">Sleep &amp; Recovery</h2>
+<h3><a href="https://doi.org/10.1007/s00415-026-14158-5">Pharmacological Treatment of Sleep Disorder Phenotypes in Parkinson's Disease: A Systematic Review and Meta-Analysis of Randomised Controlled Trials</a></h3>
+<p>⭐⭐⭐⭐⭐ · Canever et al. · J Neurol (2026) · n = 1,913 · meta-analysis</p>
+<ul>
+<li>29 RCTs (1,913 participants; 2002–2025) identified across six databases without restrictions; random-effects pooling; risk of bias assessed with Cochrane RoB 2 tool; PROSPERO registration CRD420261412614.</li>
+<li>Only 17.2% of included trials were at low overall risk of bias.</li>
+<li>For excessive daytime sleepiness (EDS; k = 6): pooled Epworth Sleepiness Scale (ESS) estimate was directionally favourable but non-significant (MD 1.75; 95% CI −0.26 to 3.75); very high statistical heterogeneity noted.</li>
+<li>Chronobiotic agents and dopaminergic receptor agonists showed directional improvement in overall sleep quality (low-certainty evidence); evidence for EDS, insomnia symptoms, and REM sleep behaviour disorder (RBD) insufficient for definitive recommendations.</li>
+<li>Authors explicitly caution against over-interpreting pooled estimates given very high statistical heterogeneity and call for phenotype-specific RCTs with harmonised outcome measures.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00394-026-04113-5">Dietary Fibre Blend Improves Gut Health in Patients with Irritable Bowel Syndrome Following a Low FODMAP Diet: A Randomised, Double-Blind Control Trial</a></h3>
+<p>⭐⭐⭐⭐ · Yan et al. · Eur J Nutr (2026) · n = 26 · RCT</p>
+<ul>
+<li>Pilot double-blind RCT; n = 26 adults (3 males) with IBS following a low-FODMAP diet; 3-week intervention comparing a dietary fibre blend (&quot;ur gut&quot;) vs. placebo; outcome domains included gut symptoms, gut microbiota composition, and sleep patterns.</li>
+<li>Both groups maintained stable baseline gut symptoms and sleep patterns during the intervention period.</li>
+<li>After the intervention, the ur gut fibre group showed improvements in gut health markers compared with placebo (specific effect sizes not available from abstract due to truncation).</li>
+<li>Very small sample (n = 26, only 3 males); pilot designation acknowledged; results should be considered preliminary; abstract truncated, limiting full data extraction.</li>
+<li>Sleep patterns assessed but no quantitative sleep outcomes reported in available abstract text.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1007/s00420-026-02229-z">Improving Adaptation in Male High-Altitude Workers Through Pressurization: A Randomized Controlled Trial on Sleep Architecture</a></h3>
+<p>⭐⭐⭐⭐ · Shan et al. · Int Arch Occup Environ Health (2026) · n = 24 · RCT</p>
+<ul>
+<li>5-week RCT; 24 male workers residing at 3,500 m altitude randomized to Pressurization group (n = 12) or Control group (n = 12); pressurization group slept in an environmental simulator at sequentially lower simulated altitudes (3,000 m → 2,500 m → 2,000 m) over 3 weeks while working at 3,500 m during the day.</li>
+<li>Significant Group × Time interaction for nocturnal oxygenation: Mean SpO₂ (F(4,88) = 28.36, p &lt; 0.001); Minimum SpO₂ (F(4,88) = 7.16, p &lt; 0.001); dose-dependent increases in both metrics peaking at simulated 2,000 m.</li>
+<li>Deep sleep percentage increased significantly in pressurization group at 2,000 m (Group × Time effect: +3.25%, p = 0.010).</li>
+<li>Arousal index (ArI) reduced by −5.42 events/h at 2,500 m and −7.01 events/h at 2,000 m in the pressurization group (both p &lt; 0.001).</li>
+<li>Epworth Sleepiness Scale scores decreased significantly in pressurization group during descent (p &lt; 0.01); no significant changes in total sleep time, REM sleep, or wake percentage; all-male sample limits generalizability; small n.</li>
+</ul>
+<hr />
+<h2 class="theme-skin-hair">Skin &amp; Hair Health</h2>
+<h3><a href="https://doi.org/10.1038/s41392-026-03055-y">Retinoic Acid in Health and Disease</a></h3>
+<p>⭐⭐⭐ · De Angelis et al. · Signal Transduct Target Ther (2026) · review</p>
+<ul>
+<li>Comprehensive narrative review of retinoic acid (RA) — the active metabolite of vitamin A — covering developmental, homeostatic, and pathological roles across organ systems.</li>
+<li>Skin-relevant content: RA contributes to epithelial integrity, stem-cell regulation, immune homeostasis, and metabolic balance in adult tissues; disruption of RA synthesis, degradation, or receptor signaling is implicated in a broad spectrum of pathologies.</li>
+<li>In oncology: retinoid-based interventions have transformed treatment of acute promyelocytic leukemia; broader application constrained by resistance mechanisms, pharmacokinetic limitations, tissue-specific effects, and dual (differentiation-inducing vs. stemness-maintaining) signaling character.</li>
+<li>Authors propose concept of &quot;retinoid endotypes&quot; — tissue- and stage-specific RA signaling states shaped by metabolic niches, chromatin state, and microenvironmental organization — as a framework for patient stratification and precision retinoid therapy.</li>
+<li>No original data; no quantitative outcomes; conclusions represent narrative synthesis.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1186/s13148-026-02230-w">Epigenetic Clocks Can Differentiate Between Exogenous and Endogenous Skin Ageing</a></h3>
+<p>⭐⭐⭐ · Shore et al. · Clin Epigenetics (2026) · n &gt; 400 skin samples · observational</p>
+<ul>
+<li>Exogenous and endogenous skin epigenetic clocks trained in &gt;400 skin samples; tested alongside the Horvath &quot;Skin and Blood&quot; clock for association with chronological age and (age-acceleration-adjusted) sun-exposure parameters and gene expression.</li>
+<li>Exogenous Skin clock ages were significantly older in sun-exposed arm samples vs. donor-matched sun-protected samples in both epidermal (n = 24) and cultured fibroblast (n = 8) samples (p &lt; 0.001).</li>
+<li>Exogenous clock age acceleration significantly correlated with sun-seeking behaviour (ρ = 0.18, p = 0.004) and with mRNA levels in whole-skin abdomen samples (n = 364; 202 genes with q &lt; 0.05); endogenous and Horvath clocks showed neither association.</li>
+<li>In 44 facial skin swabs, exogenous age acceleration correlated significantly with facial photodamage grading (ρ = 0.33, p = 0.028).</li>
+<li>Endogenous and Horvath clocks showed stronger correlation with chronological age overall; this is an observational study — no intervention data; directionality of gene expression associations cannot be inferred.</li>
+</ul>
+<hr />
+<h3><a href="https://doi.org/10.1242/dev.205552">A Retinoic Acid-Rfx6 Cascade Modulates Wnt/Bmp-Dependent Gut Tube Patterning: Insight into the Molecular Basis of Mitchell-Riley Syndrome</a></h3>
+<p>⭐⭐⭐ · Rankin et al. · Development (2026) · developmental/molecular biology</p>
+<ul>
+<li>Used human pluripotent stem cell (hPSC) cultures and <em>Xenopus</em> embryo models to demonstrate that retinoic acid (RA) from lateral plate mesoderm directly activates transcription factor Rfx6 in posterior foregut endoderm.</li>
+<li>Rfx6 promotes posterior foregut identity while suppressing Wnt-dependent hindgut and Bmp-dependent pharyngeal fates through multiple direct and indirect mechanisms.</li>
+<li>Rfx6 directly activates foregut TFs (onecut1, pdx1) and Wnt antagonists (sfrp2/5); directly suppresses hindgut TF cdx2 and pharyngeal TFs nkx2-5 and nkx2-6; indirectly restricts Wnt and Bmp ligand expression.</li>
+<li>Study provides mechanistic insight into Mitchell-Riley Syndrome congenital anomalies, caused by RFX6 mutations.</li>
+<li>Exclusively developmental/molecular biology; no direct adult skin or hair relevance; placed in skin/hair theme based on input classification but thematic fit is limited — see Run Notes.</li>
+</ul>
+<hr />
+<h2>Sources Scanned This Week</h2>
+<p>| Source | Studies |
+|--------|---------|
+| PubMed | 18 |
+| <strong>Total</strong> | <strong>18</strong> |</p>
+<hr />
+<h2>Run Notes</h2>
+<ol>
+<li>
+<p><strong>Partial abstract coverage:</strong> Three studies had truncated or null abstracts — &quot;Vitamin D and Gastric Cancer&quot; (Pântea &amp; Meliț, null abstract), &quot;Digestive-Transformed TiO₂ Nanoparticles&quot; (Zhang et al., truncated mid-sentence), and &quot;Dietary Fibre Blend in IBS&quot; (Yan et al., truncated). Specific effect sizes and conclusions for these studies cannot be reported and are flagged accordingly.</p>
+</li>
+<li>
+<p><strong>Theme misclassification — input-assigned themes:</strong> Several studies were placed in themes that do not reflect their primary subject matter:</p>
+<ul>
+<li><em>Congenital Levator Synkinesis</em> (Diab &amp; Alsuhaibani) was tagged &quot;strength&quot; but addresses ophthalmic neurodevelopment; not included in any theme section as it falls outside the digest's six themes.</li>
+<li><em>FOXC1-FTO Axis in Cardiac Hypertrophy</em> (Kong et al.) was tagged &quot;strength&quot; but addresses pathological cardiac hypertrophy; not included in Strength &amp; Hypertrophy.</li>
+<li><em>Retinoic Acid-Rfx6 Cascade</em> (Rankin et al.) was tagged &quot;skin_hair&quot; but addresses embryonic gut patterning and a rare congenital syndrome; included in Skin &amp; Hair under the input classification but flagged for limited thematic relevance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Creatine meta-analysis (Wang et al.)</strong> appears in both the Strength &amp; Hypertrophy and Supplements sections per input theme tagging; a cross-reference entry is used in Supplements to avoid duplication of the full write-up.</p>
+</li>
+<li>
+<p><strong>Study type gaps:</strong> Five studies had no study_type specified in input (Zhang et al., You et al., Miller et al., Kong et al., Shore et al.); study design inferred from abstract language where possible and noted in metadata lines.</p>
+</li>
+<li>
+<p><strong>No &quot;cited_by&quot; data</strong> was provided for any study this week; Cited by lines are omitted throughout.</p>
+</li>
+</ol>
+
+  </div>
+  <div class="footer">
+    <p><strong>fiteligent</strong> · Research Digest</p>
+    <p>Optymizacja zdrowia oparta na nauce</p>
+    <p><a href="https://fiteligent.pl">fiteligent.pl</a></p>
+  </div>
+</div>
+</body>
+</html>
